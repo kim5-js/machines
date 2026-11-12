@@ -9,7 +9,7 @@
 | 目录 | 内容 |
 |---|---|
 | `records/` | 123 次训练各自的参数和逐轮记录，533 项评价的评分记录，最初 78 项评价的封存汇总表；说明见 `records/先读我.md` |
-| `checkpoints/` | 每次训练的 `best.pt` 和 `last.pt`，文件夹名与 `records/` 一一对应；`检查点索引.csv` 列出每个文件的 SHA-256 和用到它的评价 |
+| `checkpoints/` | 每次训练的 `best.pt` 和 `last.pt`，文件夹名与 `records/` 一一对应；`检查点索引.csv` 列出每个文件的 SHA-256 和用到它的评价。`00_预训练起始权重` 是预训练微调所用的四个公开权重 |
 | `evaluation_outputs/` | 每项评价的完整输出：逐图预测（`predictions.json.gz`）、COCOeval 中间数组、评分日志和 `evaluation.json` |
 | `code/training/` | 各实验块在服务器上实际运行的训练代码，按实验块分文件夹 |
 | `code/evaluation/` | 统一评价脚本（官方 COCOeval）和条件评价脚本 |
@@ -39,12 +39,23 @@
 其余的 `last.pt` 没有被论文评价，只是随 `best.pt` 一起放入，共 117 个。
 
 
+`checkpoints/00_预训练起始权重` 里是训练参数里指明的四个起始权重（`yolov8s.pt`，72 次训练、`yolo11s.pt`，3 次训练、`yolo26s.pt`，3 次训练、`rtdetr-l.pt`，3 次训练）。它们是 Ultralytics 公开发布的权重，SHA-256 与实验块启动时记下的哈希一致。从头训练的 42 次不用起始权重。
+
+## 代码是怎么核对的
+
+- 四个实验块在发布到服务器运行时，各自记下了每个代码文件的 SHA-256。仓库里对应的文件逐个重算后全部一致：`flow_source_retrain_20260920` 420 个、`flow_source_cbam_20260920` 421 个、`refsoft_reproduction_20260910` 312 个、`refsoft_extension_20261109` 312 个。
+- `formal_runs_autodl`（SDS、WSODD 的训练策略和检测器参照）没有这样的清单，改为与第一台训练服务器备份里的同名文件比对：230 个文件逐字节相同；2 个说明文档后来改过（`README.md`、`WEEKLY_CAPACITY_PLAN_20260820.md`），脚本没有差别。
+- 修回阶段追加训练的启动脚本和评价脚本，与训练机器上留下的副本逐字节相同。
+
 评分用的是 pycocotools 的官方 COCOeval。评价记录里的 `evaluator_code_sha256` 是评分模块 `cocoeval.py` 的 SHA-256，78 项封存评价和 533 项后续评价记的是同一个值，与 `code/training/flow_source_retrain_20260920/vendor/pycocotools/cocoeval.py` 一致。调用它的评价脚本在 `code/evaluation/`。
 
 ## 没有放进来的东西
 
 - 数据集图像和标注。三个数据集都是公开数据集，划分清单在 `supplementary/` 里。`evaluation_outputs/前78项/unified_evaluation_evidence.zip` 是当时封存的评价证据，里面带有三个评价划分的 COCO 格式标注文件（不含图像）。
 - 训练过程中保存的示例图、曲线图和逐次训练的控制台日志。
+- 论文没有用到的权重：冒烟测试和中途失败的运行；27 次从头训练另按 mAP 保存的 `best_map.pt`（评价用的是 `best.pt`）；检测器参照训练中每 10 轮保存的中间检查点。
+- 随代码打包的第三方库里的非代码文件（示例图片、网页模板、pycocotools 的已编译模块）。pycocotools 2.0.10 可以用 pip 安装。
+- 服务器上与论文无关的其他实验的脚本。
 - 稿件、审稿意见和回复信。
 - `code/training/formal_runs_autodl` 里的三个文件：一份写有训练服务器登录地址的说明，两份内部的启动授权记录。
 
