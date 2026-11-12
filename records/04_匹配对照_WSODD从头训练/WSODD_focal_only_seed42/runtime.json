@@ -1,0 +1,25 @@
+{
+  "ultralytics_version": "8.3.182",
+  "ultralytics_file": "/root/autodl-tmp/refsoft_extension_20261109/release_v1/code/vendor/ultralytics/__init__.py",
+  "pretrained": false,
+  "scale": "s",
+  "parameters": 11141018,
+  "cbam_indices": [],
+  "criterion": "v8DetectionLoss",
+  "bbox_loss": "focal_eiou",
+  "box": 4.0,
+  "dfl": 1.3,
+  "initial_state_sha256": "d509c836a464bd9b047918ba9deddf0b1d46dfa5ca64603c7e26f49eb8ac8e57",
+  "train_images": 3977,
+  "batches_per_epoch": 995,
+  "optimizer": "SGD",
+  "amp": true,
+  "protocol_sha256": "af6d49831606c02786d828634fd544c588b3b2a4181c40711dd0465bb98f1caf",
+  "job": {
+    "key": "WSODD_focal_only_seed42",
+    "dataset": "WSODD",
+    "arm": "focal_only",
+    "seed": 42
+  },
+  "smoke": false
+}

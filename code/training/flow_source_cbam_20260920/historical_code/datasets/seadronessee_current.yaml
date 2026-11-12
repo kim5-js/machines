@@ -1,0 +1,14 @@
+# Official train/validation folders available locally. COCO category 0
+# ("ignored") is excluded by the Ultralytics converter; source categories 1-5
+# therefore become YOLO class IDs 0-4. The downloaded test images have no
+# labels, so they are intentionally excluded from local evaluation.
+path: /root/autodl-tmp/datasets/SeaDronesSee
+train: images/train
+val: images/val
+nc: 5
+names:
+  0: swimmer
+  1: boat
+  2: jetski
+  3: life_saving_appliances
+  4: buoy

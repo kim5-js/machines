@@ -1,0 +1,97 @@
+{
+  "schema": "ring3.pretrained_sgd_robustness_eval_config.v1",
+  "status": "locked_evaluation_only",
+  "purpose": "Evaluate existing pretrained-SGD E0-E3 checkpoints by manually reviewed scene and controlled degradation without training",
+  "invariants": {
+    "no_training": true,
+    "no_checkpoint_updates": true,
+    "no_e3_continuation": true,
+    "no_e4": true,
+    "same_evaluator_for_all_models_and_conditions": true,
+    "same_prediction_parameters_for_all_models_and_conditions": true,
+    "labels_and_geometry_unchanged_under_photometric_degradation": true
+  },
+  "dataset": {
+    "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/seadronessee_source_disjoint_v1.yaml",
+    "yaml_sha256": "66b63cf9f50952faa5abdc83979599f2de88c64178278fb5b2b4c698ed841f7c",
+    "split": "val",
+    "images": 1555,
+    "official_test_note": "Official SeaDronesSee test labels are not public; the locked source-disjoint validation set is used for metric-bearing robustness evaluation"
+  },
+  "evaluator": {
+    "path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_e3_coco_areas.py",
+    "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc",
+    "imgsz": 960,
+    "batch": 8,
+    "chunk_size": 4,
+    "confidence_floor": 0.001,
+    "nms_iou": 0.7,
+    "prediction_max_det": 300,
+    "evaluation_max_det": 100,
+    "iou_thresholds": "0.50:0.05:0.95",
+    "recall_points": 101,
+    "area_coordinates": "original validation image pixels",
+    "small_area": "[0,32^2)"
+  },
+  "models": {
+    "E0": {
+      "run_dir": "/root/autodl-tmp/formal_pretrained_sgd_mainline/seed0_yolov8s_seadronessee_e0_pretrained_sgd_img960_e150",
+      "best_weights_sha256": "32f1bf5fcdc052417a4f6748de2f48c0ceab3dab1013bcf65028f3306ef2523f"
+    },
+    "E1": {
+      "run_dir": "/root/autodl-tmp/formal_pretrained_sgd_mainline/seed0_yolov8s_seadronessee_e1_mdg_pretrained_sgd_img960_e150",
+      "best_weights_sha256": "175ee2448563495170e30490ee7eeeb9c69e5cc05b69347c12bb3a2351bad626"
+    },
+    "E2": {
+      "run_dir": "/root/autodl-tmp/formal_pretrained_sgd_mainline/seed0_yolov8s_seadronessee_e2_dualview_nocons_pretrained_sgd_img960_e150",
+      "best_weights_sha256": "ae4a97f0be526b6edceaa5ee3e9366601e59004a3105901404f75eb610a27779"
+    },
+    "E3": {
+      "run_dir": "/root/autodl-tmp/formal_pretrained_sgd_mainline/seed0_yolov8s_seadronessee_e3_dualview_smallobj_alpha15_pretrained_sgd_img960_e150",
+      "best_weights_sha256": "c5239bc069a15c1b152b44ffa56e59d9f259762d893940f01e0cc44c5cf326b8"
+    }
+  },
+  "scene_evaluation": {
+    "labels_csv": "/root/autodl-tmp/robustness_eval/pretrained_sgd_e0_e3_20260902/scene_review/scene_labels.csv",
+    "allowed_labels": [
+      "Normal",
+      "Glare",
+      "Low-light",
+      "Mixed"
+    ],
+    "models": [
+      "E0",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "metrics": [
+      "mAP50-95",
+      "APsmall"
+    ]
+  },
+  "controlled_degradation": {
+    "source_config": "/root/autodl-tmp/ring3_setup/autodl/e1_mdg_config.json",
+    "source_config_sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+    "models": [
+      "E0",
+      "E2"
+    ],
+    "families": [
+      "glare",
+      "low_light"
+    ],
+    "severities": [
+      "mild",
+      "medium",
+      "strong"
+    ],
+    "parameter_policy": "Use the midpoint of each existing locked MDG severity band; glare center is deterministic per image and shared across severities",
+    "random_seed_namespace": "ring3.pretrained_sgd_robustness_eval.v1",
+    "metrics": [
+      "mAP50-95",
+      "APsmall"
+    ]
+  },
+  "output": "/root/autodl-tmp/robustness_eval/pretrained_sgd_e0_e3_20260902/metrics"
+}

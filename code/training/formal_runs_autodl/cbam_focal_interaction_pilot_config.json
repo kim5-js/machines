@@ -1,0 +1,84 @@
+{
+  "schema": "ring3.cbam_focal_interaction_pilot_config.v1",
+  "stage": "interaction-pilot",
+  "purpose": "Test whether CBAM plus Focal-EIoU changes the regional P3 discrepancy pattern before any Object-Aware consistency run",
+  "paper_result_eligible": false,
+  "pilot_epochs": 30,
+  "seed": 0,
+  "model": "yolov8s",
+  "dataset": "seadronessee",
+  "initialization": {
+    "pretrained": true,
+    "source": "/root/autodl-tmp/weights/yolov8s.pt",
+    "source_sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a"
+  },
+  "architecture": {
+    "base": "YOLOv8s",
+    "cbam_method": "replace_backbone_C2f_with_C2f_CBAM_after_model_construction",
+    "cbam_layer_indices": [4, 6],
+    "cbam_scope": "backbone_P3_P4_only",
+    "channel_reduction_ratio": 16,
+    "spatial_kernel_size": 7,
+    "detect_input_indices": [15, 18, 21],
+    "consistency_feature_layer_index": 15,
+    "consistency_feature_layer_type": "C2f"
+  },
+  "bbox_regression": {
+    "name": "Focal-EIoU",
+    "replaces": "CIoU_bbox_regression_term_only",
+    "dfl_preserved": true,
+    "alpha": 0.25,
+    "gamma": 2.0,
+    "eps": 1e-7
+  },
+  "mdg": {
+    "config_path": "/root/autodl-tmp/ring3_setup/autodl/e1_mdg_config.json",
+    "config_sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+    "unchanged_from_e1": true
+  },
+  "dual_view": {
+    "clean_view": "standard_yolo_training_augmentation_output_before_mdg",
+    "degraded_view": "clone_of_clean_view_then_online_mdg",
+    "shared_detector_weights": true,
+    "detection_loss_on_clean": true,
+    "detection_loss_on_degraded": true,
+    "validation_uses_locked_original_distribution_only": true,
+    "inference_uses_single_detector_path_only": true
+  },
+  "consistency": {
+    "feature_scale": "P3",
+    "feature_locator": "first_input_to_detect_head",
+    "loss": "one_minus_cosine_similarity",
+    "feature_reduction": "flatten_each_paired_feature_map_then_mean_over_pairs",
+    "lambda": 0.0,
+    "objective_role": "zero_weight_control_and_discrepancy_probe",
+    "weighted_consistency_contribution_must_be_zero": true
+  },
+  "diagnostic": {
+    "batches": 200,
+    "foreground": "union_of_post_augmentation_GT_boxes_projected_to_P3",
+    "background": "P3_cells_outside_foreground_union",
+    "small_object_area_ratio_threshold": 0.0025,
+    "minimum_valid_foreground_pairs": 500,
+    "minimum_batch_fraction_foreground_discrepancy_gt_background": 0.7,
+    "minimum_mean_discrepancy_ratio_foreground_over_background": 1.05,
+    "bootstrap_samples": 10000,
+    "bootstrap_confidence": 0.95
+  },
+  "invariants": {
+    "formal_lock_file_unchanged": true,
+    "runtime_amendment_file_unchanged": true,
+    "dataset_yaml_and_manifest_unchanged": true,
+    "locked_training_hyperparameters_unchanged_except_pilot_epochs": true,
+    "independent_initialization_from_locked_yolov8s_pretrained_weight": true,
+    "no_resume_from_E0_E1_E2_or_scratch_checkpoints": true,
+    "p4_p5_consistency_disabled": true,
+    "object_aware_consistency_not_implemented_or_started_by_this_pilot": true,
+    "E3_E4_formal_results_not_started": true
+  },
+  "activation": {
+    "authorization": "User approved a gated CBAM plus Focal-EIoU interaction pilot after the plain E2 regional diagnostic contradicted the foreground-discrepancy hypothesis.",
+    "authorization_date": "2026-08-28",
+    "decision_rule": "Train the lambda-zero CBAM plus Focal-EIoU base for 30 pilot epochs, run the fixed 200-batch regional diagnostic, and stop unless the preregistered foreground gate passes."
+  }
+}

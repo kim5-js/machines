@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "utc": "2026-11-09T18:44:01.065620+00:00",
+  "job": {
+    "experiment_id": "AD0174",
+    "dataset": "FloW",
+    "arm": "E0",
+    "seed": "1",
+    "split": "test",
+    "family": "strategy",
+    "key": "AD0174__low_light_L5",
+    "condition": "low_light_L5",
+    "weights": "weights/AD0174_best.pt",
+    "weights_sha256": "3e6f4dd658476d0c1cf979b86841dcaaa0eca9162972869fc24fb5677ac5de27",
+    "block": "flow_strong_low_light"
+  },
+  "images": 541,
+  "ground_truth_boxes": 1090,
+  "predictions": 5969,
+  "input_pixels_sha256": "4c2f11773d9a54f4c48219faf961e4a3097e0fbd9171b24de90af783be60ebdf",
+  "predictions_sha256": "bcfbf12ae9d352aa1a1c1fe7c0c47da98dba7243334d2f36e7230a34113c6f60",
+  "metrics": {
+    "mAP50-95": 0.42189248127033874,
+    "mAP50": 0.8402479418628758,
+    "mAP75": 0.3731312601041023,
+    "APsmall": 0.23399510642042892,
+    "APmedium": 0.5499342362734101,
+    "APlarge": 0.644572357756444,
+    "AR1": 0.2842201834862385,
+    "AR10": 0.5061467889908257,
+    "AR100": 0.5126605504587156,
+    "ARsmall": 0.37346534653465346,
+    "ARmedium": 0.6172549019607843,
+    "ARlarge": 0.7386666666666667
+  },
+  "per_class_AP": {
+    "bottle": 0.42189248127033874
+  },
+  "condition_parameters": {
+    "kind": "low",
+    "brightness": 0.5,
+    "gamma": 2.0,
+    "basis": "beyond training range"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 12.15990950493142
+}

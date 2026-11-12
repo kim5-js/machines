@@ -1,0 +1,73 @@
+{
+  "schema": "ring3.formal_e2_dualview_mainline_designation.v1",
+  "status": "locked_designation",
+  "designated_utc": "2026-08-28T00:00:00Z",
+  "stage": "E2",
+  "paper_role": "new_formal_mainline_e2",
+  "definition": "clean view + degraded view, shared YOLO detector, detection loss on both views, no consistency loss in the optimization objective",
+  "immutable_existing_run": {
+    "run_dir": "/root/autodl-tmp/formal_e2_lambda_ablation/seed0_yolov8s_seadronessee_e2_mdg_p3cons_lambda0_img960_e150",
+    "historical_run_name_note": "The immutable historical directory name contains p3cons_lambda0. Raw P3 discrepancy was observed only as diagnostics; its weighted and scaled contribution and all consistency-only gradients were exactly zero.",
+    "state_path": "/root/autodl-tmp/formal_state/e2_lambda0_state.json",
+    "state_sha256": "249e0cde222f0520f6c00406ddc22c79b7596f369c00f789043141b73e1f9326",
+    "protocol_path": "/root/autodl-tmp/formal_state/e2_lambda0_protocol.json",
+    "protocol_sha256": "47036a666c03c78ea027bb6f07ef9dd8eaac9b145968047df5b118f98e9813ec",
+    "results_sha256": "3a272ecac8c235479223d158068585b24b088e92800762606b04b0a4e51cfe8a",
+    "args_sha256": "ce815854eb855d65134d8f6c57422ed41f2cfaa52318705849c2816245254525",
+    "runtime_evidence_sha256": "4a66ef5c1bb34ee9c9149939467b1542672928a151e6a0ef478c297e053a1dd7"
+  },
+  "objective": {
+    "clean_detection_loss": true,
+    "degraded_detection_loss": true,
+    "shared_detector_weights": true,
+    "consistency_loss": false,
+    "formal_equation": "L_E2 = L_det(clean) + L_det(degraded)"
+  },
+  "locked_conditions": {
+    "pretrained": true,
+    "model": "/root/autodl-tmp/weights/yolov8s.pt",
+    "model_sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+    "dataset": "SeaDronesSee source_disjoint_v1",
+    "imgsz": 960,
+    "batch": 8,
+    "epochs": 150,
+    "optimizer": "AdamW",
+    "lr0": 0.001111,
+    "seed": 0,
+    "device": 0
+  },
+  "runtime_wiring": {
+    "clean_detection_targets_equal_degraded_detection_targets": true,
+    "consistency_lambda": 0.0,
+    "consistency_weighted_contribution": 0.0,
+    "consistency_scaled_contribution": 0.0,
+    "consistency_only_nonzero_gradient_tensors": 0,
+    "detect_inputs": [
+      15,
+      18,
+      21
+    ],
+    "p3_layer": 15,
+    "p3_layer_type": "C2f"
+  },
+  "best": {
+    "epoch": 26,
+    "precision": 0.71746,
+    "recall": 0.69208,
+    "mAP50": 0.71089,
+    "mAP50_95": 0.46748
+  },
+  "final": {
+    "epoch": 150,
+    "precision": 0.72356,
+    "recall": 0.68976,
+    "mAP50": 0.6949,
+    "mAP50_95": 0.44086
+  },
+  "supersedes_as_mainline": {
+    "old_e2_lambda_0_1": true,
+    "scratch_runs": true,
+    "cbam_focal_interaction_pilot": true
+  },
+  "immutability_note": "This file designates an already completed immutable run; it does not rename, rewrite, or recompute that run."
+}

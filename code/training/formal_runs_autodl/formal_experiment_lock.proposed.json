@@ -1,0 +1,85 @@
+{
+  "schema": "ring3.formal_experiment_lock.v1",
+  "status": "proposed_not_started",
+  "created": "2026-08-20",
+  "purpose": "Unified modern-baseline and MDC development protocol. Timing calibrations are excluded from paper results.",
+  "environment": {
+    "prefix": "/root/autodl-tmp/envs/mdc-yolo26",
+    "python": "3.10.20",
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124",
+    "ultralytics": "8.4.124",
+    "gpu": "NVIDIA GeForce RTX 4090 24GB"
+  },
+  "common_train": {
+    "task": "detect",
+    "imgsz": 960,
+    "epochs": 150,
+    "batch": 8,
+    "workers": 8,
+    "optimizer": "AdamW",
+    "momentum": 0.9,
+    "lrf": 0.01,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "patience": 150,
+    "nbs": 64,
+    "amp": true,
+    "deterministic": true,
+    "pretrained": true,
+    "cache": false,
+    "close_mosaic": 10,
+    "save": true,
+    "save_period": 10,
+    "plots": true,
+    "seed": 0
+  },
+  "dataset_protocols": {
+    "flow": {
+      "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/flow_current.yaml",
+      "lr0": 0.002,
+      "status": "development_only_missing_official_800_image_test"
+    },
+    "wsodd": {
+      "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/wsodd_sequence_disjoint_v1.yaml",
+      "lr0": 0.000556,
+      "status": "local_sequence_disjoint_train_val_test_ready"
+    },
+    "seadronessee": {
+      "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/seadronessee_source_disjoint_v1.yaml",
+      "lr0": 0.001111,
+      "status": "source_disjoint_development_then_trainval_and_official_test_server"
+    }
+  },
+  "weights": {
+    "yolov8s": {
+      "path": "/root/autodl-tmp/weights/yolov8s.pt",
+      "sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a"
+    },
+    "yolo11s": {
+      "path": "/root/autodl-tmp/weights/yolo11s.pt",
+      "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+    },
+    "yolo26s": {
+      "path": "/root/autodl-tmp/weights/yolo26s.pt",
+      "sha256": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+    },
+    "rtdetr_l": {
+      "path": "/root/autodl-tmp/weights/rtdetr-l.pt",
+      "sha256": "6de60b10d4bc566f00cda0f5b4d64afe4b66d48dc9695d2171effb7859d8e73f"
+    }
+  },
+  "execution_order": [
+    "Modern baselines at seed 0 on all usable development protocols",
+    "SeaDronesSee E0-E4 sequential gates; stop after a failed gate",
+    "Final method on the remaining datasets only after E4 is accepted",
+    "Seeds 1 and 2 only for the frozen baseline and frozen final method",
+    "One cross-backbone MDC-YOLO11 confirmation run"
+  ],
+  "activation_requirements": [
+    "Human review of optimizer and dataset-specific learning-rate lock",
+    "Successful RT-DETR batch-8 calibration without OOM",
+    "MDC code smoke test before any E1-E4 formal run",
+    "No validation metric may be relabeled as an independent test result"
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "schema": "ring3.flow2000_historical_e0e2e3.v1",
+  "status": "authorized_for_training",
+  "authorization": {
+    "date": "2026-09-17",
+    "request": "ok先按这个重训，验证部分可以再做，但是划分估计就按这个来了",
+    "supplied_dataset": "D:\\ring3\\FloW_IMG_YOLO_2000",
+    "prior_instruction": "暂停现有队列，先重跑所有FloW训练和验证",
+    "interpretation": "9 fresh E0/E2/E3 seed 0/1/2 runs; supplied 1200/800 membership; native validation retained; separate COCO evaluation deferred"
+  },
+  "execution": {
+    "remote_root": "/root/autodl-tmp/flow2000_e0e2e3_20260917/release_v1",
+    "legacy_root": "/root/autodl-tmp/legacy_e2e3_multiseed_20260911/release_v2",
+    "priority": "legacy queue remains SIGSTOP-paused during this queue",
+    "legacy_pause_sha256": "7c7bf0bcdc8f27cdb35a0a70c28afc8bf12a2e4b5aa9ff57df1c2ab5a52104ae",
+    "launch_mechanism": "single locked supervisor after 3 real-data smoke trainings",
+    "legacy_resume": "After all nine priority trainings and evidence recovery, verify original PID identities and checkpoint hashes, then SIGCONT original processes; never launch a duplicate queue"
+  },
+  "matrix": {
+    "datasets": [
+      "FloW"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "arms": [
+      "E0",
+      "E2",
+      "E3"
+    ],
+    "scientific_jobs": 9,
+    "rerun_all": true,
+    "old_results": "reference only; all 9 jobs start fresh from identical pretrained file",
+    "order": "seed, arm",
+    "cross_dataset_meaning": "train and evaluate independently on each dataset; no cross-domain transfer"
+  },
+  "training_reference_args": {
+    "task": "detect",
+    "mode": "train",
+    "model": "/root/autodl-tmp/weights/yolov8s.pt",
+    "data": "/root/autodl-tmp/ring3_setup/autodl/datasets/wsodd_current.yaml",
+    "epochs": 150,
+    "time": null,
+    "patience": 100,
+    "batch": 8,
+    "imgsz": 960,
+    "save": true,
+    "save_period": -1,
+    "cache": false,
+    "device": "0",
+    "workers": 8,
+    "project": "/root/autodl-tmp/validation_wsodd_legacy_split_sgd_e0_e3",
+    "name": "seed0_yolov8s_wsodd_legacy_e2_dualview_nocons_pretrained_sgd_img960_e150",
+    "exist_ok": false,
+    "pretrained": true,
+    "cls_remap": true,
+    "optimizer": "SGD",
+    "verbose": true,
+    "seed": 0,
+    "deterministic": true,
+    "single_cls": false,
+    "rect": false,
+    "cos_lr": false,
+    "close_mosaic": 10,
+    "resume": false,
+    "amp": true,
+    "fraction": 1,
+    "profile": false,
+    "freeze": null,
+    "multi_scale": false,
+    "compile": false,
+    "channels_last": false,
+    "overlap_mask": true,
+    "mask_ratio": 4,
+    "dropout": 0,
+    "val": true,
+    "split": "val",
+    "save_json": false,
+    "conf": null,
+    "iou": 0.7,
+    "max_det": 300,
+    "quantize": null,
+    "dnn": false,
+    "plots": true,
+    "end2end": null,
+    "source": null,
+    "vid_stride": 1,
+    "stream_buffer": false,
+    "visualize": false,
+    "augment": false,
+    "agnostic_nms": false,
+    "classes": null,
+    "retina_masks": false,
+    "embed": null,
+    "show": false,
+    "save_frames": false,
+    "save_txt": false,
+    "save_conf": false,
+    "save_crop": false,
+    "show_labels": true,
+    "show_conf": true,
+    "show_boxes": true,
+    "line_width": null,
+    "format": "torchscript",
+    "keras": false,
+    "optimize": false,
+    "dynamic": false,
+    "simplify": true,
+    "opset": null,
+    "workspace": null,
+    "nms": false,
+    "lr0": 0.006,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 6.25e-05,
+    "warmup_epochs": 3,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "distill_model": null,
+    "dis": 6,
+    "box": 7.5,
+    "cls": 0.5,
+    "cls_pw": 0,
+    "dfl": 1.5,
+    "pose": 12,
+    "kobj": 1,
+    "rle": 1,
+    "angle": 1,
+    "dlog": 1,
+    "dgrad": 0.5,
+    "dlam": 1,
+    "nbs": 8,
+    "hsv_h": 0.015,
+    "hsv_s": 0.6,
+    "hsv_v": 0.2,
+    "degrees": 0,
+    "translate": 0.1,
+    "scale": 0.45,
+    "shear": 0,
+    "perspective": 0,
+    "flipud": 0,
+    "fliplr": 0.5,
+    "bgr": 0,
+    "mosaic": 0.7,
+    "mixup": 0.05,
+    "cutmix": 0,
+    "copy_paste": 0,
+    "copy_paste_mode": "flip",
+    "auto_augment": "randaugment",
+    "erasing": 0.2,
+    "cfg": null,
+    "tracker": "tracktrack.yaml",
+    "save_dir": "/root/autodl-tmp/validation_wsodd_legacy_split_sgd_e0_e3/seed0_yolov8s_wsodd_legacy_e2_dualview_nocons_pretrained_sgd_img960_e150"
+  },
+  "allowed_job_argument_differences": [
+    "data",
+    "seed",
+    "project",
+    "name",
+    "save_dir"
+  ],
+  "pretrained_weight": {
+    "path": "/root/autodl-tmp/weights/yolov8s.pt",
+    "sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+    "initialization": "every full job independently from same pretrained file; no E2-to-E3 continuation"
+  },
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124",
+    "numpy": "2.2.6",
+    "python": "/root/autodl-tmp/envs/mdc-yolo26/bin/python",
+    "gpu": "RTX 4090",
+    "change_installed_packages": false
+  },
+  "arms": {
+    "E0": {
+      "mdg_mode": "none",
+      "dual_view": false,
+      "small_weight": 1
+    },
+    "E2": {
+      "mdg_mode": "dual_view",
+      "dual_view": true,
+      "small_weight": 1,
+      "definition": "historical clean + degraded two views; shared detector; both detection losses; preserve original loss reduction and effective batch treatment"
+    },
+    "E3": {
+      "mdg_mode": "dual_view",
+      "dual_view": true,
+      "small_weight": 1.5,
+      "definition": "same E2 plus degraded-small assigned-positive weighting",
+      "small_area_lt_px2": 1024,
+      "coordinates": "post-augmentation training pixels",
+      "components": [
+        "box",
+        "cls",
+        "dfl"
+      ],
+      "normalization_denominator_unchanged": true,
+      "background_anchor_weight": 1,
+      "clean_target_weight": 1
+    }
+  },
+  "exclusions": {
+    "cbam": true,
+    "focal_eiou": true,
+    "consistency_loss": true,
+    "adaptive_schedule": true,
+    "deterministic_image_id_mdg_replacement": true,
+    "early_start": true
+  },
+  "mdg_config": {
+    "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+    "data": {
+      "schema": "ring3.e1_mdg_config.v1",
+      "stage": "E1",
+      "method": "online_maritime_degradation_only",
+      "branch_probabilities": {
+        "clean": 0.3,
+        "low_light": 0.2,
+        "glare": 0.2,
+        "mixed": 0.15,
+        "standard_aug_only": 0.15
+      },
+      "severity_probabilities": {
+        "mild": 0.3333333333333333,
+        "medium": 0.3333333333333333,
+        "strong": 0.3333333333333334
+      },
+      "low_light": {
+        "mild": {
+          "brightness": [
+            0.9,
+            0.95
+          ],
+          "gamma": [
+            1.05,
+            1.12
+          ]
+        },
+        "medium": {
+          "brightness": [
+            0.86,
+            0.9
+          ],
+          "gamma": [
+            1.12,
+            1.21
+          ]
+        },
+        "strong": {
+          "brightness": [
+            0.82,
+            0.86
+          ],
+          "gamma": [
+            1.21,
+            1.3
+          ]
+        }
+      },
+      "glare": {
+        "mild": {
+          "target_area_ratio": [
+            0.0175,
+            0.028
+          ],
+          "intensity_255": [
+            22,
+            30
+          ]
+        },
+        "medium": {
+          "target_area_ratio": [
+            0.028,
+            0.039
+          ],
+          "intensity_255": [
+            30,
+            39
+          ]
+        },
+        "strong": {
+          "target_area_ratio": [
+            0.039,
+            0.05
+          ],
+          "intensity_255": [
+            39,
+            48
+          ]
+        },
+        "aspect_ratio": [
+          1.4,
+          3.2
+        ],
+        "softness": [
+          1.6,
+          2.4
+        ]
+      },
+      "invariants": {
+        "train_only": true,
+        "validation_unchanged": true,
+        "labels_unchanged": true,
+        "dataset_manifests_unchanged": true,
+        "applied_after_standard_yolo_augmentation": true,
+        "consistency_loss": false,
+        "curriculum": false
+      },
+      "provenance": {
+        "low_light_envelope": "Existing project range: brightness 0.82-0.95 and gamma 1.05-1.30",
+        "glare_envelope": "Existing project range: target area 0.0175-0.05, aspect 1.4-3.2, intensity 22-48, softness 1.6-2.4",
+        "severity_policy": "The existing envelopes are partitioned into contiguous mild, medium, and strong bands without extending their extrema"
+      }
+    }
+  },
+  "datasets": [
+    {
+      "key": "FloW",
+      "yaml": "/root/autodl-tmp/flow2000_e0e2e3_20260917/release_v1/dataset.yaml",
+      "yaml_sha256": "0bf8be86def16dec3c62fa3b77d1ae2d0bec189104e27d9f45d25521da5f2124",
+      "names": {
+        "0": "bottle"
+      },
+      "splits": {
+        "train": {
+          "images": 1200,
+          "boxes": 3248,
+          "empty_labels": 0
+        },
+        "val": {
+          "images": 800,
+          "boxes": 1995,
+          "empty_labels": 4
+        },
+        "test": {
+          "images": 800,
+          "boxes": 1995,
+          "empty_labels": 4
+        }
+      },
+      "protocol": "supplied_1200_train_shared_800_validation_test",
+      "independent_test": false,
+      "temporal_disjointness_verified": false,
+      "user_source_manifest_sha256": "52a35a81871d6db34e9e85e3183dff9d6e574fa86d4a850dd5c2949efee9a145",
+      "annotation_repair": {
+        "train_boxes_restored": 52,
+        "affected_train_images": 49,
+        "provenance": "User-supplied audit/annotation_repairs.json; actual 3248/1995 labels retained byte-for-byte"
+      }
+    }
+  ],
+  "evaluation": {
+    "set": "shared 800-image native validation/test set",
+    "checkpoint": "historical best.pt selection; record actual native fitness and best epoch; do not select using posthoc area evaluation",
+    "primary": "same frozen COCO-style area evaluator for all arms and datasets",
+    "native_yolo_metrics": "separate report, never merge with COCO-style fields",
+    "metrics": [
+      "mAP50",
+      "mAP50-95",
+      "APsmall",
+      "APmedium",
+      "APlarge"
+    ],
+    "comparisons": [
+      "E2-E0",
+      "E3-E0",
+      "E3-E2"
+    ],
+    "summary": [
+      "all seeds",
+      "paired mean",
+      "paired sample standard deviation",
+      "positive and negative counts"
+    ],
+    "no_test_tuning": true,
+    "do_not_claim_sequence_disjoint_generalization": true,
+    "primary_evaluator_sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc",
+    "prediction_chunk_adapter_sha256": "083b05cc9c82fa41474de8e92b080755f3b0df88429b1d7c22dc2371eb8cb577",
+    "evaluation_contract": {
+      "protocol": "COCO-style 10 IoU thresholds and 101 recall points",
+      "area_coordinates": "original validation image pixels",
+      "area_ranges": {
+        "small": "[0, 32^2)",
+        "medium": "[32^2, 96^2)",
+        "large": "[96^2, inf)"
+      },
+      "max_detections_per_image": 100,
+      "prediction_confidence_floor": 0.001,
+      "prediction_nms_iou": 0.7,
+      "prediction_max_detections_per_image": 300,
+      "prediction_chunk_size": 4
+    },
+    "status": "separate_COCO_evaluation_deferred_by_user",
+    "training_validation": "native validation every epoch remains enabled for historical checkpoint selection",
+    "independent_test": false
+  },
+  "historical_argument_sources": {
+    "E0": {
+      "path": "/root/autodl-tmp/validation_wsodd_legacy_split_sgd_e0_e3/seed0_yolov8s_wsodd_legacy_e0_pretrained_sgd_img960_e150/args.yaml",
+      "sha256": "ddbdc2f9902c75bb96e90f84755a757085c0a2372728479180c23654f345f22a"
+    },
+    "E2": {
+      "path": "/root/autodl-tmp/validation_wsodd_legacy_split_sgd_e0_e3/seed0_yolov8s_wsodd_legacy_e2_dualview_nocons_pretrained_sgd_img960_e150/args.yaml",
+      "sha256": "cd930bce135b787fd9df0e3fffed2b88c2da117d57153b0c8749c08872c78e17"
+    },
+    "E3": {
+      "path": "/root/autodl-tmp/validation_wsodd_legacy_split_sgd_e3_alpha15/seed0_yolov8s_wsodd_legacy_e3_dualview_smallobj_alpha15_pretrained_sgd_img960_e150/args.yaml",
+      "sha256": "05a4e2622b04b4a0478e2f31510b274ab3ddc5dec78332b9042c92d0e3752549"
+    }
+  },
+  "historical_release_manifests": {
+    "wsodd_legacy_split_sgd_mainline_v3_release_manifest.json": {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_legacy_split_sgd_mainline_v3_release_manifest.json",
+      "sha256": "020510dafaa66c2da1db24eb2453e007f0ffa569a7dc63c1e7dd38e7def264ff"
+    },
+    "wsodd_legacy_e3_alpha15_v2_release_manifest.json": {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_legacy_e3_alpha15_v2_release_manifest.json",
+      "sha256": "98afcec96e7b814e77f41202ebc80ef64f08cf63996d738f150d87234f53ff6c"
+    }
+  },
+  "snapshot": {
+    "historical_request_sha256": "ae66cd4e7e435be3777d860460a22455a7a9a75adc6d30c06a054cb323ed8c1e",
+    "historical_staging_manifest_sha256": "0c47c11d7c9539a7f08ec687bac0e556d18b4008e76369dec13a888714dcc948",
+    "historical_source_count": 40,
+    "runtime_file_count": 361,
+    "training_started": false
+  },
+  "scientific_implementation": {
+    "E0_E2_trainer": "historical_code/train_wsodd_pretrained_sgd_mainline.py::WSODDMainlineTrainer via historical legacy setup",
+    "E3_trainer": "historical_code/train_pretrained_sgd_mainline.py::MainlineSGDTrainer, as RELEASED_MAINLINE_TRAINER in train_wsodd_legacy_e3_alpha15.py",
+    "preserve_amp_mask_hotfix": "historical_code/wsodd_pretrained_sgd_hotfix_v3_entry.py::task_aligned_assigner_forward_bool_mask",
+    "preserve_early_stop_semantics": true,
+    "do_not_rewrite_loss_or_mdg": true,
+    "validate_actual_args_against_reference": true,
+    "allowed_dataset_changes": [
+      "data YAML",
+      "dataset-dependent number of classes and pretrained detection head adaptation"
+    ],
+    "preserve_cls_remap": true
+  }
+}

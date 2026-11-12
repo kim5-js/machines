@@ -1,0 +1,30 @@
+{
+  "status": "completed_verified",
+  "utc": "2026-09-21T09:38:10.503791+00:00",
+  "automation_id": "mdg",
+  "automation_status": "DELETED",
+  "new_formal_trainings": 15,
+  "new_official_val_test_evaluations": 30,
+  "new_historical_val_test_evaluations": 30,
+  "formal_best_last_recovered_verified": 30,
+  "manifest_files_recovered_verified": 1276,
+  "reused_anchor_jobs": 9,
+  "request_sha256": "c805ee4fb20409be4ee033217f2765c47116b904f699132e65ae399976872a44",
+  "delivery": {
+    "status": "verified",
+    "utc": "2026-09-21T09:35:56.160505+00:00",
+    "report": "D:\\ring3\\deliverables\\FloW_source_CBAM_5x3_final_20260921.md",
+    "report_sha256": "7954e43f504ca03e437ce34890512c64bd6e08f39d5fc3747b7db2d672a9214a",
+    "compact_package": "D:\\ring3\\deliverables\\FloW_source_CBAM_5x3_final_20260921.zip",
+    "bytes": 184024,
+    "sha256": "2dea8c095e9e7fda279371a444dc5d527f99dd8e7d18fe5b9a7743e151b83997",
+    "verified_members": 29,
+    "raw_archive": "D:\\ring3\\artifacts\\flow_source_cbam_20260920\\final_recovery_20260921\\raw_evidence_with_weights.zip",
+    "raw_archive_sha256": "47fb387ec13d195f6cfe0e8d2090bc00847790a0d0f6130c5b8ba491c9fd91aa",
+    "formal_best_last_verified": 30,
+    "all_required_work_complete": true
+  },
+  "raw_results_overwritten": false,
+  "training_or_evaluation_rerun": false,
+  "git_commit_or_push": false
+}

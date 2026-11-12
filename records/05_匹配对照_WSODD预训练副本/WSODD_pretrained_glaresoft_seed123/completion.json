@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T11:56:59.690537+00:00",
+  "arm": "glaresoft",
+  "seed": 123,
+  "smoke": false,
+  "info": {
+    "train_images": 4374,
+    "val_images": 1084,
+    "trainer": "MainlineSGDTrainer",
+    "optimizer": "SGD",
+    "amp": true
+  },
+  "ultralytics": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/vendor/ultralytics/__init__.py",
+  "torch": "2.5.1+cu124",
+  "elapsed_seconds": 16351.206275195349,
+  "best_sha256": "cb1e022100fd8183a7b310c9e3ad700be7562f784de59f973f6e3eac69d98d5b",
+  "last_sha256": "1df24e173bb5026dc51564a0718535f00c842612c42108dbfccc996fc41d3f30"
+}

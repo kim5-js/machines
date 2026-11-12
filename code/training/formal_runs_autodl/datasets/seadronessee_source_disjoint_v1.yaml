@@ -1,0 +1,13 @@
+# Source-disjoint labeled development protocol. Video frames stay with their
+# source video; still images stay with their source acquisition folder. The
+# official 3750-image test set is evaluated only through benchmark submission.
+path: /root/autodl-tmp/datasets/SeaDronesSee/source_disjoint_v1
+train: train/images
+val: val/images
+nc: 5
+names:
+  0: swimmer
+  1: boat
+  2: jetski
+  3: life_saving_appliances
+  4: buoy

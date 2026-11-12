@@ -1,0 +1,37 @@
+{
+  "schema": "ring3.cbam_focal_formal_series_release_manifest.v1",
+  "status": "locked",
+  "release": "pretrained-cbam-focal-factorial-plus-e2-e3",
+  "files": [
+    {"path": "CBAM_FOCAL_FORMAL_SERIES.md", "sha256": "aff17b7a5f93bf29bad131723feed6cef5ca08eb268949c18a6a47e5d3b9db0f"},
+    {"path": "cbam_focal_formal_series_config.json", "sha256": "1579470b402fcce682f5806cdd3b0ad6bf2eaa1bca97adeb22e58961ff9bdbfc"},
+    {"path": "cbam_focal_formal_models.py", "sha256": "58ad7ef9a2e996729f6263312cfd692880eaf9279eb946684611e31299667fff"},
+    {"path": "train_cbam_focal_formal_series.py", "sha256": "6f8756ea0d304812e448eed25a513287c19222b31780aaa0c3909e8cc6323d29"},
+    {"path": "run_cbam_focal_formal_series.sh", "sha256": "4196080593a8ac1d84032a7d1500cbc194167f3733cc53080a15b504bc3801c5"},
+    {"path": "cbam_focal_sdc.py", "sha256": "a24a7eb23d3736b4d44d5317db170e6d8cd73b474738ea6c5698d068de89a537"},
+    {"path": "maritime_degradation.py", "sha256": "b0d60602f77db9bbb935f5e48f44a5766f361ef35bc07e90fd06b23c3f8b85cc"},
+    {"path": "e1_mdg_config.json", "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"},
+    {"path": "formal_experiment_lock.json", "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"},
+    {"path": "formal_runtime_amendment.json", "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"},
+    {"path": "formal_baseline_queue.py", "sha256": "69a6d45298bee2c47da03e9ceadbe9895e53455120b16e96bf14d22e06bff517"},
+    {"path": "verify_yolo_dataset.py", "sha256": "faf305177a9e61477affb7f42d5030a8142b95b22335be8b602e6e418813002c"}
+  ],
+  "run_order": [
+    "cbam_only",
+    "focal_eiou_only",
+    "cbam_focal",
+    "cbam_focal_e2",
+    "cbam_focal_e3"
+  ],
+  "boundaries": {
+    "reuse_existing_e0_only": true,
+    "old_30_epoch_pilot_is_validation_only": true,
+    "every_new_run_starts_independently_from_locked_pretrained": true,
+    "same_run_last_pt_only_for_non_numeric_resume": true,
+    "no_consistency_loss": true,
+    "no_severity_weighting": true,
+    "no_curriculum": true,
+    "no_E4": true,
+    "no_git_commit_or_push_by_launcher": true
+  }
+}

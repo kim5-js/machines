@@ -1,0 +1,206 @@
+{
+  "schema": "ring3.flow_source_temporal_split_audit.v1",
+  "status": "passed",
+  "created_utc": "2026-09-07T17:01:21.859372+00:00",
+  "dataset_root": "D:\\ring3\\FloW_IMG\\training_source_temporal_disjoint_v1",
+  "source_manifest": "D:\\ring3\\autodl\\manifests\\flow_source_temporal_disjoint_v1\\source_manifest.tsv",
+  "source_manifest_sha256": "887741e6761d2398970d1713d70c725dbfb6990b6e74acf82567b94c27976d41",
+  "protocol": "D:\\ring3\\autodl\\manifests\\flow_source_temporal_disjoint_v1\\protocol.json",
+  "protocol_sha256": "e6eb3e54dca983be36380581ed6fd5d3d1253d80b98f1c30c02ea4428b15f5f7",
+  "split_counts": {
+    "train": 653,
+    "val": 203,
+    "test": 344
+  },
+  "expected_counts": {
+    "train": 653,
+    "val": 203,
+    "test": 344
+  },
+  "count_match": {
+    "train": true,
+    "val": true,
+    "test": true
+  },
+  "manifest_name_match": {
+    "train": {
+      "matches": true,
+      "missing_count": 0,
+      "unexpected_count": 0
+    },
+    "val": {
+      "matches": true,
+      "missing_count": 0,
+      "unexpected_count": 0
+    },
+    "test": {
+      "matches": true,
+      "missing_count": 0,
+      "unexpected_count": 0
+    }
+  },
+  "labels": {
+    "train": {
+      "missing_label_count": 0,
+      "missing_label_examples": [],
+      "malformed_label_count": 0,
+      "malformed_label_examples": [],
+      "valid_instances": 1597,
+      "area_bins_original_pixels": {
+        "small": 944,
+        "medium": 549,
+        "large": 104
+      }
+    },
+    "val": {
+      "missing_label_count": 0,
+      "missing_label_examples": [],
+      "malformed_label_count": 0,
+      "malformed_label_examples": [],
+      "valid_instances": 916,
+      "area_bins_original_pixels": {
+        "small": 523,
+        "medium": 356,
+        "large": 37
+      }
+    },
+    "test": {
+      "missing_label_count": 0,
+      "missing_label_examples": [],
+      "malformed_label_count": 0,
+      "malformed_label_examples": [],
+      "valid_instances": 735,
+      "area_bins_original_pixels": {
+        "small": 329,
+        "medium": 359,
+        "large": 47
+      }
+    }
+  },
+  "cross_split_overlap": {
+    "renamed_filename": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    "content_sha256": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    "hardlink_inode": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    "source_group": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    "original_filename": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    "original_path": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    }
+  },
+  "temporal_order": {
+    "passed": true,
+    "dated_ranges": {
+      "train": {
+        "min": 1601013794.0,
+        "max": 1601097919.0,
+        "dated_images": 262
+      },
+      "val": {
+        "min": 1601100009.0,
+        "max": 1601107359.0,
+        "dated_images": 203
+      },
+      "test": {
+        "min": 1601250947.0,
+        "max": 1601260129.0,
+        "dated_images": 344
+      }
+    },
+    "undated_source_policy": "myPerson kept whole in train"
+  },
+  "perceptual_near_duplicate_screen": {
+    "method": "64-bit dHash",
+    "hamming_threshold": 3,
+    "pairwise": {
+      "train_val": {
+        "count": 0,
+        "examples": []
+      },
+      "train_test": {
+        "count": 0,
+        "examples": []
+      },
+      "val_test": {
+        "count": 0,
+        "examples": []
+      }
+    }
+  },
+  "claim_boundary": "Source/session-disjoint for all 1,200 available images and chronological for all dated sessions. The undated myPerson acquisition is kept whole in train; therefore this is not proof of a global chronology relative to that one source."
+}

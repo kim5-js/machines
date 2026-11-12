@@ -1,0 +1,337 @@
+{
+  "status": "prepared",
+  "utc": "2026-09-24T12:19:48.154314+00:00",
+  "request_sha256": "823af4f4fd2afffc2640fc55185fc98e0abe6301905be9845171d0c7dc863c6a",
+  "code_sha256": "3289be9d1cacccb736272fefe4c2d83504c70c0a03d752178a9bd0238fd9c169",
+  "checkpoints": {
+    "AD0043": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_yolov8s_wsodd_img960_e150/weights/best.pt",
+      "sha256": "6b3e6687851c2e9c414dd80874dd8985865bb764d0d299061921946c9d539c57",
+      "bytes": 22575587
+    },
+    "AD0037": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_yolo11s_wsodd_img960_e150/weights/best.pt",
+      "sha256": "b6ed55bae53daa40da9bf90e56479e960ef9ca46429f7eb5d2ea558ee96fd435",
+      "bytes": 19234259
+    },
+    "AD0040": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_yolo26s_wsodd_img960_e150/weights/best.pt",
+      "sha256": "fbc8af061e862e8ea38a281fb58fa8a64a7c5db7e052953e1d36a4243e653e6d",
+      "bytes": 20378366
+    },
+    "AD0034": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_rtdetr_l_wsodd_img960_e150/weights/best.pt",
+      "sha256": "c2981fd9ea809dd950194125530f4db66f6c1469dd8b56747e03f38e30c0ebbc",
+      "bytes": 66377910
+    },
+    "AD0042": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_yolov8s_seadronessee_img960_e150/weights/best.pt",
+      "sha256": "8428f62134436617bb4bbc848758a5a73345fee7e482499f7730e0eda236662e",
+      "bytes": 22572515
+    },
+    "AD0036": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_yolo11s_seadronessee_img960_e150/weights/best.pt",
+      "sha256": "92e11e55e335d76d0aec09131a3ab920ebf9f539b169b6b5a07d29b0aff14cbc",
+      "bytes": 19231251
+    },
+    "AD0039": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_yolo26s_seadronessee_img960_e150/weights/best.pt",
+      "sha256": "c018e4531d0a6b578d755e07ff26fb5d214580eb15abd758d948967e21e58801",
+      "bytes": 20368382
+    },
+    "AD0033": {
+      "path": "/root/autodl-tmp/formal_baselines/seed0_rtdetr_l_seadronessee_img960_e150/weights/best.pt",
+      "sha256": "df8f31c1ca32bfa04f5800944dd7c93d17c1e3a3907de0edd511adca6447b07f",
+      "bytes": 66340918
+    },
+    "AD0185": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/baseline_yolov8s_seed0/weights/best.pt",
+      "sha256": "c3d8e99cbadc454fac683d486f736eed71f8722f120f10c26e2b21e1a8151150",
+      "bytes": 22545891
+    },
+    "AD0183": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/baseline_yolo11s_seed0/weights/best.pt",
+      "sha256": "ce791e460561389b35e6be4aea42f0e75a893f99d536327f615971dd51c2b109",
+      "bytes": 19204627
+    },
+    "AD0184": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/baseline_yolo26s_seed0/weights/best.pt",
+      "sha256": "19f77d491c3a5a17a683fefea8b119f4f19db8b5699c9424aac6f846ba393170",
+      "bytes": 20338750
+    },
+    "AD0182": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/baseline_rtdetr_l_seed0/weights/best.pt",
+      "sha256": "1a25e2cbf4a86a595249a7d2065b641ca2c62722da8ffe9924e28e9ad7a3aac0",
+      "bytes": 66324470
+    },
+    "AD0120": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_baseline_seed0/weights/best.pt",
+      "sha256": "31c462dbb529d43cbbbd70452eaa41fa7eed6bf690a3b810370973eac6379525",
+      "bytes": 22575139
+    },
+    "AD0121": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_baseline_seed1/weights/best.pt",
+      "sha256": "f2603936e7635230a8d64e4bd1e95c91fae76243c009b6f5edfde3d542045d6b",
+      "bytes": 22575139
+    },
+    "AD0122": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_baseline_seed42/weights/best.pt",
+      "sha256": "0f6b0bee3c0e0e61e7b5ee2efb181473e40c9ce43c18b3301ff8add9a08a867f",
+      "bytes": 22575139
+    },
+    "AD0130": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_weights_only_seed0/weights/best.pt",
+      "sha256": "d5a4cf87ee8cd3cc0f11d38e0cbb33aab6ed4091d5c9c38b06791eee8d36ad09",
+      "bytes": 22575139
+    },
+    "AD0131": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_weights_only_seed1/weights/best.pt",
+      "sha256": "70ecbf4cdfe7aa5e2b2d1a1534b7df52d9c72ea7521051fb01b7a408ae9ff203",
+      "bytes": 22575011
+    },
+    "AD0132": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_weights_only_seed42/weights/best.pt",
+      "sha256": "8a8bdfd50225a1e600d2ff50d67e120e59b77dafb12ee864dd03b801aa170db3",
+      "bytes": 22575139
+    },
+    "AD0123": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_bundle_seed0/weights/best.pt",
+      "sha256": "e12fa18082d9d817173f53903cbe9c76b80ed1893cf0f3f0322a04013ab57d7e",
+      "bytes": 22745797
+    },
+    "AD0124": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_bundle_seed1/weights/best.pt",
+      "sha256": "f3eabf5f08143aad800ca15b2c0fb0c169b096154f41fe12d62ad655c985c036",
+      "bytes": 22745797
+    },
+    "AD0125": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_bundle_seed42/weights/best.pt",
+      "sha256": "d2e37671cc2c5af0bc1cc6f510dce1474f6d4bd30fed8c5285b33298fb9ad217",
+      "bytes": 22745797
+    },
+    "AD0126": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_duplicate_seed0/weights/best.pt",
+      "sha256": "724ff9a09973f3eec5794e5854a73b30f6eed3ddfd1b48f73867e1288b2f2cff",
+      "bytes": 22745797
+    },
+    "AD0153": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_duplicate_seed1/weights/best.pt",
+      "sha256": "663d99423f946702c14f81c924d0e70e784007008af9ce1170d76403ba4223ba",
+      "bytes": 22745797
+    },
+    "AD0127": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_duplicate_seed42/weights/best.pt",
+      "sha256": "4634561bf932d7318cea01fa7e10eeff77bb7d817e5a07e03874e3bc1b5f4bbe",
+      "bytes": 22745797
+    },
+    "AD0128": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_refsoft_seed0/weights/best.pt",
+      "sha256": "615e231b56446e6ae37bf63caef183ebbdf0fd59507fed1e860603b21665f3d6",
+      "bytes": 22745797
+    },
+    "AD0154": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_refsoft_seed1/weights/best.pt",
+      "sha256": "5527901525d464eb0307b06870e8ca9e66834bcd937d91dc9e4a023ad5b479e1",
+      "bytes": 22745797
+    },
+    "AD0129": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_refsoft_seed42/weights/best.pt",
+      "sha256": "059a8f575bcfa2b99c0e630b1f7c1a79dfa945628b46fbb81eed728330e90ced",
+      "bytes": 22745797
+    },
+    "AD0173": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E0_seed0/weights/best.pt",
+      "sha256": "b336cf83882c14d3e87719c7ba55b50ee3b281d20e22e4de5fa8b1885fb841e9",
+      "bytes": 22545891
+    },
+    "AD0174": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E0_seed1/weights/best.pt",
+      "sha256": "3e6f4dd658476d0c1cf979b86841dcaaa0eca9162972869fc24fb5677ac5de27",
+      "bytes": 22545891
+    },
+    "AD0175": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E0_seed2/weights/best.pt",
+      "sha256": "b07a51635e9606496ca2a2dce231a5ca7e7a4379edd7c19bf2bed5381254459a",
+      "bytes": 22545891
+    },
+    "AD0176": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E2_seed0/weights/best.pt",
+      "sha256": "81a2effe2ce01c3f2f1b4fdb18afd3f791317930f4b5e4218bfa420a16fb1e3b",
+      "bytes": 22545635
+    },
+    "AD0177": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E2_seed1/weights/best.pt",
+      "sha256": "b84dce3219bd113bc60f60b90cbc0861c36febded687d2ebbd48e924227a6455",
+      "bytes": 22545891
+    },
+    "AD0178": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E2_seed2/weights/best.pt",
+      "sha256": "63de90d45a54d41843c0808e6d51f095e3fc9761cd96d40aa9305789fbc4c2d6",
+      "bytes": 22545891
+    },
+    "AD0179": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E3_seed0/weights/best.pt",
+      "sha256": "3ec64bf5b6211cb83a17ed0300c7334d89ce7f701048cf996e3dbb7e94b9f814",
+      "bytes": 22545955
+    },
+    "AD0180": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E3_seed1/weights/best.pt",
+      "sha256": "0c03ab8e0d7b9bbb04e149f502644ec1a82c146dbf04277756f8514ffcf6bbe0",
+      "bytes": 22545955
+    },
+    "AD0181": {
+      "path": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E3_seed2/weights/best.pt",
+      "sha256": "06ee71d648610bf037e3005a4134f8b8a46590d6dd17e02a2a9c204faaf84416",
+      "bytes": 22545955
+    },
+    "AD0061": {
+      "path": "/root/autodl-tmp/formal_pretrained_sgd_mainline/seed0_yolov8s_seadronessee_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "32f1bf5fcdc052417a4f6748de2f48c0ceab3dab1013bcf65028f3306ef2523f",
+      "bytes": 22569635
+    },
+    "AD0069": {
+      "path": "/root/autodl-tmp/formal_seadronessee_e0_multiseed/seed1_yolov8s_seadronessee_source_disjoint_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "39d308e502a2532dc924cef806914e690389f5ba0e884f237a632972965961cc",
+      "bytes": 22568163
+    },
+    "AD0070": {
+      "path": "/root/autodl-tmp/formal_seadronessee_e0_multiseed/seed2_yolov8s_seadronessee_source_disjoint_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "408b9909ce279c246a7c729e5007c403003b48b0875cc081fc4a87e63151b2a9",
+      "bytes": 22568547
+    },
+    "AD0071": {
+      "path": "/root/autodl-tmp/formal_seadronessee_e1_deterministic_multiseed/seed0_yolov8s_seadronessee_source_disjoint_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "d41fdfdbe4816d5ffe4728c165f6d1e9956c21de97677fd5b0006b0a83e7a7bf",
+      "bytes": 22569379
+    },
+    "AD0072": {
+      "path": "/root/autodl-tmp/formal_seadronessee_e1_deterministic_multiseed/seed1_yolov8s_seadronessee_source_disjoint_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "b196e4647dfe221fd8bdf1dea6abdd650e7167479117d35745d45e7dbce81859",
+      "bytes": 22569507
+    },
+    "AD0073": {
+      "path": "/root/autodl-tmp/formal_seadronessee_e1_deterministic_multiseed/seed2_yolov8s_seadronessee_source_disjoint_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "6861d5729d3570a339a5c64f1a14909298d93ef41ff907cf08ab686d5ae60cfc",
+      "bytes": 22570019
+    },
+    "AD0076": {
+      "path": "/root/autodl-tmp/formal_wsodd_pretrained_sgd_mainline/seed0_yolov8s_wsodd_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "f737422c2c87ed4bdbdc611ccf4f73431bbec9925ca231f9eb43565b32589704",
+      "bytes": 22575907
+    },
+    "AD0080": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e0_multiseed/seed1_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "034a220f2b191eddf101a8d7e1483a3f375aad40ac802a22fff60ac5d1eea660",
+      "bytes": 22571811
+    },
+    "AD0081": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e0_multiseed/seed2_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "01a137d4cdc6463112006c60843ae4992dd40c3eabda709602fc0b7d6331449a",
+      "bytes": 22575907
+    },
+    "AD0085": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_multiseed/seed0_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "e67daabe3704ef7cc3daa23e134000f7e588461fa947456360c0933e650b8032",
+      "bytes": 22576035
+    },
+    "AD0086": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_multiseed/seed1_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "9beca04f74ce70d84c2606850c8cf97e8b90a68b8e5389d765065a5564aa8023",
+      "bytes": 22576035
+    },
+    "AD0087": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_multiseed/seed2_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "1af2188e685a6986909d5344aa613966f1686ab8bee7d49bb17884e0e87d3a03",
+      "bytes": 22576035
+    },
+    "AD0082": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e0_seeds42_123_3407/seed123_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "14da6750ef3fd4e600b09f1042d8b4acf52d155e00ae06e84cc07a3115ee315a",
+      "bytes": 22575971
+    },
+    "AD0083": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e0_seeds42_123_3407/seed3407_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "8d7cb912972b0e3f82e347367ed612f971068fa4d09efa7311b970d62af30dd1",
+      "bytes": 22575971
+    },
+    "AD0084": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e0_seeds42_123_3407/seed42_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "1019b7a62fdec9edd98ac9a5c4f218081c481b74b26266e9c42a453bbf160f26",
+      "bytes": 22575971
+    },
+    "AD0088": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_seeds42_123_3407/seed123_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "23a58c138bd0e2fe69367dcd5b7ed081437b3b9856d450004f9d6edc88a3cabb",
+      "bytes": 22575907
+    },
+    "AD0089": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_seeds42_123_3407/seed3407_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "68f71bb6f81732087516e65f595650c1f90cb28bda0800b3e064d5f5a919d4ee",
+      "bytes": 22575139
+    },
+    "AD0090": {
+      "path": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_seeds42_123_3407/seed42_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt",
+      "sha256": "a499abb480c5e0729abec2152ec02a09f1b0a4e0c868da35a55b7651981dcc7e",
+      "bytes": 22571811
+    }
+  },
+  "datasets": {
+    "SeaDronesSee": {
+      "images": 1555,
+      "annotations": 10013,
+      "records_sha256": "8cefd06e2d15d4eebae1e57d3f406b7e40d1c806d76249213ff6cc75ac3c383b",
+      "ground_truth_sha256": "82f27f9cea033c19cdd778594222fbe3ac71adf48803e755d55f6756eaf95854",
+      "names": {
+        "0": "swimmer",
+        "1": "boat",
+        "2": "jetski",
+        "3": "life_saving_appliances",
+        "4": "buoy"
+      },
+      "split": "val"
+    },
+    "WSODD": {
+      "images": 2406,
+      "annotations": 6297,
+      "records_sha256": "f9536951be6b1ae7906e2e2f0e3f4f06000c73b205ccc918c18e0fb41dbf0856",
+      "ground_truth_sha256": "14c35859c78ecc8809305f5e3fc9006f6c2a6520995a221f1eecebc87fedca52",
+      "names": {
+        "0": "animal",
+        "1": "ball",
+        "2": "boat",
+        "3": "bridge",
+        "4": "buoy",
+        "5": "grass",
+        "6": "harbor",
+        "7": "mast",
+        "8": "person",
+        "9": "platform",
+        "10": "rock",
+        "11": "rubbish",
+        "12": "ship",
+        "13": "tree"
+      },
+      "split": "test"
+    },
+    "FloW": {
+      "images": 541,
+      "annotations": 1090,
+      "records_sha256": "087a9ecda48cf36e18b6bc08a2e22eda291babbd8e3a24e10e8c22413dcf0007",
+      "ground_truth_sha256": "ca8a4dceb793716b07fe0961db780de395c6ad2afd283dc8bfbc7793fba907af",
+      "names": {
+        "0": "bottle"
+      },
+      "split": "test"
+    }
+  },
+  "self_test": {
+    "status": "passed",
+    "checks": [
+      "perfect detection",
+      "empty detections",
+      "wrong category",
+      "absent class",
+      "absent area"
+    ]
+  }
+}

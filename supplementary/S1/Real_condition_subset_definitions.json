@@ -1,0 +1,41 @@
+{
+  "dataset": "WSODD test set",
+  "note": "Subsets were fixed before scoring; the four subsets overlap. Scores are obtained by re-scoring the saved normal-input predictions on the images of each subset.",
+  "subsets": [
+    {
+      "subset": "Low luminance",
+      "definition": "Mean gray level below 110",
+      "images": 160,
+      "objects": 348,
+      "small_objects": 13
+    },
+    {
+      "subset": "High saturation",
+      "definition": "Pixels with gray level of at least 250 exceed 0.3% of the image",
+      "images": 171,
+      "objects": 378,
+      "small_objects": 86
+    },
+    {
+      "subset": "Captured 18:00-18:59",
+      "definition": "File-name timestamp",
+      "images": 39,
+      "objects": 119,
+      "small_objects": 0
+    },
+    {
+      "subset": "Captured 19:00-19:59",
+      "definition": "File-name timestamp",
+      "images": 68,
+      "objects": 413,
+      "small_objects": 12
+    },
+    {
+      "subset": "Remaining test images",
+      "definition": "In none of the four subsets",
+      "images": 2056,
+      "objects": 5335,
+      "small_objects": 1024
+    }
+  ]
+}

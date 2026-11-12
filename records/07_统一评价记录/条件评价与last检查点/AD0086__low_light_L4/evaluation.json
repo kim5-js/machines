@@ -1,0 +1,79 @@
+{
+  "status": "completed",
+  "utc": "2026-11-09T18:07:49.556985+00:00",
+  "job": {
+    "experiment_id": "AD0086",
+    "dataset": "WSODD",
+    "arm": "E1",
+    "seed": "1",
+    "split": "test",
+    "family": "strategy",
+    "key": "AD0086__low_light_L4",
+    "condition": "low_light_L4",
+    "weights": "weights/AD0086_best.pt",
+    "weights_sha256": "9beca04f74ce70d84c2606850c8cf97e8b90a68b8e5389d765065a5564aa8023",
+    "block": "severity"
+  },
+  "images": 2406,
+  "ground_truth_boxes": 6297,
+  "predictions": 38246,
+  "input_pixels_sha256": "4e60c6f01c0a2a49e2af69fc6f8966e6a5f8231e5c2a684448d1dea917928769",
+  "predictions_sha256": "aebfb65c6bddfb526ef68eab246583085fff617d5fd261a37737785a404871df",
+  "metrics": {
+    "mAP50-95": 0.2168375411548602,
+    "mAP50": 0.4221662935801545,
+    "mAP75": 0.1930520466550205,
+    "APsmall": 0.10248445390175469,
+    "APmedium": 0.1670795270950035,
+    "APlarge": 0.31325951300989674,
+    "AR1": 0.2181396590954751,
+    "AR10": 0.3195882612831414,
+    "AR100": 0.3422187393779887,
+    "ARsmall": 0.17729358944976278,
+    "ARmedium": 0.34346684071238026,
+    "ARlarge": 0.43388919662635334
+  },
+  "per_class_AP": {
+    "animal": 0.0,
+    "ball": 0.24767065187017184,
+    "boat": 0.38218395277569683,
+    "bridge": 0.4344354145331926,
+    "buoy": 0.1307499777773511,
+    "grass": 0.2173721214874307,
+    "harbor": 0.24720679851334917,
+    "mast": 0.28183609883750405,
+    "person": 0.04822513786167348,
+    "platform": 0.20597394440313174,
+    "rock": 0.06681866192735007,
+    "rubbish": 0.053144776690225264,
+    "ship": 0.4095001218040636,
+    "tree": 0.31060791768690216
+  },
+  "condition_parameters": {
+    "kind": "low",
+    "brightness": 0.7,
+    "gamma": 1.5,
+    "basis": "beyond training range"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "0"
+  },
+  "elapsed_seconds": 99.82332414388657
+}

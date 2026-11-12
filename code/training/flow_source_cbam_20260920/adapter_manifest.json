@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "path": "adapter/coco_functions.py",
+      "sha256": "6bd3ff062ab83b0775ee9924bda4278578fdd3a076ade1535fa3a0e6c566943c"
+    },
+    {
+      "path": "adapter/common.py",
+      "sha256": "ca177662de9d3bf0be5a2a41669034eaec9cb7b4ca4521ae5022b55d9d5bc1d6"
+    },
+    {
+      "path": "adapter/evaluate.py",
+      "sha256": "4b16ca478030cd829f1440617534c7cfa7c07b3fb0313978d27ff02b918180f0"
+    },
+    {
+      "path": "adapter/factorial_trainer.py",
+      "sha256": "0aecc34bff29b1e792d97675292fce361923f2af985a962376c853913cb780bf"
+    },
+    {
+      "path": "adapter/finalize.py",
+      "sha256": "566db69f92fc6623baa1f14f07ee852a2a9ec564cffba2bd9509b022b599b570"
+    },
+    {
+      "path": "adapter/supervise.py",
+      "sha256": "2a43acaa948e849851c0754de6207496eec8b7e89d6bff057047ff45de5c4881"
+    },
+    {
+      "path": "adapter/train.py",
+      "sha256": "66ec8740e55c694d4f3b8522818ededaa8a8e05783b890a77c9162231681b111"
+    },
+    {
+      "path": "adapter/training_helpers.py",
+      "sha256": "8a36b0a12e720c940f9781b161a8840215b2cd3af7d5497a3b3648ac08e97e54"
+    },
+    {
+      "path": "collect.py",
+      "sha256": "f6f556dc953cbddc578a859ff3457c86cc5542393249e4a9adfa60126f149278"
+    },
+    {
+      "path": "launch.py",
+      "sha256": "bf2025b0bf62636cb203d9cc70b9c6f3399321a37e13f8f5607edf089467d56f"
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "71a26a153940cd7fbd9a5551cc4f1ad69f771015e7287c105eac50f7f5191f40"
+    },
+    {
+      "path": "probe.py",
+      "sha256": "8274f295cda6cc51ac36721e5bfa96304b44d9c1bdeb5f6b3f6ff7a5bf9c93e2"
+    }
+  ],
+  "bundle_manifest_sha256": "4e4bb337127cc396aff1e4d279e85714188fc02ae452a835eb90bbb418c0386a"
+}

@@ -1,0 +1,35 @@
+{
+  "files": 5259,
+  "bad_files": [],
+  "bad_count": 0,
+  "strategy": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "cuda": "12.4",
+    "gpus": [
+      "NVIDIA GeForce RTX 4090",
+      "NVIDIA GeForce RTX 4090"
+    ],
+    "pycocotools": "2.0.10",
+    "cocoeval_sha": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0"
+  },
+  "matched": {
+    "ultralytics": "8.3.182",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/matched_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "cuda": "12.4",
+    "gpus": [
+      "NVIDIA GeForce RTX 4090",
+      "NVIDIA GeForce RTX 4090"
+    ],
+    "pycocotools": "2.0.10",
+    "cocoeval_sha": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0"
+  },
+  "cocoeval_matches_sealed": true,
+  "vendors_expected": true
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "completed_jobs": 5,
+  "utc": "2026-09-20T21:16:52.009292+00:00",
+  "request_sha256": "c805ee4fb20409be4ee033217f2765c47116b904f699132e65ae399976872a44",
+  "adapter_manifest_sha256": "19487480795a7df365feb48164a5eb8fc6145457014aa0fb66fcbf1d130b8d10",
+  "preflight_sha256": "cb157f8eb0618f001aa2f4703de19dcf71425bf2fa47331c8dab153e6e93b63e",
+  "smoke_data_manifest_sha256": "50cf1a32f9723c530dedba4438dbb3295ee7ca0fa0c4218919a44904ca2b24e4",
+  "proof": {
+    "FloW_cbam_only_seed0": {
+      "completion_sha256": "e497f532cbb6c0ead36c43c63f9f1aba10439bb5efd4d92f10a5afc2272c3603"
+    },
+    "FloW_focal_eiou_only_seed0": {
+      "completion_sha256": "ffa96f618ca680aedcad95f7b50b6dd16e8ee2dd4e1eccb28c559a1dd46f86fa"
+    },
+    "FloW_cbam_focal_seed0": {
+      "completion_sha256": "91f59f4f39cb4c5477d37b12f8b728d3e3a1a35eb466b0e357d81f7043c995e4"
+    },
+    "FloW_cbam_focal_e2_seed0": {
+      "completion_sha256": "ebb433196057f353c82d132e8e47ca9003d810447ff560e6acbfe016af1ef444"
+    },
+    "FloW_cbam_focal_e3_seed0": {
+      "completion_sha256": "19e15e8c80cb039f812fc6e671b6fc8427020f09001973c37c2199cb7e389faa"
+    }
+  },
+  "scope": "real-data training and native validation before full ablation queue"
+}

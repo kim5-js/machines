@@ -1,0 +1,8 @@
+{
+  "status": "official_coco_inference",
+  "job": "FloW_focal_eiou_only_seed0",
+  "split": "test",
+  "images": 541,
+  "target_images": 541,
+  "updated_utc": "2026-09-20T22:29:37.715573+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "ring3.cross_dataset_e0_e1_multiseed_eval_release.v1",
+  "status": "locked",
+  "purpose": "Evaluation-only matched E0/E1 seed 0/1/2 cross-dataset fixed-split and strong low-light/glare comparison",
+  "created_utc": "2026-09-08T19:00:00Z",
+  "files": [
+    {"path": "evaluate_cross_dataset_e0_e1_multiseed.py", "sha256": "3636175d42e7dc39d224dd8d123c5074115d25ea9c2f3fc800bb6e671a743eaf"},
+    {"path": "cross_dataset_e0_e1_multiseed_eval_config.json", "sha256": "058d7d96670f41afe0f6b12a9b9adc8f45dacef5b6d2be14b2ff2b520469dd10"},
+    {"path": "run_cross_dataset_e0_e1_multiseed_eval.sh", "sha256": "513da844fb597014d0186edf927f99ae2f1c5d09d04a96d8498d23aaf9e95d17"},
+    {"path": "evaluate_e3_coco_areas.py", "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"},
+    {"path": "evaluate_pretrained_sgd_robustness.py", "sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f"},
+    {"path": "e1_mdg_config.json", "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"},
+    {"path": "datasets/wsodd_sequence_disjoint_v1.yaml", "sha256": "180965bbca7a5416d467b0d089965db2c8fc22751843795df295d1376c62907e"},
+    {"path": "datasets/seadronessee_source_disjoint_v1.yaml", "sha256": "66b63cf9f50952faa5abdc83979599f2de88c64178278fb5b2b4c698ed841f7c"},
+    {"path": "datasets/flow_source_temporal_disjoint_v1.yaml", "sha256": "aeb32a2ab114e906797195dff5236823f223f76544fd39b97d1d4c0143144eb2"},
+    {"path": "manifests/wsodd_sequence_disjoint_v1/test.txt", "sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136"},
+    {"path": "manifests/seadronessee_source_disjoint_v1/val.tsv", "sha256": "c03aabe92e34bda87e5d9c6839a243fc721916e72a95c8ce5949bb9e25410503"},
+    {"path": "manifests/flow_source_temporal_disjoint_v1/test.txt", "sha256": "1cd110552ff016bf2414014f1d0ce7cc2608b404b6e70a7650171eb92edcca65"}
+  ],
+  "invariants": {"evaluation_only": true, "same_evaluator": true, "same_prediction_parameters": true, "no_training": true}
+}

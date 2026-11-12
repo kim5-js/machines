@@ -1,0 +1,22 @@
+{
+  "status": "dispatched",
+  "utc": "2026-09-20T21:14:54.673389+00:00",
+  "pid": 215855,
+  "process": {
+    "pid": 215855,
+    "state": "R",
+    "ppid": 215854,
+    "pgid": 215855,
+    "starttime": 6382887466,
+    "cpu_ticks": 0
+  },
+  "command": [
+    "/root/autodl-tmp/envs/mdc-yolo26/bin/python",
+    "-B",
+    "-u",
+    "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/adapter/supervise.py"
+  ],
+  "request_sha256": "c805ee4fb20409be4ee033217f2765c47116b904f699132e65ae399976872a44",
+  "order": "five real-data smoke trainings first; then 15 CBAM/Focal trainings and val/test evaluations",
+  "other_jobs_modified": false
+}

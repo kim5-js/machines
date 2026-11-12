@@ -1,0 +1,56 @@
+{
+  "schema": "ring3.wsodd_legacy_image_split_protocol.v1",
+  "status": "locked_validation_only",
+  "protocol": "wsodd_legacy_image_split_v1",
+  "purpose": "Reproduce E0-E3 on the historical image-level WSODD train/val split after its sequence leakage was audited",
+  "evidence_class": "legacy_protocol_reproduction_not_formal_generalization_evidence",
+  "dataset": "WSODD",
+  "classes": 14,
+  "objects_total": 21911,
+  "source_images": 7467,
+  "split_images": {
+    "train": 6222,
+    "val": 1245,
+    "test": 0
+  },
+  "split_generator": {
+    "local_path": "WSODD USV_dataset/WSODD USV_dataset/split_labels.py",
+    "sha256": "4af6e783402963853ef6bcd47f74b43d659817317bbedddc566de83adf31e94b3",
+    "method": "sklearn.model_selection.train_test_split over individual label files",
+    "test_size": 0.16666666666666666,
+    "random_state": 42,
+    "group_aware": false
+  },
+  "manifests": {
+    "train": {
+      "path": "train.txt",
+      "lines": 6222,
+      "sha256": "dfd295ea3f536d33917921b8f68f333eb47533ba1cc8aacbc1624c6ba2260eb3"
+    },
+    "val": {
+      "path": "val.txt",
+      "lines": 1245,
+      "sha256": "ceaaa6f9b92ee5b08fb83bad78607dfc7a962c7b4a5905b7cda021dc582d7fdf"
+    }
+  },
+  "sequence_audit": {
+    "audit_script_sha256": "41704075b78fd23ce30daeeead1aa2a89488ce4ac480a09e1aef5171e069ba2f",
+    "gap_seconds": 60.0,
+    "sequence_groups": 147,
+    "contaminated_sequence_groups": 98,
+    "images_in_contaminated_groups": 7290,
+    "train_images_in_contaminated_groups": 6047,
+    "val_images_in_contaminated_groups": 1243,
+    "val_images_total": 1245,
+    "val_sequence_overlap_fraction": 0.9983935742971888,
+    "exact_filename_path_fileid_hardlink_or_content_duplicates_found": false,
+    "conclusion": "Confirmed sequence/source leakage without exact-file duplication"
+  },
+  "evaluation": {
+    "split": "val",
+    "images": 1245,
+    "independent_test_available": false,
+    "same_split_used_for_early_stopping_and_reported_metrics": true,
+    "comparison_scope": "Within this legacy split only; do not compare numerically as equivalent to sequence-disjoint fixed-test results"
+  }
+}

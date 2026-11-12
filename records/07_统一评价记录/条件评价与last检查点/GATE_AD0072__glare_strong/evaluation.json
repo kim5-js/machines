@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "utc": "2026-11-09T18:00:36.270900+00:00",
+  "job": {
+    "key": "GATE_AD0072__glare_strong",
+    "sealed_key": "AD0072__glare_strong",
+    "experiment_id": "AD0072",
+    "dataset": "SeaDronesSee",
+    "arm": "E1",
+    "seed": "1",
+    "split": "val",
+    "family": "strategy",
+    "condition": "glare_strong",
+    "weights": "weights/AD0072_best.pt",
+    "weights_sha256": "b196e4647dfe221fd8bdf1dea6abdd650e7167479117d35745d45e7dbce81859",
+    "block": "gate",
+    "sealed_input_pixels_sha256": "e30a7c28eed089c8fb1477ef8245346e504f9ea127ca40883dd51321bff178d6",
+    "sealed_predictions_sha256": "a3f7de0697e05b70dac8e4db4f087fe647768b69afe9cb5bc3546b990f37cb64",
+    "sealed": {
+      "mAP50-95": 0.46695104858756925,
+      "mAP50": 0.7071373117909822,
+      "APsmall": 0.2860155899512092,
+      "APmedium": 0.4734493434164594,
+      "APlarge": 0.7230588076548236,
+      "AR100": 0.5371701274911974
+    }
+  },
+  "images": 1555,
+  "ground_truth_boxes": 10013,
+  "predictions": 48744,
+  "input_pixels_sha256": "e30a7c28eed089c8fb1477ef8245346e504f9ea127ca40883dd51321bff178d6",
+  "predictions_sha256": "14878056c36658e347f6dead9a2cb54d2cead35dd5fcf4a98ef090374c364dd6",
+  "metrics": {
+    "mAP50-95": 0.4669490148562942,
+    "mAP50": 0.70713850467754,
+    "mAP75": 0.5179666813370211,
+    "APsmall": 0.2860131947519279,
+    "APmedium": 0.47347132425885435,
+    "APlarge": 0.7230556038726076,
+    "AR1": 0.36861126117186144,
+    "AR10": 0.5325857854869729,
+    "AR100": 0.5371669254418858,
+    "ARsmall": 0.3823076714925304,
+    "ARmedium": 0.5539569088769766,
+    "ARlarge": 0.7847029527124039
+  },
+  "per_class_AP": {
+    "swimmer": 0.349376574102839,
+    "boat": 0.7215215261522466,
+    "jetski": 0.6164952029428188,
+    "life_saving_appliances": 0.0014521452145214522,
+    "buoy": 0.6458996258690451
+  },
+  "condition_parameters": {
+    "target_area_ratio": 0.0445,
+    "intensity_255": 43.5,
+    "aspect_ratio": 2.3,
+    "softness": 2.0,
+    "center_policy": "deterministic per image and shared across severities",
+    "random_seed_namespace": "ring3/cross-dataset/e0-e1/controlled-strong/v1/SeaDronesSee"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "0"
+  },
+  "elapsed_seconds": 64.05542453378439
+}

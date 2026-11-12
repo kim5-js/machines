@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T13:49:15.527402+00:00",
+  "job": {
+    "key": "NEW_FloW_E3_seed123__low_light_L5",
+    "experiment_id": "FloW_E3_seed123",
+    "dataset": "FloW",
+    "family": "strategy",
+    "arm": "FloW_E3_seed123",
+    "seed": "123",
+    "split": "test",
+    "condition": "low_light_L5",
+    "weights": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E3_seed123/weights/best.pt",
+    "weights_sha256": "5b22c4a066ef7a32675ebec4ea125b509a3e84597bda4ca4e709f87baac9bd33",
+    "block": "post_train"
+  },
+  "images": 541,
+  "ground_truth_boxes": 1090,
+  "predictions": 12569,
+  "input_pixels_sha256": "4c2f11773d9a54f4c48219faf961e4a3097e0fbd9171b24de90af783be60ebdf",
+  "predictions_sha256": "88ce62638b2ed0454baa98da37ec274be3e1b99822cb88779a259c9562d703b1",
+  "metrics": {
+    "mAP50-95": 0.4474225545745336,
+    "mAP50": 0.8720864802671839,
+    "mAP75": 0.4107379191392972,
+    "APsmall": 0.28219147048118853,
+    "APmedium": 0.57773165707922,
+    "APlarge": 0.5853812317282676,
+    "AR1": 0.288256880733945,
+    "AR10": 0.5311926605504586,
+    "AR100": 0.541743119266055,
+    "ARsmall": 0.41782178217821786,
+    "ARmedium": 0.644313725490196,
+    "ARlarge": 0.6786666666666666
+  },
+  "per_class_AP": {
+    "bottle": 0.4474225545745336
+  },
+  "condition_parameters": {
+    "kind": "low",
+    "brightness": 0.5,
+    "gamma": 2.0,
+    "basis": "beyond training range"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 15.642966475337744
+}

@@ -1,0 +1,7 @@
+# Current local protocol. No independent test split exists yet.
+path: /root/autodl-tmp/datasets/FloW
+train: train/images
+val: val/images
+nc: 1
+names:
+  0: bottle

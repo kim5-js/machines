@@ -1,0 +1,27 @@
+{
+  "device": "NVIDIA GeForce RTX 4090",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.124",
+  "cuda": "12.4",
+  "cudnn": 90100,
+  "tf32": false,
+  "cudnn_benchmark": false,
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "warmup_images": 50,
+  "timed_images": 500,
+  "dataset": "WSODD",
+  "process_isolation": "Each model is measured in a fresh Python process.",
+  "selection": "first 500 entries of the frozen ordered WSODD test manifest",
+  "timing_scope": "synchronized wall-clock time from decoded BGR image to Results object; includes preprocessing, host-to-device transfer, forward pass, and postprocessing; excludes file reading and image decoding",
+  "memory_scope": "peak torch.cuda.max_memory_allocated for warmed model plus one-image prediction, in MiB",
+  "flops_scope": "Ultralytics get_flops estimate for the unfused trained architecture at 960; multiply-add counted as two operations"
+}

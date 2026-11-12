@@ -1,0 +1,45 @@
+{
+  "schema": "ring3.wsodd_scene_label_release_manifest.v1",
+  "status": "released",
+  "purpose": "Auditable manual Normal/Glare/Low-light/Mixed labels for the locked WSODD sequence-disjoint test split",
+  "base_training_release_manifest_sha256": "fe106f29d4bbd424bb3962d8a459b151e6e5810e50cc8eefebef35e2ba0b117e",
+  "base_hotfix_v2_manifest_sha256": "9004d4f613164e130d3471b2c5f25d177c18b7f356f251fc8093793b80076daa",
+  "test_manifest_sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136",
+  "review": {
+    "images": 2406,
+    "sequence_groups": 32,
+    "full_contact_sheet_pages": 115,
+    "label_counts": {
+      "Normal": 2344,
+      "Glare": 39,
+      "Low-light": 21,
+      "Mixed": 2
+    },
+    "heuristic_labels_used_as_final_labels": false
+  },
+  "files": [
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/build_wsodd_contact_page_atlases.py",
+      "sha256": "e3f55504af27e0cea7837cef0b434e728fa782f1ad818ce1a59acf142213107a"
+    },
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/build_wsodd_manual_scene_decisions.py",
+      "sha256": "d0c0c07e0f7dd3940bd2afc7829a8aa224af61578b40ba683903c71c6b26025d"
+    },
+    {
+      "path": "/root/autodl-tmp/robustness_eval/wsodd_pretrained_sgd_e0_e3/scene_review/manual_scene_decisions.json",
+      "sha256": "b8d2cf174c3dac8080554bed0a345c3f6ed916ca44baecab14af655fa99244c3"
+    },
+    {
+      "path": "/root/autodl-tmp/robustness_eval/wsodd_pretrained_sgd_e0_e3/scene_review/scene_review_manifest.csv",
+      "sha256": "695dd812d63a13e1cc185fc23f8dc275a52a4378fd88703cc784a09fc7fb0e1d"
+    }
+  ],
+  "invariants": {
+    "manual_review_complete": true,
+    "same_evaluator_for_all_models": true,
+    "no_training_parameter_change": true,
+    "no_checkpoint_change": true,
+    "no_e4": true
+  }
+}

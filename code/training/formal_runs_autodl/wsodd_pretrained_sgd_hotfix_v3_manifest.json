@@ -1,0 +1,39 @@
+{
+  "schema": "ring3.wsodd_e3_amp_resume_hotfix_manifest.v3",
+  "status": "locked",
+  "purpose": "Recover the WSODD E3 run after the AMP empty-target foreground mask audit defect, while allowing only the canonical run's own last.pt for resume provenance",
+  "base_release_manifest_sha256": "fe106f29d4bbd424bb3962d8a459b151e6e5810e50cc8eefebef35e2ba0b117e",
+  "v2_hotfix_manifest_sha256": "9004d4f613164e130d3471b2c5f25d177c18b7f356f251fc8093793b80076daa",
+  "training_recipe_changed": false,
+  "dataset_protocol_changed": false,
+  "loss_formula_changed": false,
+  "completed_runs_reused": [
+    "e0",
+    "e1",
+    "e2"
+  ],
+  "resume_policy": "e3_canonical_own_last_pt_only",
+  "files": [
+    {
+      "path": "wsodd_pretrained_sgd_mainline_release_manifest.json",
+      "sha256": "fe106f29d4bbd424bb3962d8a459b151e6e5810e50cc8eefebef35e2ba0b117e"
+    },
+    {
+      "path": "wsodd_pretrained_sgd_hotfix_v2_manifest.json",
+      "sha256": "9004d4f613164e130d3471b2c5f25d177c18b7f356f251fc8093793b80076daa"
+    },
+    {
+      "path": "e3_small_object_weighting.py",
+      "sha256": "5df5e0d4b39f17c0abb08288ff0d826b4894f6245bdd90dd6be6458590ecd67b"
+    },
+    {
+      "path": "wsodd_pretrained_sgd_hotfix_v3_entry.py",
+      "sha256": "bad6f09ed1e06bb3af74d4fb9f15fa119493b11dd0e45cd1f189c91399f939ef"
+    },
+    {
+      "path": "run_wsodd_pretrained_sgd_mainline_v3.sh",
+      "sha256": "6119d3e65eb57f4590685471dfedf65e384381a18a137f5a4844fa274864f18c"
+    }
+  ],
+  "prohibitions_unchanged": true
+}

@@ -1,0 +1,10 @@
+# Strict protocol over the 1,200 available official FloW images.  XML source
+# folders remain intact; dated acquisition sessions are chronologically split.
+# The latest continuous Saved_Pic session is the fixed test set.
+path: /root/autodl-tmp/datasets/FloW_source_temporal_disjoint_v1
+train: train/images
+val: val/images
+test: test/images
+nc: 1
+names:
+  0: bottle

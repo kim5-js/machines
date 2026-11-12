@@ -1,0 +1,43 @@
+{
+  "schema": "ring3.wsodd_validation_empty_area_hotfix_release.v1",
+  "status": "released",
+  "purpose": "Resume evaluation only after treating evaluator-empty area ranges as zero positive GT without changing AP null semantics",
+  "failure_signature": "KeyError: 'positive_gt_count' from metric_summary when an area range has per_class=[]",
+  "invariants": {
+    "training_started": false,
+    "training_recipe_changed": false,
+    "checkpoint_updates": false,
+    "dataset_or_scene_labels_changed": false,
+    "locked_evaluator_changed": false,
+    "prediction_parameters_changed": false,
+    "e4_started": false
+  },
+  "locked_base_files": [
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_pretrained_sgd_robustness.py",
+      "sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f"
+    },
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_wsodd_pretrained_sgd_validation.py",
+      "sha256": "9f4e88e3924ef70eca183bf07d797ad9a438274be5524d627342aacb8df680ad"
+    },
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_e3_coco_areas.py",
+      "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"
+    },
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_pretrained_sgd_validation_config.json",
+      "sha256": "844e06e1787638368a8c50c9213c82df6f6c112e62c1e02e57f6c4bf5831174b"
+    }
+  ],
+  "hotfix_files": [
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_pretrained_sgd_validation_hotfix_v1_entry.py",
+      "sha256": "7e722c6468127a0bfe44e2d1eb9cc3fe058d875fa8d21e1c26222fad151e158b"
+    },
+    {
+      "path": "/root/autodl-tmp/ring3_setup/autodl/run_wsodd_pretrained_sgd_validation_v2.sh",
+      "sha256": "fc7ff4ef2823ef8923c3c9c2f627e8f821b0d6d533ee99c162a52edd773eec29"
+    }
+  ]
+}

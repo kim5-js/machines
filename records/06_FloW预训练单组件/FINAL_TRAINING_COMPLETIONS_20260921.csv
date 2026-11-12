@@ -1,0 +1,16 @@
+﻿job,arm,seed,epochs,native_patience_early_stop,best_epoch,native_fitness,all_training_args_matched_frozen_protocol,shared_initialization_matched_same_seed_E0
+FloW_cbam_only_seed0,cbam_only,0,150,False,57,0.37682,True,True
+FloW_cbam_only_seed1,cbam_only,1,129,True,29,0.37343,True,True
+FloW_cbam_only_seed2,cbam_only,2,150,False,63,0.38518,True,True
+FloW_focal_eiou_only_seed0,focal_eiou_only,0,147,True,47,0.38131,True,True
+FloW_focal_eiou_only_seed1,focal_eiou_only,1,150,False,50,0.37506,True,True
+FloW_focal_eiou_only_seed2,focal_eiou_only,2,150,False,53,0.37732,True,True
+FloW_cbam_focal_seed0,cbam_focal,0,150,False,80,0.37988,True,True
+FloW_cbam_focal_seed1,cbam_focal,1,150,False,50,0.37662,True,True
+FloW_cbam_focal_seed2,cbam_focal,2,150,False,72,0.38088,True,True
+FloW_cbam_focal_e2_seed0,cbam_focal_e2,0,144,True,44,0.37948,True,True
+FloW_cbam_focal_e2_seed1,cbam_focal_e2,1,150,False,75,0.38091,True,True
+FloW_cbam_focal_e2_seed2,cbam_focal_e2,2,141,True,41,0.37325,True,True
+FloW_cbam_focal_e3_seed0,cbam_focal_e3,0,150,False,57,0.37805,True,True
+FloW_cbam_focal_e3_seed1,cbam_focal_e3,1,150,False,58,0.38126,True,True
+FloW_cbam_focal_e3_seed2,cbam_focal_e3,2,150,False,65,0.38522,True,True

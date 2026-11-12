@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "job": {
+    "key": "baseline_rtdetr_l_seed0",
+    "dataset": "FloW",
+    "seed": 0,
+    "arm": "baseline",
+    "model_key": "rtdetr_l",
+    "family": "baseline",
+    "phase": "full",
+    "run_dir": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/baseline_rtdetr_l_seed0",
+    "data_yaml": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/dataset.yaml",
+    "epochs": 150
+  },
+  "epochs": 150,
+  "completed_utc": "2026-09-20T11:22:47.944259+00:00",
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "adapter_manifest_sha256": "ef8603aa780df9c90da2d9fe5dd44d7b733bf5a50d98ef1a390974e1986adb24",
+  "preflight_sha256": "a87087c1417b26399788d3719b1d1c998eb1e06a59884f71898b340d06aef29b",
+  "data_yaml_sha256": "1e8ef7adcb3c4f579d54146b8deeb18ccf107ce70460d29d58ea7e169051577c",
+  "checkpoint_selection": {
+    "rule": "native val mAP50-95 best.pt; no test selection",
+    "epoch": 149,
+    "fitness": 0.31327
+  },
+  "native_patience_early_stop": false,
+  "artifacts": {
+    "args.yaml": "dccfdad087ca6b4414dc61c9e6300914f88097c824b249a696bd8194418e7dd4",
+    "results.csv": "4b37237de479389616468c60820f092fc239ca8d0420b3fe34da902cf6dca5d8",
+    "runtime_evidence.json": "11eb0c8a89db0d1ae32b441738c73a826579854e8e265cac2cdeaa38f911e825",
+    "weights/best.pt": "1a25e2cbf4a86a595249a7d2065b641ca2c62722da8ffe9924e28e9ad7a3aac0",
+    "weights/last.pt": "318a51b5a0db2552a32d994d44ac50b5d5754cb9e5b0215a43a555d9a52d42c4"
+  }
+}

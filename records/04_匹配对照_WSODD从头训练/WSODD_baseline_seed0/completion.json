@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "utc": "2026-09-11T15:34:10.266707+00:00",
+  "job": {
+    "key": "WSODD_baseline_seed0",
+    "dataset": "WSODD",
+    "arm": "baseline",
+    "seed": 0
+  },
+  "smoke": false,
+  "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+  "runtime": {
+    "ultralytics_version": "8.3.182",
+    "ultralytics_file": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/code/vendor/ultralytics/__init__.py",
+    "pretrained": false,
+    "scale": "s",
+    "parameters": 11141018,
+    "cbam_indices": [],
+    "criterion": "v8DetectionLoss",
+    "bbox_loss": "ciou",
+    "box": 7.5,
+    "dfl": 1.5,
+    "initial_state_sha256": "5cc2cfcdb6cdf5e60ff114d931d861133caa3d1551d4ec9c20db540e2b332301",
+    "train_images": 3977,
+    "batches_per_epoch": 995,
+    "optimizer": "SGD",
+    "amp": true,
+    "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+    "job": {
+      "key": "WSODD_baseline_seed0",
+      "dataset": "WSODD",
+      "arm": "baseline",
+      "seed": 0
+    },
+    "smoke": false,
+    "monitoring_revision": "recovery_v1",
+    "recovery_manifest_sha256": "ed51f53291d984898ef5bdd8802f6305599b32060c5133eff3fb69799877374b"
+  },
+  "epochs_completed": 150,
+  "maximum_epochs": 150,
+  "early_stopped": false,
+  "elapsed_seconds": 11862.748507678509,
+  "optimizer_step_calls": 75371,
+  "optimizer_parameter_changed": true,
+  "best_map_epoch": 94,
+  "peak_val_map": 0.19819,
+  "checkpoints": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_baseline_seed0/weights/best.pt",
+      "sha256": "31c462dbb529d43cbbbd70452eaa41fa7eed6bf690a3b810370973eac6379525"
+    },
+    "best_map.pt": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_baseline_seed0/weights/best_map.pt",
+      "sha256": "c105240a44f716d8f80f756581e255d41c186b620a2361764e1d719414687f32"
+    }
+  },
+  "results_sha256": "ff12f4b0edb9cabc8eb38cc260d8f37e8f20c26d426789786bc00e1ca4d99896",
+  "monitoring_revision": "recovery_v1",
+  "recovery_manifest_sha256": "ed51f53291d984898ef5bdd8802f6305599b32060c5133eff3fb69799877374b",
+  "validation_overflow_epochs": [],
+  "failed_prefix_reproduced": null
+}

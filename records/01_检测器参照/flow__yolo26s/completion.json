@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "job": {
+    "key": "baseline_yolo26s_seed0",
+    "dataset": "FloW",
+    "seed": 0,
+    "arm": "baseline",
+    "model_key": "yolo26s",
+    "family": "baseline",
+    "phase": "full",
+    "run_dir": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/baseline_yolo26s_seed0",
+    "data_yaml": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/dataset.yaml",
+    "epochs": 150
+  },
+  "epochs": 150,
+  "completed_utc": "2026-09-20T08:38:49.103297+00:00",
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "adapter_manifest_sha256": "ef8603aa780df9c90da2d9fe5dd44d7b733bf5a50d98ef1a390974e1986adb24",
+  "preflight_sha256": "a87087c1417b26399788d3719b1d1c998eb1e06a59884f71898b340d06aef29b",
+  "data_yaml_sha256": "1e8ef7adcb3c4f579d54146b8deeb18ccf107ce70460d29d58ea7e169051577c",
+  "checkpoint_selection": {
+    "rule": "native val mAP50-95 best.pt; no test selection",
+    "epoch": 62,
+    "fitness": 0.3855
+  },
+  "native_patience_early_stop": false,
+  "artifacts": {
+    "args.yaml": "b595b7b910f79c1a89291e8a83bc4c3620be44c88c1150251efdf366a503fdc8",
+    "results.csv": "f7adcdb24f5b874bed34d6c3417465a6c7264ef331182ef205e06135fbffb2f2",
+    "runtime_evidence.json": "da37e0e7a5c59c4ec6fb0f0bd7c22cef047cf1fa9a5f4ee88274e0bd747b9f30",
+    "weights/best.pt": "19f77d491c3a5a17a683fefea8b119f4f19db8b5699c9424aac6f846ba393170",
+    "weights/last.pt": "ef25ebdd5a8ad05c1db02f63720677ac2821ed540a459e76ed2e9bc5f0c61349"
+  }
+}

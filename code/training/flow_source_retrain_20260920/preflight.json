@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "utc": "2026-09-20T06:41:23.074794+00:00",
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "bundle_manifest_sha256": "7f15daaf168b8c0e4a45b8f8d340dc9230c0213a9d6bb4c9017bc711c2bb1704",
+  "datasets": {
+    "FloW": {
+      "train": {
+        "images": 1124,
+        "boxes": 2665,
+        "empty_labels": 0,
+        "sha256": "d8834244769b9dbc9e962745eacde62a68f6359c0bbec85b1f72fbed07145ed2"
+      },
+      "val": {
+        "images": 335,
+        "boxes": 1517,
+        "empty_labels": 0,
+        "sha256": "ccb2b1c6e9c2afab0bb264140e3378fdf1a598c08a3c200dec8af7ea74ff8586"
+      },
+      "test": {
+        "images": 541,
+        "boxes": 1090,
+        "empty_labels": 0,
+        "sha256": "bad1371dd87d58a1ec863eee6103b85b493388cab68cc50955c9a61ef2ef62b4"
+      }
+    }
+  },
+  "runtime_assets": [
+    {
+      "path": "vendor/pycocotools/__init__.py",
+      "sha256": "d02e91fe125b82e6e5f0642b897f7439094506d06f32771b40d00170deb8eae1"
+    },
+    {
+      "path": "vendor/pycocotools/_mask.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "98f86d469894fbf6419171b3c8fe1ed82bc769568e16554b75dd52e5fe29afa5"
+    },
+    {
+      "path": "vendor/pycocotools/coco.py",
+      "sha256": "07f29665283eeb84deb940e7f28caabc0863f521089e1075165b9b32693a3f16"
+    },
+    {
+      "path": "vendor/pycocotools/cocoeval.py",
+      "sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267"
+    },
+    {
+      "path": "vendor/pycocotools/mask.py",
+      "sha256": "4d4788f995971c97c5548f0bd19941f6ec1faaf5d0d7fb6ec489256ff872c617"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/INSTALLER",
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/METADATA",
+      "sha256": "fdc44a1ff92d846c5199aa7f230813f149dd4dbec1d0cd3a997cef69cf091dd5"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/RECORD",
+      "sha256": "f2f0acc103bfdcaae6311b8e404d14fc3d3c90faf699ba0b619856814a1c8969"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/WHEEL",
+      "sha256": "0d39ca8cce4e2272715800e8777890c96c5671d1be791c31cc6c30db7eacc296"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/direct_url.json",
+      "sha256": "522e347d67b48c6afa5b9b3cd28080e8ac70027d60c3946fcf12c9480ca66f73"
+    },
+    {
+      "path": "vendor/pycocotools-2.0.10.dist-info/top_level.txt",
+      "sha256": "9324b027becef551751346a209beb6d6d11f1c5f405180cc85fd8bec56099d53"
+    },
+    {
+      "path": "yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+    },
+    {
+      "path": "settings/Arial.ttf",
+      "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+    },
+    {
+      "path": "evaluation_data/val_ground_truth.json",
+      "sha256": "d6946507a77dea6f588027990102749607c09218604c553ed19e6c6bc45f6a71"
+    },
+    {
+      "path": "evaluation_data/val.yaml",
+      "sha256": "d2732bddb64dd134599b9a7d4b21387cf50ddb97a8d31319b9f76e5d9019d921"
+    },
+    {
+      "path": "evaluation_data/test_ground_truth.json",
+      "sha256": "ca8a4dceb793716b07fe0961db780de395c6ad2afd283dc8bfbc7793fba907af"
+    },
+    {
+      "path": "evaluation_data/test.yaml",
+      "sha256": "b8f66c79a0ebd2a11b703079b77ed78390b196148f88797c24af8048bb41a25f"
+    }
+  ],
+  "archive_sha256": "46e8df36c52ad5d4fe7fb6af8e84870bf3a1dd57fe669e819dfd08f3e30ae72b",
+  "all_2000_image_hashes_pixels_labels_verified": true,
+  "observed_source_groups_disjoint": true,
+  "supported_capture_times_ordered": true,
+  "unknown_source_limitations_preserved": true,
+  "historical_scientific_files_and_baseline_args_verified": true,
+  "training_observer_byte_identical": true,
+  "other_jobs_modified": false
+}

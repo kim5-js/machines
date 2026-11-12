@@ -1,0 +1,67 @@
+{
+  "status": "completed",
+  "utc": "2026-11-09T18:03:23.593857+00:00",
+  "job": {
+    "experiment_id": "AD0073",
+    "dataset": "SeaDronesSee",
+    "arm": "E1",
+    "seed": "2",
+    "split": "val",
+    "family": "strategy",
+    "key": "AD0073_last__normal",
+    "condition": "normal",
+    "weights": "weights/AD0073_last.pt",
+    "weights_sha256": "0a774224240a9f55b5b8ac5016855de76024fbeac69a0b6d55658b0983f5310f",
+    "block": "sds_last_checkpoint"
+  },
+  "images": 1555,
+  "ground_truth_boxes": 10013,
+  "predictions": 52952,
+  "input_pixels_sha256": "3c0ca4bd74866a1f3029ea5bf674982bcdd6ae83b6276ef27e1995b0b413f4e2",
+  "predictions_sha256": "5211f4f05ab086feff004e153f898c6fa38258009c6fe6683e47ce0b106b8e30",
+  "metrics": {
+    "mAP50-95": 0.445722502611147,
+    "mAP50": 0.6989626505905806,
+    "mAP75": 0.5015122479016425,
+    "APsmall": 0.2858486484623831,
+    "APmedium": 0.4526995469796511,
+    "APlarge": 0.7114471811718568,
+    "AR1": 0.358430511881755,
+    "AR10": 0.5136758209917824,
+    "AR100": 0.5179761546415677,
+    "ARsmall": 0.38518640054444203,
+    "ARmedium": 0.528955081567443,
+    "ARlarge": 0.7597734140336299
+  },
+  "per_class_AP": {
+    "swimmer": 0.32004626786920265,
+    "boat": 0.7089220229140504,
+    "jetski": 0.587802234889652,
+    "life_saving_appliances": 0.0038311054810482243,
+    "buoy": 0.6080108819017814
+  },
+  "condition_parameters": {
+    "identity": true
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 74.05006350437179
+}

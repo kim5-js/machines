@@ -1,0 +1,33 @@
+{
+  "schema": "ring3.wsodd_pretrained_sgd_hotfix_manifest.v2",
+  "status": "locked",
+  "purpose": "Isolate the reused base config schema during WSODD preflight and select the already-installed formal mdc-yolo26 runtime; no training, model, optimizer, augmentation, split, or evaluation parameter changes",
+  "base_release_manifest_sha256": "fe106f29d4bbd424bb3962d8a459b151e6e5810e50cc8eefebef35e2ba0b117e",
+  "training_recipe_changed": false,
+  "dataset_protocol_changed": false,
+  "model_definition_changed": false,
+  "files": [
+    {
+      "path": "wsodd_pretrained_sgd_mainline_release_manifest.json",
+      "sha256": "fe106f29d4bbd424bb3962d8a459b151e6e5810e50cc8eefebef35e2ba0b117e"
+    },
+    {
+      "path": "wsodd_pretrained_sgd_hotfix_v2_entry.py",
+      "sha256": "20a271276a7e3c286a0e5d61f992a2f221d81d669d074c768f6a4340fc87a8da"
+    },
+    {
+      "path": "run_wsodd_pretrained_sgd_mainline_v2.sh",
+      "sha256": "77e3ef89a9d9f8736a1be0606b94e5b77bd115915300932820d9a29b7ac60358"
+    },
+    {
+      "path": "run_wsodd_pretrained_sgd_validation.sh",
+      "sha256": "924c91dc118d7c0b3f36749a87aaf8262504bf8a8ebe271f124d74db703cdd23"
+    }
+  ],
+  "runtime": {
+    "python": "/root/autodl-tmp/envs/mdc-yolo26/bin/python",
+    "base_schema_visible_only_during_reused_base_validation": "ring3.pretrained_sgd_mainline_config.v1",
+    "wsodd_schema_restored_after_validation": true
+  },
+  "prohibitions_unchanged": true
+}

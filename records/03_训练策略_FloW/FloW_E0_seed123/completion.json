@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "job": {
+    "key": "FloW_E0_seed123",
+    "dataset": "FloW",
+    "seed": 123,
+    "arm": "E0",
+    "model_key": "yolov8s",
+    "family": "ablation",
+    "phase": "full",
+    "run_dir": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E0_seed123",
+    "data_yaml": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/dataset.yaml",
+    "epochs": 150
+  },
+  "completed_utc": "2026-11-10T13:44:08.201848+00:00",
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "adapter_manifest_sha256": "ef8603aa780df9c90da2d9fe5dd44d7b733bf5a50d98ef1a390974e1986adb24",
+  "epochs": 150,
+  "preflight_sha256": "a87087c1417b26399788d3719b1d1c998eb1e06a59884f71898b340d06aef29b",
+  "data_yaml_sha256": "1e8ef7adcb3c4f579d54146b8deeb18ccf107ce70460d29d58ea7e169051577c",
+  "native_patience_early_stop": false,
+  "stopper_best_epoch": 59,
+  "checkpoint_selection": {
+    "rule": "native Ultralytics 8.4.124 best.pt; mAP50-95 fitness",
+    "epoch": 59,
+    "fitness": 0.37252
+  },
+  "artifacts": {
+    "args.yaml": "0c3f86c8a7cd4051866ff2c299339d5ea20dd2cab9a1296c0a5ba32667e79194",
+    "results.csv": "c1220e2085e9147c4c56104bf776b79593751271f173f757ef83c6d81cf75247",
+    "runtime_evidence.json": "2b11ba78686da8469f461968b9ba96167e28d555094eb0fc0e244c7b4bea1ee3",
+    "weights/best.pt": "4d961dd6e8a78b33feb2108c5e90ea6bba9e65023469c1a5159516cc6d4cc6c6",
+    "weights/last.pt": "d5abe1b414b1de19a092dcf717bfe79890e351829d45ca3b3551f86b0054aeb3"
+  }
+}

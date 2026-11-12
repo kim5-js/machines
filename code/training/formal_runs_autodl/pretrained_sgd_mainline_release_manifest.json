@@ -1,0 +1,99 @@
+{
+  "schema": "ring3.pretrained_sgd_mainline_release_manifest.v1",
+  "status": "locked",
+  "purpose": "Immutable pretrained-SGD E0-E3 mainline release with auditable early-stop completion and paused-E0 recovery",
+  "supersedes_release_manifest_sha256": "3b321b1e024713f8a952f150f5876a8f13bd29a23ed945b033fbd726c7ac9d95",
+  "training_recipe_changed": false,
+  "files": [
+    {
+      "path": "pretrained_sgd_mainline_config.json",
+      "sha256": "b89049d9c3ef7ae95e3d6007777597779d07ad4e17d9e9decb85425f21ce1ec2"
+    },
+    {
+      "path": "pretrained_sgd_mainline_models.py",
+      "sha256": "4f797d6a0e9428227266d9189c74f43a5d4c3f52d2b6e7020763412d845f8fca"
+    },
+    {
+      "path": "train_pretrained_sgd_mainline.py",
+      "sha256": "8d8d46976d2be9d2473886f7de25e91bbd788a4ed368bd51b7998d42fcc2e413"
+    },
+    {
+      "path": "pretrained_sgd_mainline_entry.py",
+      "sha256": "bc7e1076bb43df1cff5deddcf1fcecfe6911ea5a00f71b4f78f92d44fb9d6dbe"
+    },
+    {
+      "path": "run_pretrained_sgd_mainline_entry.sh",
+      "sha256": "21ea42338209494058efa1d1a1b29893e1dd1b9e0e847fbb35624506520f9142"
+    },
+    {
+      "path": "PRETRAINED_SGD_MAINLINE.md",
+      "sha256": "df06014976475f175083b451e665fda736a00dd1be234625553058de63e1a1fd"
+    },
+    {
+      "path": "pretrained_sgd_mainline_supervisor_patch.py",
+      "sha256": "0281cc5da384a6c936410cd5ca30a522ed01245586b789c11de2af572ba5e246"
+    },
+    {
+      "path": "pretrained_sgd_mainline_v2_entry.py",
+      "sha256": "1e53d4c7ac23a0cd35052826b347ce2bdaf4c2ec365da19214e5c7feb3c71dae"
+    },
+    {
+      "path": "run_pretrained_sgd_mainline_v2_entry.sh",
+      "sha256": "8e5f17085a06aa3da545e7b1cd1f92fdf088712cf11abe6d052b1c31e7600df2"
+    },
+    {
+      "path": "PRETRAINED_SGD_MAINLINE_SUPERVISOR_V2.md",
+      "sha256": "c484867a8c650ce3e0ee00217a3e4f1c7c60a0b0e4d0df73077bf2c02ca54093"
+    },
+    {
+      "path": "maritime_degradation.py",
+      "sha256": "b0d60602f77db9bbb935f5e48f44a5766f361ef35bc07e90fd06b23c3f8b85cc"
+    },
+    {
+      "path": "e1_mdg_config.json",
+      "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"
+    },
+    {
+      "path": "cbam_focal_formal_models.py",
+      "sha256": "58ad7ef9a2e996729f6263312cfd692880eaf9279eb946684611e31299667fff"
+    },
+    {
+      "path": "e3_small_object_weighting.py",
+      "sha256": "5df5e0d4b39f17c0abb08288ff0d826b4894f6245bdd90dd6be6458590ecd67b"
+    },
+    {
+      "path": "formal_experiment_lock.json",
+      "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"
+    },
+    {
+      "path": "formal_runtime_amendment.json",
+      "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"
+    },
+    {
+      "path": "datasets/seadronessee_source_disjoint_v1.yaml",
+      "sha256": "66b63cf9f50952faa5abdc83979599f2de88c64178278fb5b2b4c698ed841f7c"
+    },
+    {
+      "path": "manifests/seadronessee_source_disjoint_v1/protocol.json",
+      "sha256": "0030e4921a95d57722db66afb50a094c25fc3e6c00b93db5567fbbb196576360"
+    },
+    {
+      "path": "verify_yolo_dataset.py",
+      "sha256": "faf305177a9e61477affb7f42d5030a8142b95b22335be8b602e6e418813002c"
+    }
+  ],
+  "prohibitions": {
+    "adamw": true,
+    "optimizer_auto": true,
+    "cbam": true,
+    "focal_eiou": true,
+    "consistency_loss": true,
+    "severity_weighting": true,
+    "curriculum": true,
+    "e4": true,
+    "cross_run_resume": true,
+    "resume_completed_checkpoint": true,
+    "noncanonical_run_directory": true,
+    "git_commit_or_push": true
+  }
+}

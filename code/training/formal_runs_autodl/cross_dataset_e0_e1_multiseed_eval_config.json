@@ -1,0 +1,141 @@
+{
+  "schema": "ring3.cross_dataset_e0_e1_multiseed_eval_config.v1",
+  "status": "locked_requested",
+  "purpose": "Evaluate matched deterministic-MDG E0/E1 seeds 0/1/2 across leakage-controlled WSODD, SeaDronesSee, and FloW splits using one evaluator and one prediction contract",
+  "assets": {
+    "base_evaluator": "/root/autodl-tmp/ring3_setup/autodl/evaluate_e3_coco_areas.py",
+    "base_evaluator_sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc",
+    "robust_helper": "/root/autodl-tmp/ring3_setup/autodl/evaluate_pretrained_sgd_robustness.py",
+    "robust_helper_sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f"
+  },
+  "prediction": {
+    "imgsz": 960,
+    "batch": 8,
+    "chunk_size": 4,
+    "confidence_floor": 0.001,
+    "nms_iou": 0.7,
+    "prediction_max_det": 300,
+    "evaluation_max_det": 100,
+    "device": 0,
+    "iou_thresholds": "0.50:0.05:0.95",
+    "recall_points": 101,
+    "area_coordinates": "original image pixels"
+  },
+  "controlled_degradation": {
+    "source_config": "/root/autodl-tmp/ring3_setup/autodl/e1_mdg_config.json",
+    "source_config_sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+    "namespace_root": "ring3/cross-dataset/e0-e1/controlled-strong/v1",
+    "evaluated_conditions": ["normal", "low_light_strong", "glare_strong"],
+    "same_transform_for_matched_E0_E1": true
+  },
+  "training_contract": {
+    "pretrained": true,
+    "batch": 8,
+    "imgsz": 960,
+    "optimizer": "SGD",
+    "lr0": 0.006,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0000625,
+    "nbs": 8
+  },
+  "training_states": [
+    {"key": "wsodd_e0", "path": "/root/autodl-tmp/formal_state/wsodd_sequence_e0_multiseed_state.json"},
+    {"key": "wsodd_e1", "path": "/root/autodl-tmp/formal_state/wsodd_sequence_e1_deterministic_multiseed_state.json"},
+    {"key": "seadronessee_e0", "path": "/root/autodl-tmp/formal_state/seadronessee_e0_multiseed_state.json"},
+    {"key": "seadronessee_e1", "path": "/root/autodl-tmp/formal_state/seadronessee_e1_deterministic_multiseed_state.json"},
+    {"key": "flow_e0", "path": "/root/autodl-tmp/formal_state/flow_e0_multiseed_state.json"},
+    {"key": "flow_e1", "path": "/root/autodl-tmp/formal_state/flow_e1_deterministic_multiseed_state.json"}
+  ],
+  "datasets": [
+    {
+      "key": "FloW",
+      "protocol": "flow_source_temporal_disjoint_v1",
+      "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/flow_source_temporal_disjoint_v1.yaml",
+      "yaml_sha256": "aeb32a2ab114e906797195dff5236823f223f76544fd39b97d1d4c0143144eb2",
+      "split": "test",
+      "manifest": "/root/autodl-tmp/ring3_setup/autodl/manifests/flow_source_temporal_disjoint_v1/test.txt",
+      "manifest_sha256": "1cd110552ff016bf2414014f1d0ce7cc2608b404b6e70a7650171eb92edcca65",
+      "manifest_format": "basename",
+      "images": 344,
+      "classes": 1,
+      "models": [
+        {"key": "e0_seed0", "family": "E0", "seed": 0, "checkpoint": "/root/autodl-tmp/formal_flow_e0_multiseed/seed0_yolov8s_flow_source_temporal_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "897a13f0755463d4774cdc180749ff7432687d661a57e81e3725da1f50d8b55c"},
+        {"key": "e1_seed0", "family": "E1", "seed": 0, "checkpoint": "/root/autodl-tmp/formal_flow_e1_deterministic_multiseed/seed0_yolov8s_flow_source_temporal_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "45350b69285ec396635754359845cebe60597deaedf7ad70df9d41b6b7601105"},
+        {"key": "e0_seed1", "family": "E0", "seed": 1, "checkpoint": "/root/autodl-tmp/formal_flow_e0_multiseed/seed1_yolov8s_flow_source_temporal_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "b1870d67701d5c4e72c24824ba1c7732f5f3c788741467c4a3af16bb6859d1a0"},
+        {"key": "e1_seed1", "family": "E1", "seed": 1, "checkpoint": "/root/autodl-tmp/formal_flow_e1_deterministic_multiseed/seed1_yolov8s_flow_source_temporal_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "6ae05255e0a96ca63afe7db0a0cacd0279073256f1514fe722250e8e10f4447e"},
+        {"key": "e0_seed2", "family": "E0", "seed": 2, "checkpoint": "/root/autodl-tmp/formal_flow_e0_multiseed/seed2_yolov8s_flow_source_temporal_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "56792c1e81dd4d332a7148f7adb76985c27b496765e3a95c42f51f1efcb7d770"},
+        {"key": "e1_seed2", "family": "E1", "seed": 2, "checkpoint": "/root/autodl-tmp/formal_flow_e1_deterministic_multiseed/seed2_yolov8s_flow_source_temporal_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "2aecd5ff166e7dbf399da6bf61c025d24d4000035bf2a48974e35fe009edc177"}
+      ]
+    },
+    {
+      "key": "SeaDronesSee",
+      "protocol": "seadronessee_source_disjoint_v1",
+      "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/seadronessee_source_disjoint_v1.yaml",
+      "yaml_sha256": "66b63cf9f50952faa5abdc83979599f2de88c64178278fb5b2b4c698ed841f7c",
+      "split": "val",
+      "manifest": "/root/autodl-tmp/ring3_setup/autodl/manifests/seadronessee_source_disjoint_v1/val.tsv",
+      "manifest_sha256": "c03aabe92e34bda87e5d9c6839a243fc721916e72a95c8ce5949bb9e25410503",
+      "manifest_format": "tsv_last_column",
+      "images": 1555,
+      "classes": 5,
+      "models": [
+        {"key": "e0_seed0", "family": "E0", "seed": 0, "checkpoint": "/root/autodl-tmp/formal_pretrained_sgd_mainline/seed0_yolov8s_seadronessee_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "32f1bf5fcdc052417a4f6748de2f48c0ceab3dab1013bcf65028f3306ef2523f"},
+        {"key": "e1_seed0", "family": "E1", "seed": 0, "checkpoint": "/root/autodl-tmp/formal_seadronessee_e1_deterministic_multiseed/seed0_yolov8s_seadronessee_source_disjoint_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "d41fdfdbe4816d5ffe4728c165f6d1e9956c21de97677fd5b0006b0a83e7a7bf"},
+        {"key": "e0_seed1", "family": "E0", "seed": 1, "checkpoint": "/root/autodl-tmp/formal_seadronessee_e0_multiseed/seed1_yolov8s_seadronessee_source_disjoint_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "39d308e502a2532dc924cef806914e690389f5ba0e884f237a632972965961cc"},
+        {"key": "e1_seed1", "family": "E1", "seed": 1, "checkpoint": "/root/autodl-tmp/formal_seadronessee_e1_deterministic_multiseed/seed1_yolov8s_seadronessee_source_disjoint_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "b196e4647dfe221fd8bdf1dea6abdd650e7167479117d35745d45e7dbce81859"},
+        {"key": "e0_seed2", "family": "E0", "seed": 2, "checkpoint": "/root/autodl-tmp/formal_seadronessee_e0_multiseed/seed2_yolov8s_seadronessee_source_disjoint_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "408b9909ce279c246a7c729e5007c403003b48b0875cc081fc4a87e63151b2a9"},
+        {"key": "e1_seed2", "family": "E1", "seed": 2, "checkpoint": "/root/autodl-tmp/formal_seadronessee_e1_deterministic_multiseed/seed2_yolov8s_seadronessee_source_disjoint_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "6861d5729d3570a339a5c64f1a14909298d93ef41ff907cf08ab686d5ae60cfc"}
+      ]
+    },
+    {
+      "key": "WSODD",
+      "protocol": "wsodd_sequence_disjoint_v1",
+      "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/wsodd_sequence_disjoint_v1.yaml",
+      "yaml_sha256": "180965bbca7a5416d467b0d089965db2c8fc22751843795df295d1376c62907e",
+      "split": "test",
+      "manifest": "/root/autodl-tmp/ring3_setup/autodl/manifests/wsodd_sequence_disjoint_v1/test.txt",
+      "manifest_sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136",
+      "manifest_format": "basename",
+      "images": 2406,
+      "classes": 14,
+      "clean_anchors": {
+        "E0": {"path": "/root/autodl-tmp/formal_state/wsodd_sequence_e0_e1_paired_multiseed_fixed_test_metrics.json", "sha256": "9b245abbc05985ae21746dd96cec82a600dfc29f1aae87c4f89cc43e2e6bd9b7", "field": "E0_per_seed"},
+        "E1": {"path": "/root/autodl-tmp/formal_state/wsodd_sequence_e1_deterministic_multiseed_fixed_test_metrics.json", "sha256": "74d5fc8ce29c83aefa49883632f79664c7da32f10415a24407f061f0f2820108", "field": "E1_Deterministic_per_seed"}
+      },
+      "models": [
+        {"key": "e0_seed0", "family": "E0", "seed": 0, "checkpoint": "/root/autodl-tmp/formal_wsodd_pretrained_sgd_mainline/seed0_yolov8s_wsodd_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "f737422c2c87ed4bdbdc611ccf4f73431bbec9925ca231f9eb43565b32589704"},
+        {"key": "e1_seed0", "family": "E1", "seed": 0, "checkpoint": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_multiseed/seed0_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "e67daabe3704ef7cc3daa23e134000f7e588461fa947456360c0933e650b8032"},
+        {"key": "e0_seed1", "family": "E0", "seed": 1, "checkpoint": "/root/autodl-tmp/formal_wsodd_sequence_e0_multiseed/seed1_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "034a220f2b191eddf101a8d7e1483a3f375aad40ac802a22fff60ac5d1eea660"},
+        {"key": "e1_seed1", "family": "E1", "seed": 1, "checkpoint": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_multiseed/seed1_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "9beca04f74ce70d84c2606850c8cf97e8b90a68b8e5389d765065a5564aa8023"},
+        {"key": "e0_seed2", "family": "E0", "seed": 2, "checkpoint": "/root/autodl-tmp/formal_wsodd_sequence_e0_multiseed/seed2_yolov8s_wsodd_sequence_e0_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "01a137d4cdc6463112006c60843ae4992dd40c3eabda709602fc0b7d6331449a"},
+        {"key": "e1_seed2", "family": "E1", "seed": 2, "checkpoint": "/root/autodl-tmp/formal_wsodd_sequence_e1_deterministic_multiseed/seed2_yolov8s_wsodd_sequence_e1_mdg_deterministic_image_id_pretrained_sgd_img960_e150/weights/best.pt", "checkpoint_sha256": "1af2188e685a6986909d5344aa613966f1686ab8bee7d49bb17884e0e87d3a03"}
+      ]
+    }
+  ],
+  "output": {
+    "root": "/root/autodl-tmp/robustness_eval/cross_dataset_e0_e1_multiseed",
+    "state": "/root/autodl-tmp/formal_state/cross_dataset_e0_e1_multiseed_eval_state.json",
+    "events": "/root/autodl-tmp/formal_state/cross_dataset_e0_e1_multiseed_eval_events.jsonl",
+    "summary": "/root/autodl-tmp/formal_state/cross_dataset_e0_e1_multiseed_eval_summary.json",
+    "table_csv": "/root/autodl-tmp/formal_state/cross_dataset_e0_e1_multiseed_table.csv",
+    "log": "/root/autodl-tmp/logs/cross_dataset_e0_e1_multiseed_eval.log"
+  },
+  "execution": {
+    "screen": "ring3_cross_dataset_e0_e1_eval",
+    "stop_sentinel": "/root/autodl-tmp/formal_state/STOP_CROSS_DATASET_E0_E1_EVAL",
+    "evaluation_only": true,
+    "resume_from_condition_cache": true
+  },
+  "invariants": {
+    "same_evaluator_for_all_datasets_models_and_seeds": true,
+    "same_prediction_parameters_for_all_datasets_models_and_seeds": true,
+    "same_fixed_split_within_each_dataset": true,
+    "same_strong_degradation_transform_for_matched_E0_E1": true,
+    "paired_seeds_are_exactly_0_1_2": true,
+    "checkpoints_are_read_only": true,
+    "no_training_started": true,
+    "no_E2_E3_E4_training": true,
+    "no_git_commit_or_push": true
+  }
+}

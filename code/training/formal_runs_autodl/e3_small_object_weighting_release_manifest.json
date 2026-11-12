@@ -1,0 +1,78 @@
+{
+  "schema": "ring3.e3_small_object_weighting_release_manifest.v1",
+  "status": "locked",
+  "created_utc": "2026-08-28T14:00:00Z",
+  "purpose": "Single formal E3 run: dual-view detection with degraded-small target weighting alpha=1.5",
+  "files": [
+    {
+      "path": "E3_SMALL_OBJECT_WEIGHTING.md",
+      "sha256": "62997ed6c894c73732749886828184f3b74f4ed7aa16e73dbc020728a9e06fb5"
+    },
+    {
+      "path": "formal_e2_dualview_mainline_designation.json",
+      "sha256": "1c66bc145be4c74044be485485ebfbe1f63ec7833b95e555c3019864d799524e"
+    },
+    {
+      "path": "e3_small_object_weighting_config.json",
+      "sha256": "670473dc1fbdd223697a07839316442a42de29c5e38de597cfbcf28e89b4b389"
+    },
+    {
+      "path": "e3_small_object_weighting.py",
+      "sha256": "5df5e0d4b39f17c0abb08288ff0d826b4894f6245bdd90dd6be6458590ecd67b"
+    },
+    {
+      "path": "train_e3_small_object_weighting.py",
+      "sha256": "c825965504a3b7922b496192fcec5ddf56dfb52fe183a4c89e8146767ff8c03f"
+    },
+    {
+      "path": "evaluate_e3_coco_areas.py",
+      "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"
+    },
+    {
+      "path": "run_e3_small_object_weighting.sh",
+      "sha256": "bfecce93f61eb7e4abbafc8562c589e24cba0f067d75606482b0bc81522e72e0"
+    },
+    {
+      "path": "formal_experiment_lock.json",
+      "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"
+    },
+    {
+      "path": "formal_runtime_amendment.json",
+      "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"
+    },
+    {
+      "path": "e1_mdg_config.json",
+      "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"
+    },
+    {
+      "path": "formal_baseline_queue.py",
+      "sha256": "69a6d45298bee2c47da03e9ceadbe9895e53455120b16e96bf14d22e06bff517"
+    },
+    {
+      "path": "maritime_degradation.py",
+      "sha256": "b0d60602f77db9bbb935f5e48f44a5766f361ef35bc07e90fd06b23c3f8b85cc"
+    },
+    {
+      "path": "verify_yolo_dataset.py",
+      "sha256": "faf305177a9e61477affb7f42d5030a8142b95b22335be8b602e6e418813002c"
+    }
+  ],
+  "external_immutable_inputs": {
+    "pretrained_yolov8s_pt_sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+    "seadronessee_yaml_sha256": "66b63cf9f50952faa5abdc83979599f2de88c64178278fb5b2b4c698ed841f7c",
+    "seadronessee_manifest_sha256": "0030e4921a95d57722db66afb50a094c25fc3e6c00b93db5567fbbb196576360",
+    "new_formal_e2_state_sha256": "249e0cde222f0520f6c00406ddc22c79b7596f369c00f789043141b73e1f9326",
+    "new_formal_e2_protocol_sha256": "47036a666c03c78ea027bb6f07ef9dd8eaac9b145968047df5b118f98e9813ec",
+    "new_formal_e2_results_sha256": "3a272ecac8c235479223d158068585b24b088e92800762606b04b0a4e51cfe8a",
+    "new_formal_e2_args_sha256": "ce815854eb855d65134d8f6c57422ed41f2cfaa52318705849c2816245254525",
+    "new_formal_e2_runtime_evidence_sha256": "4a66ef5c1bb34ee9c9149939467b1542672928a151e6a0ef478c297e053a1dd7"
+  },
+  "prohibitions": {
+    "consistency_loss": true,
+    "severity_weighting": true,
+    "curriculum": true,
+    "cbam": true,
+    "focal_eiou": true,
+    "e4": true
+  }
+}

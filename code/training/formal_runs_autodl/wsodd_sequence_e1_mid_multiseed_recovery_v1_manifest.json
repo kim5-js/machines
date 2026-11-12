@@ -1,0 +1,33 @@
+{
+  "schema": "ring3.wsodd_sequence_e1_mid_multiseed_recovery_release.v1",
+  "status": "locked_additive_hotfix",
+  "purpose": "Resume the completed-seed1 E1-Mid multiseed queue after an adapter omitted the completion-details return value",
+  "parent_release_manifest_sha256": "5212739fe08ef947260103b5d478096661a635b391752193567dfef0065fc1ef",
+  "training_recipe_changed": false,
+  "dataset_protocol_changed": false,
+  "model_or_loss_changed": false,
+  "completed_seed1_reused_without_retraining": true,
+  "seed2_fresh_pretrained_initialization_required": true,
+  "files": [
+    {
+      "path": "wsodd_sequence_e1_mid_multiseed_release_manifest.json",
+      "sha256": "5212739fe08ef947260103b5d478096661a635b391752193567dfef0065fc1ef"
+    },
+    {
+      "path": "wsodd_sequence_e1_mid_multiseed_recovery_v1.py",
+      "sha256": "96f2d004148cd6fa8e1baa40d4a867608239f6021d7d359d452224d022ddb2bd"
+    },
+    {
+      "path": "run_wsodd_sequence_e1_mid_multiseed_recovery_v1.sh",
+      "sha256": "9fbef73492063b64a1b9c40f64181a2243f12cf361615af4f72bb8aef4f6cc87"
+    }
+  ],
+  "invariants": {
+    "original_release_untouched": true,
+    "seed1_artifacts_validated_before_reuse": true,
+    "only_missing_return_adapter_installed": true,
+    "no_cross_run_checkpoint_initialization": true,
+    "no_E2_E3_E4_training": true,
+    "same_fixed_test_evaluator": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "utc": "2026-09-11T22:16:21.669189+00:00",
+  "job": {
+    "key": "WSODD_bundle_seed0",
+    "dataset": "WSODD",
+    "arm": "bundle",
+    "seed": 0
+  },
+  "smoke": false,
+  "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+  "runtime": {
+    "ultralytics_version": "8.3.182",
+    "ultralytics_file": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/code/vendor/ultralytics/__init__.py",
+    "pretrained": false,
+    "scale": "s",
+    "parameters": 11223518,
+    "cbam_indices": [
+      4,
+      6
+    ],
+    "criterion": "v8DetectionLoss",
+    "bbox_loss": "focal_eiou",
+    "box": 4.0,
+    "dfl": 1.3,
+    "initial_state_sha256": "191196fe0fd15662b98441822760660fbce15aaecbd4ee982b6caa98eabad8de",
+    "train_images": 3977,
+    "batches_per_epoch": 995,
+    "optimizer": "SGD",
+    "amp": true,
+    "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+    "job": {
+      "key": "WSODD_bundle_seed0",
+      "dataset": "WSODD",
+      "arm": "bundle",
+      "seed": 0
+    },
+    "smoke": false,
+    "monitoring_revision": "recovery_v1",
+    "recovery_manifest_sha256": "ed51f53291d984898ef5bdd8802f6305599b32060c5133eff3fb69799877374b"
+  },
+  "epochs_completed": 150,
+  "maximum_epochs": 150,
+  "early_stopped": false,
+  "elapsed_seconds": 11964.65766865015,
+  "optimizer_step_calls": 75371,
+  "optimizer_parameter_changed": true,
+  "best_map_epoch": 148,
+  "peak_val_map": 0.21678,
+  "checkpoints": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_bundle_seed0/weights/best.pt",
+      "sha256": "e12fa18082d9d817173f53903cbe9c76b80ed1893cf0f3f0322a04013ab57d7e"
+    },
+    "best_map.pt": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_bundle_seed0/weights/best_map.pt",
+      "sha256": "d738a61b5a71083f189b1c0476cd8092ddea46633e36c884ce3ef6074fffcf64"
+    }
+  },
+  "results_sha256": "090707618932ce1cfc2ca089fcb9b4279af7051564628dcc5af4c0f731f63da6",
+  "monitoring_revision": "recovery_v1",
+  "recovery_manifest_sha256": "ed51f53291d984898ef5bdd8802f6305599b32060c5133eff3fb69799877374b",
+  "validation_overflow_epochs": [],
+  "failed_prefix_reproduced": null
+}

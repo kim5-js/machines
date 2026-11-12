@@ -1,0 +1,6 @@
+{
+  "key": "WSODD_baseline_seed123",
+  "dataset": "WSODD",
+  "arm": "baseline",
+  "seed": 123
+}

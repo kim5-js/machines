@@ -1,0 +1,174 @@
+{
+  "schema": "ring3.wsodd_pretrained_sgd_mainline_release_manifest.v1",
+  "status": "locked",
+  "purpose": "Immutable WSODD replication of the selected pretrained-SGD E0-E3 mainline, including fixed-test area, scene-stratified, and controlled-degradation evaluations",
+  "training_recipe_changed_from_selected_seadronessee_mainline": false,
+  "dataset_adaptation": {
+    "protocol": "wsodd_sequence_disjoint_v1",
+    "classes": 14,
+    "train_images": 3977,
+    "val_images": 1084,
+    "test_images": 2406,
+    "ignore_rule_transplanted_from_seadronessee": false
+  },
+  "selected_e3_alpha": 1.2,
+  "files": [
+    {
+      "path": "wsodd_pretrained_sgd_mainline_config.json",
+      "sha256": "62800cd45b6648f726575bc57bbeb377fa6f657061f859b689d49f5a5081fc8c"
+    },
+    {
+      "path": "train_wsodd_pretrained_sgd_mainline.py",
+      "sha256": "256ac80772bc3c0f23d6ac8e07877c43b333bb681e5b52898e39dbca0d79fd21"
+    },
+    {
+      "path": "wsodd_pretrained_sgd_validation_config.json",
+      "sha256": "844e06e1787638368a8c50c9213c82df6f6c112e62c1e02e57f6c4bf5831174b"
+    },
+    {
+      "path": "evaluate_wsodd_pretrained_sgd_validation.py",
+      "sha256": "9f4e88e3924ef70eca183bf07d797ad9a438274be5524d627342aacb8df680ad"
+    },
+    {
+      "path": "run_wsodd_pretrained_sgd_mainline.sh",
+      "sha256": "91cb8f91292cd2f932a5b0272b1cb27dce8870611f7646fa23553040df672ce6"
+    },
+    {
+      "path": "run_wsodd_pretrained_sgd_validation.sh",
+      "sha256": "924c91dc118d7c0b3f36749a87aaf8262504bf8a8ebe271f124d74db703cdd23"
+    },
+    {
+      "path": "wsodd_annotation_semantics_audit.json",
+      "sha256": "e53493e4a791595e7e7f18f53a5614f53106f09e6ad61a60b4dd23fb1b2d0efd"
+    },
+    {
+      "path": "datasets/wsodd_sequence_disjoint_v1.yaml",
+      "sha256": "180965bbca7a5416d467b0d089965db2c8fc22751843795df295d1376c62907e"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/protocol.json",
+      "sha256": "a2edac79e4b7782d6b39d3d91bf22bfa30469811c095310e5f258714fe9869a8"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/train.txt",
+      "sha256": "00c1052014c5bbb96488d419db4da08caa676bbfbb4f54ddfcf602305aeebae1"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/val.txt",
+      "sha256": "710669418ccb21f6d2425ca01aff437b792a60ee0fbff29e0425bd931a3590c9"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/test.txt",
+      "sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/trainval.txt",
+      "sha256": "6f5d646ee1b47963f4b084b3f6a907f8b24989609c2302935ab1c38464438585"
+    },
+    {
+      "path": "train_pretrained_sgd_mainline.py",
+      "sha256": "8d8d46976d2be9d2473886f7de25e91bbd788a4ed368bd51b7998d42fcc2e413"
+    },
+    {
+      "path": "pretrained_sgd_mainline_supervisor_patch.py",
+      "sha256": "0281cc5da384a6c936410cd5ca30a522ed01245586b789c11de2af572ba5e246"
+    },
+    {
+      "path": "train_pretrained_sgd_alpha_ablation.py",
+      "sha256": "2338248add22157ba58bf308c5525d2dde98868d9d272cb2d995978761f3b464"
+    },
+    {
+      "path": "train_pretrained_sgd_alpha_ablation_v2.py",
+      "sha256": "afc3c7c33e690db3a745b0c59ebc932cb7250ca2bddc722135e8903be670fc36"
+    },
+    {
+      "path": "pretrained_sgd_early_stop_utils.py",
+      "sha256": "2aa2a11aacba36fd99218164f47b30cafa1806b239f8ba772f48a6fd8c6ecc6b"
+    },
+    {
+      "path": "pretrained_sgd_mainline_entry.py",
+      "sha256": "bc7e1076bb43df1cff5deddcf1fcecfe6911ea5a00f71b4f78f92d44fb9d6dbe"
+    },
+    {
+      "path": "pretrained_sgd_mainline_models.py",
+      "sha256": "4f797d6a0e9428227266d9189c74f43a5d4c3f52d2b6e7020763412d845f8fca"
+    },
+    {
+      "path": "e3_small_object_weighting.py",
+      "sha256": "5df5e0d4b39f17c0abb08288ff0d826b4894f6245bdd90dd6be6458590ecd67b"
+    },
+    {
+      "path": "cbam_focal_formal_models.py",
+      "sha256": "58ad7ef9a2e996729f6263312cfd692880eaf9279eb946684611e31299667fff"
+    },
+    {
+      "path": "maritime_degradation.py",
+      "sha256": "b0d60602f77db9bbb935f5e48f44a5766f361ef35bc07e90fd06b23c3f8b85cc"
+    },
+    {
+      "path": "e1_mdg_config.json",
+      "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"
+    },
+    {
+      "path": "verify_yolo_dataset.py",
+      "sha256": "faf305177a9e61477affb7f42d5030a8142b95b22335be8b602e6e418813002c"
+    },
+    {
+      "path": "evaluate_e3_coco_areas.py",
+      "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"
+    },
+    {
+      "path": "evaluate_pretrained_sgd_robustness.py",
+      "sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f"
+    },
+    {
+      "path": "formal_experiment_lock.json",
+      "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"
+    },
+    {
+      "path": "formal_runtime_amendment.json",
+      "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"
+    }
+  ],
+  "post_training_validation": {
+    "fixed_test_area_metrics_for": [
+      "e0",
+      "e1",
+      "e2",
+      "e3"
+    ],
+    "manual_scene_categories": [
+      "Normal",
+      "Glare",
+      "Low-light",
+      "Mixed"
+    ],
+    "controlled_degradation_models": [
+      "e0",
+      "e2"
+    ],
+    "controlled_degradation_types": [
+      "glare",
+      "low_light"
+    ],
+    "controlled_degradation_levels": [
+      "mild",
+      "medium",
+      "strong"
+    ]
+  },
+  "prohibitions": {
+    "adamw": true,
+    "optimizer_auto": true,
+    "cbam": true,
+    "focal_eiou": true,
+    "consistency_loss": true,
+    "severity_weighting": true,
+    "curriculum": true,
+    "e4": true,
+    "cross_run_resume": true,
+    "resume_completed_checkpoint": true,
+    "noncanonical_run_directory": true,
+    "git_commit_or_push": true
+  }
+}

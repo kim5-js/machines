@@ -1,0 +1,9 @@
+{
+ "experiment_id": "AD0084",
+ "exported_from": "AD0084_best.pt",
+ "epoch_saved": -1,
+ "best_fitness": null,
+ "date": "2026-09-09T12:48:08.959576+08:00",
+ "version": "8.4.124",
+ "history_rows": 150
+}

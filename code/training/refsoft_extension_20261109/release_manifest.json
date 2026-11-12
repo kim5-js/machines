@@ -1,0 +1,1596 @@
+{
+  "schema": "refsoft.release.v1+extension_20261109",
+  "historical_unchanged_common_files": {
+    "data/augment.py": true,
+    "engine/trainer.py": true,
+    "nn/modules/conv.py": true,
+    "utils/metrics.py": true
+  },
+  "files": [
+    {
+      "path": "common.py",
+      "sha256": "b746565a8418b2dc92a5cc10a47022f0d42c76a1f7751ea05307befa05446d05",
+      "source": "D:\\ring3\\autodl\\refsoft_reproduction\\common.py"
+    },
+    {
+      "path": "evaluate.py",
+      "sha256": "eeb120463e5893fdcf05d51777da915bf7ecbc70ba35db396da0d1de3d9ad81e",
+      "source": "D:\\ring3\\autodl\\refsoft_reproduction\\evaluate.py"
+    },
+    {
+      "path": "evaluation_code/evaluate_e3_coco_areas.py",
+      "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc",
+      "source": "D:\\ring3\\autodl\\evaluate_e3_coco_areas.py"
+    },
+    {
+      "path": "evaluation_code/evaluate_pretrained_sgd_robustness.py",
+      "sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f",
+      "source": "D:\\ring3\\autodl\\evaluate_pretrained_sgd_robustness.py"
+    },
+    {
+      "path": "historical/baseline_args.yaml",
+      "sha256": "1ed2ac100b02b6fe70e19e54b5dbae5cb67ffef381ad602751528ca91dad3af9",
+      "source": "D:\\ring3\\训练总存档\\baseline\\WSODD_USV\\stage1_960_20260328_045554\\args.yaml"
+    },
+    {
+      "path": "historical/baseline_loss.py",
+      "sha256": "7db39673722ed103898966e2fa65d603dfb5a2d4d895e86d994b08ee8b3bc9d3",
+      "source": "D:\\ring3\\environments\\baseline_20251112\\yolo_baseline_20251112\\Lib\\site-packages\\ultralytics\\utils\\loss.py"
+    },
+    {
+      "path": "historical/bundle_args.yaml",
+      "sha256": "2f3f38f0fbcccb9d08c16c1600f8c6c86a0e11174b9e4d79d2e2e81116727238",
+      "source": "D:\\ring3\\训练总存档\\cbam_eiou\\WSODD_USV\\stage1_960_20260328_045554\\args.yaml"
+    },
+    {
+      "path": "historical/custom_losses/__init__.py",
+      "sha256": "0c9d8b7f71d4aa19c745a4c49c21700a0d3366dc00c33fed7f50540b17751e1b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\custom_losses\\__init__.py"
+    },
+    {
+      "path": "historical/custom_losses/focal_eiou.py",
+      "sha256": "2747886e43b8bfbc3a6242161e8e4fb90d15170aeb74042bc6e681fd46c64710",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\custom_losses\\focal_eiou.py"
+    },
+    {
+      "path": "historical/custom_losses/yolo_adapters.py",
+      "sha256": "2c9b424b6c78499906a1713ba0930ac66284d0765a45a9f1fbd0624367d9be61",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\custom_losses\\yolo_adapters.py"
+    },
+    {
+      "path": "historical/flow_refsoft_args.yaml",
+      "sha256": "10e664a2cfcab159d35733b28b396c73c90e32f15efe8d16a963cb9bc78b7ebf",
+      "source": "D:\\ring3\\训练总存档\\cbam_eiou_light_glare\\FloW_IMG\\stage1_960_flow_ref_soft_r010_20260510_170537\\args.yaml"
+    },
+    {
+      "path": "historical/light_glare_dataset.py",
+      "sha256": "2b582ab93b6caa9a3637aa39757dd0ffaa8a615a03b94e9be7cfb3d66bbb8e5b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\light_glare_dataset.py"
+    },
+    {
+      "path": "historical/recipes.json",
+      "sha256": "0d1e5dc7f08a7f16289175b10172d05fc4c72b39d47c42bafde2dcc9da102062",
+      "source": "generated from archived YAML"
+    },
+    {
+      "path": "historical/requirements.txt",
+      "sha256": "45fb6466eda2faf71cc4593f9d60c5959b239244d16ec0d7bab3989e4faecfc0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\requirements.txt"
+    },
+    {
+      "path": "historical/run_stage1_960_only2.py",
+      "sha256": "5adbe9424fd6c3c15ccbf3c66d9a9fab33b108f7141d40f089b71abff5a89ff6",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\run_stage1_960_only2.py"
+    },
+    {
+      "path": "historical/wsodd_refsoft_args.yaml",
+      "sha256": "81b7229c5a9fbaae78578b32de2c79174fcec179085ea26bb71606b80189c725",
+      "source": "D:\\ring3\\训练总存档\\cbam_eiou_light_glare\\WSODD_USV\\stage1_960_wsodd_lg_sweep_r010_ref_soft_20260510_041602\\args.yaml"
+    },
+    {
+      "path": "historical/yolov8s_cbam.yaml",
+      "sha256": "f6627bd5e91c5de8b6e994a459099b2e88a0112560c21ec55df15482dd32769b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolov8s_cbam.yaml"
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "ae398430157898c08d42c67dc2e024fb4048a81b663fd3614cbab3eba87875a2",
+      "source": "D:\\ring3\\autodl\\refsoft_reproduction\\prepare.py"
+    },
+    {
+      "path": "PROTOCOL_ZH.md",
+      "sha256": "577179c416e6ac5dedd7b841f8d3911840774d952cbae69aadb28b4300618df7",
+      "source": "D:\\ring3\\autodl\\refsoft_reproduction\\PROTOCOL_ZH.md"
+    },
+    {
+      "path": "supervise.py",
+      "sha256": "8ffeecdd27337159a2e4f546a3d66828ec807cf3d8912b48104c3fba815f1bb8",
+      "source": "D:\\ring3\\autodl\\refsoft_reproduction\\supervise.py"
+    },
+    {
+      "path": "train.py",
+      "sha256": "21c50f9630d6c7d77126ddd1923f08ec1e169eef91e6b81d38c0e93e3bbd3344",
+      "source": "refsoft release train.py with the 20261109 two-arm extension"
+    },
+    {
+      "path": "vendor/cpuinfo/__init__.py",
+      "sha256": "4fa82776a1808207c90aee3f88ece24e7a2608decacda00afce6137b013814c0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\cpuinfo\\__init__.py"
+    },
+    {
+      "path": "vendor/cpuinfo/__main__.py",
+      "sha256": "9d2c42e87aa18bed2537b6785b0b4a77141d7f771425e7dbe6139a842ce1e188",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\cpuinfo\\__main__.py"
+    },
+    {
+      "path": "vendor/cpuinfo/cpuinfo.py",
+      "sha256": "1c7c8394350da2f13743327786f8a23359e0c8e0b8883ee2ea81a2cf68939959",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\cpuinfo\\cpuinfo.py"
+    },
+    {
+      "path": "vendor/tqdm/__init__.py",
+      "sha256": "f6640d6124aa3fdf496acb9b102d4f3892cc9a1924047e9c259c4f211e46da94",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\__init__.py"
+    },
+    {
+      "path": "vendor/tqdm/__main__.py",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\__main__.py"
+    },
+    {
+      "path": "vendor/tqdm/_dist_ver.py",
+      "sha256": "9b901d608fa307ebfa3f4549ffbd22b07fe9db813348e192c15bee0199a498a6",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_dist_ver.py"
+    },
+    {
+      "path": "vendor/tqdm/_main.py",
+      "sha256": "f724af8268bfd92c38080a395035b44367717d3af26e8116187a217c2273d2c0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_main.py"
+    },
+    {
+      "path": "vendor/tqdm/_monitor.py",
+      "sha256": "524bbe0cf5a0cc9edd3b908ad3cc4a24af84fc5eaa43e241de4b2e5dccd2611d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_monitor.py"
+    },
+    {
+      "path": "vendor/tqdm/_tqdm.py",
+      "sha256": "2df2c2b89e9ba6c568f718a59ad057c849b5bc69d4085ae5896f398f727e9c3e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_tqdm.py"
+    },
+    {
+      "path": "vendor/tqdm/_tqdm_gui.py",
+      "sha256": "d371dcf0a6b2c49bde89e239fb4fb6346883a4bbf0f6365e9287c9515ec20b09",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_tqdm_gui.py"
+    },
+    {
+      "path": "vendor/tqdm/_tqdm_notebook.py",
+      "sha256": "06e1e22eec6eeae11f64568f256dd13e93dac5a55cb44400de47522520cbd61c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_tqdm_notebook.py"
+    },
+    {
+      "path": "vendor/tqdm/_tqdm_pandas.py",
+      "sha256": "73d8e9b5482280de9ac510e145de1189ff7c4e6c5ea297359c5345848a5b1541",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_tqdm_pandas.py"
+    },
+    {
+      "path": "vendor/tqdm/_utils.py",
+      "sha256": "ff813bddb7c38f87f5b37b0ce3634b1cdad90ce9228d9a16abe9fac562e4759f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\_utils.py"
+    },
+    {
+      "path": "vendor/tqdm/asyncio.py",
+      "sha256": "2a9dab4a43517fd291a9adddf58a6079943b2fb1197f62a2e1b49ced43c8ca8a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\asyncio.py"
+    },
+    {
+      "path": "vendor/tqdm/auto.py",
+      "sha256": "9c365f963ea9db32a48c108d068babae14bcd7361f672d7f750bdb724add5bca",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\auto.py"
+    },
+    {
+      "path": "vendor/tqdm/autonotebook.py",
+      "sha256": "61bf45e6e6a204f85f6c30c5a5bb681bc236614c37b9027cf6b5032db7d1eb0b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\autonotebook.py"
+    },
+    {
+      "path": "vendor/tqdm/cli.py",
+      "sha256": "49b2a537c432676a207a7aadfb04ffa7afecc7638e7428c2ca1a190459e59b22",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\cli.py"
+    },
+    {
+      "path": "vendor/tqdm/completion.sh",
+      "sha256": "8fbf4a6d29a9223fc4d758df4df057ac69d44f3297569435bc6550becc83465e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\completion.sh"
+    },
+    {
+      "path": "vendor/tqdm/contrib/__init__.py",
+      "sha256": "3a04b05579bebe50c9fb68a6b6843dcfca9da26e2c9cc491ced1fbd8a300f360",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\__init__.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/bells.py",
+      "sha256": "631d47a860a61eb1120803bbd348f9c04fff24295e34e0c9c5e761d628cf2c3d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\bells.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/concurrent.py",
+      "sha256": "2b5ca3968292e5644d1728cb46d8740e65393c09c36c5d00f860f6ecdf89e1af",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\concurrent.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/discord.py",
+      "sha256": "32d5482f5b3f7711f6d46e2c2fc141810e167a2db7868f449394fe0289a6bcd7",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\discord.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/itertools.py",
+      "sha256": "59d28a414e5e4b3b2a1eedbd48dfe81f5da1b98668d098a1aa88bdfa7561c33e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\itertools.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/logging.py",
+      "sha256": "36c62d9cab6d8f698cac69b9f2611da396bd0cfff6beff29672ae2992b96ba50",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\logging.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/slack.py",
+      "sha256": "78ffccaf9b10a27627887c7140d1ae7b78e4d899083e63d6159a886319ceba2d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\slack.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/telegram.py",
+      "sha256": "be7ffd4804cc6dbc27d8f01bcd20f2397e9abf7781074d5006e835d4fe07f8e8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\telegram.py"
+    },
+    {
+      "path": "vendor/tqdm/contrib/utils_worker.py",
+      "sha256": "1c93f9333d52d71cb31247b625aa89dac60b1d7003628a367a94f9033437f1e0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\contrib\\utils_worker.py"
+    },
+    {
+      "path": "vendor/tqdm/dask.py",
+      "sha256": "f448b9f1e56a4e8b2c44b8407d6c9414276e5d82a398b9b091a5c8cbe08761fb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\dask.py"
+    },
+    {
+      "path": "vendor/tqdm/gui.py",
+      "sha256": "493201dcaf220f30e090d52a588a6f708feed0e1ad6c6372e4dc2900b5e17d6b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\gui.py"
+    },
+    {
+      "path": "vendor/tqdm/keras.py",
+      "sha256": "a29f6c0646faaba73a770db0274483d99c293caef233555b838975422cb7308a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\keras.py"
+    },
+    {
+      "path": "vendor/tqdm/notebook.py",
+      "sha256": "1ad67721aa4b2f5bfc58d0da4d2bcfc346c9193c9fa7bd557f3e470e7033c753",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\notebook.py"
+    },
+    {
+      "path": "vendor/tqdm/rich.py",
+      "sha256": "63230f9041d5c98515511dda74929b557dba89398d2a934c7f70c4aa69be9bad",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\rich.py"
+    },
+    {
+      "path": "vendor/tqdm/std.py",
+      "sha256": "b568f3ebe4026bdd9aa988f3ecf21d90b50201f8b2fa525985e06d672208c8ed",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\std.py"
+    },
+    {
+      "path": "vendor/tqdm/tk.py",
+      "sha256": "1aed2ec17c0b0863d1187391762dd6bc12c68ac794a7fc715ff87f829f55a4ad",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\tk.py"
+    },
+    {
+      "path": "vendor/tqdm/tqdm.1",
+      "sha256": "6882f250f9364b838f7bfb96cb63f800c8d47f4a10e8f516d272d85c1f815b02",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\tqdm.1"
+    },
+    {
+      "path": "vendor/tqdm/utils.py",
+      "sha256": "e84d01430dd283bb8658a04cfdc0e7dcfe36b57b30461ce48206e10602c38e5f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\utils.py"
+    },
+    {
+      "path": "vendor/tqdm/version.py",
+      "sha256": "fb5c968dfbb73f47a0855b32b071f4edf6f376200335177346d60fa8e6aa4760",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\tqdm\\version.py"
+    },
+    {
+      "path": "vendor/ultralytics/__init__.py",
+      "sha256": "366169f19dd1934b35419bb822e06fdb02cb7fe3dce432c5772703e58e3d29e8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/assets/bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\assets\\bus.jpg"
+    },
+    {
+      "path": "vendor/ultralytics/assets/zidane.jpg",
+      "sha256": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\assets\\zidane.jpg"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/__init__.py",
+      "sha256": "ec483dba96a57d63f463b1636b1ed7cce8e3bbdb8a8399f28b5522777f964546",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/african-wildlife.yaml",
+      "sha256": "4ae968329f560190628060bc6b3f952c00ac1614ccefafcedbdca14ef52a7675",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\african-wildlife.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/Argoverse.yaml",
+      "sha256": "e1219a262a3d245524aec7072533e71ff4126d89b8f166e4f04170977f739ed7",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\Argoverse.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/brain-tumor.yaml",
+      "sha256": "aabc4f3bfb7dc316e7da41c5c0fdef193cd25a3d842d32de954c182f7fdbea77",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\brain-tumor.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/carparts-seg.yaml",
+      "sha256": "0387bd84cd6e9d36368e36485c688a49aac5e91f8077d47df6de7b3a0449dfbc",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\carparts-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco-pose.yaml",
+      "sha256": "518118f745e31f14c462c50c5d95d76b1cf1b37d7346e9fe3cb4cc468d62df7e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco.yaml",
+      "sha256": "8a9b555b33b580b44fb3be8caecd52a78ca36004787f70187a85303f4af850ac",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco128-seg.yaml",
+      "sha256": "927052d9e9ea1f3423e51e5fad4e2725dc4ab0514186af134351b524d89acfdb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco128-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco128.yaml",
+      "sha256": "a24fddcda054cd27740d67dee77d464ffb984c4a05e66210720a0c1d9c885480",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco128.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco8-grayscale.yaml",
+      "sha256": "f2fe86ea63b364740d750335630753056fe5b165a42d19c08a6c190472ad260f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco8-grayscale.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco8-multispectral.yaml",
+      "sha256": "9e55385b477cae5d5c54286d84e9343489a15430a6d2fa18dc5ad9b360f4958d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco8-multispectral.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco8-pose.yaml",
+      "sha256": "19f48e35297e3a1e1012bb68f7513fc2cde29bd65311898331a3ce6922cb755f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco8-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco8-seg.yaml",
+      "sha256": "133e36644eb11e58fc95c8ed3012493f6638eb4ab606e8b045f934f745e70601",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco8-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/coco8.yaml",
+      "sha256": "b73ac3635296f36007b20a42c6d7bfc8f920308229358e8f6f8178e930cfc649",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\coco8.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/crack-seg.yaml",
+      "sha256": "7eabd222ad5f4573b9e55fe0d93f7685c6005682811d9b1265047b0a89283d42",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\crack-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/dog-pose.yaml",
+      "sha256": "b11535243b440b89cb55fdaf927ee5c5ba7820b58d72013ea24f7aaf166fda57",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\dog-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/dota8-multispectral.yaml",
+      "sha256": "da53018b5437fe97346ae2b4d325fcd2817ba14328d1b525c2390eae9df786fb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\dota8-multispectral.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/dota8.yaml",
+      "sha256": "e67e21ff8cddaed5129261f90c727e24b3ef7e20137227889203f735e38fe672",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\dota8.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/DOTAv1.5.yaml",
+      "sha256": "559fca2855f41f662f945549f091dc2d6601676c6243a67e44e49388a5a94bb7",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\DOTAv1.5.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/DOTAv1.yaml",
+      "sha256": "26b0ee61c434254f65265080f9d0a430d928fe36a3e8c0151878ec7e3799feed",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\DOTAv1.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
+      "sha256": "767aff968798484e84a3f7fb575cae6c82ec31104c466d68cf20b9afbb93fa26",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\GlobalWheat2020.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/hand-keypoints.yaml",
+      "sha256": "e89176c30adf01f6956f933fc8b997cafee22055ed02df7516a4be43790975ad",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\hand-keypoints.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/HomeObjects-3K.yaml",
+      "sha256": "c44b52a8469dfabb5f1ae22b1118e385d21282098f96f697fb7d796732b3e742",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\HomeObjects-3K.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/ImageNet.yaml",
+      "sha256": "1af0d6ca92d51bf1f71faec08bc202d69bcae9fc1c4ed1791518733b53975c35",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\ImageNet.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/lvis.yaml",
+      "sha256": "9c442051d49d05c4d85b72f374ad9b6b793c48afa9ecd36067e4a80977f9be7b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\lvis.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/medical-pills.yaml",
+      "sha256": "44aee2405a430e4512e84b041aa95b163a28862ddc812b1421bb24ed422dc9db",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\medical-pills.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/Objects365.yaml",
+      "sha256": "bcbcdb4f7c60a4b47e6c786b1ce898cb362f0c89e245d7af812c8f7ad9bc4079",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\Objects365.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/open-images-v7.yaml",
+      "sha256": "c0af6fdce00674739190576aa018b4852d1f6b56fbe0b2eba00cd44968f112ac",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\open-images-v7.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/package-seg.yaml",
+      "sha256": "578bb24c3596ce07eddb8cbd1c95ae10b2ae6790277401d76da9f1308e93f065",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\package-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/signature.yaml",
+      "sha256": "801bd4dfbd79815c5501a7c8ff2698733197de47c47c0e01b6d6e232480e5cd9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\signature.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/SKU-110K.yaml",
+      "sha256": "6b9da57b5f89436607e9bd562cc531573ed1919dfa62c997816cb0d33deaf674",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\SKU-110K.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/tiger-pose.yaml",
+      "sha256": "63ff21b40e3efba866a6a1d35be231e2df5275a59e9d24b297f154b48d80ee7f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\tiger-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/VisDrone.yaml",
+      "sha256": "75801ec1ef380ab1a6c4003fcfa52765401dee979ac399770110dcb2ca230039",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\VisDrone.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/VOC.yaml",
+      "sha256": "a34f4558002caf5307ddfb4127f9fee1399cdf3c675492f51ea96a2915185534",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\VOC.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/datasets/xView.yaml",
+      "sha256": "3441066914ef4c669f724262143d65b45c8c9746f4e333b2385bbf27e3cdf889",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\datasets\\xView.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/default.yaml",
+      "sha256": "3197309575f0c2a78ece88a31446fa5dd6d438f832fd309ba4e8bdf6d72be99b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\default.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yolo11-cls-resnet18.yaml",
+      "sha256": "d58729f6a32bc296fcaeaedcaa1b7743ed6030dd11f3b537e679b68ff8ac76ba",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yolo11-cls-resnet18.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yolo11-cls.yaml",
+      "sha256": "d7b97919d37e56cb782ef69fb0adbeaba2e2f555fd52551c4f90a50ad8a4c1e1",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yolo11-cls.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yolo11-obb.yaml",
+      "sha256": "dccfdcd3a07ecbc75ae2dba71d5c5043e88550d2ca51fa1fa82653a671f91445",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yolo11-obb.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yolo11-pose.yaml",
+      "sha256": "fcdead2303f57b7722feaf3bdc1edcaa0ce502d8f37fe5f99c566a7a5e718de4",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yolo11-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yolo11-seg.yaml",
+      "sha256": "74628efbc4d94d81ee74fa9021da75d4c073b5012f8c287f4f5582154c44cffb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yolo11-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yolo11.yaml",
+      "sha256": "43d8a7c86acc77282ddf4966d6526e091e5b064c140ed4a6e4c0b68ecbc3784c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yolo11.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yoloe-11-seg.yaml",
+      "sha256": "fc9b4ca0dc86badc04f79afdc29ea406a1a6bde1da08a8a8e0de08893f2c58b8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yoloe-11-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/11/yoloe-11.yaml",
+      "sha256": "7ee6650baf516ec00fc01c4c9e14c12c20903adca1fd496f5742ac0836f5bd9f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\11\\yoloe-11.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/12/yolo12-cls.yaml",
+      "sha256": "04bbf9efc66e53e40ac7a1933565fa95776eb737ffd2b1a146b0b71eba7168d3",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\12\\yolo12-cls.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/12/yolo12-obb.yaml",
+      "sha256": "24cbe21403a60db5b468c37364daa2b293f4c315b0de6b4a9f6894c1e75fe163",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\12\\yolo12-obb.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/12/yolo12-pose.yaml",
+      "sha256": "32bf718d87252d0cf162132a8c82904dd893beda99bc45c1b5c9400c582068c0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\12\\yolo12-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/12/yolo12-seg.yaml",
+      "sha256": "441145cf86fde43ba97e0d1f9aa0a46788b56736a2fd0c89ac8e98da82eca1c3",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\12\\yolo12-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/12/yolo12.yaml",
+      "sha256": "65e03c2eeca62573cd8d9e719319191e4724b4368a0f35016f629cde008b0b5c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\12\\yolo12.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/rt-detr/rtdetr-l.yaml",
+      "sha256": "fe31aee2ba2d0679a34b6f4c912bcfc7fe1d3535a4bbaf227bcf8122f7ffa7a4",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\rt-detr\\rtdetr-l.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/rt-detr/rtdetr-resnet101.yaml",
+      "sha256": "0465a9eb5a252a4803fc2ce291e55282559f6addcbf610c82ba283923c339717",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\rt-detr\\rtdetr-resnet101.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/rt-detr/rtdetr-resnet50.yaml",
+      "sha256": "86b466a0bdb0f9172177ba1b11c4983dec83346df64315dfb5b447ff8bd57994",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\rt-detr\\rtdetr-resnet50.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/rt-detr/rtdetr-x.yaml",
+      "sha256": "b1f3b8915ce919a6d45f76786c7a3ae731f3e79092fe6403faa013cbf6b99b52",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\rt-detr\\rtdetr-x.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v10/yolov10b.yaml",
+      "sha256": "fef4f0cf88875b60de5fbc891aad290f9308da6f306e15b6556a512e10679917",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v10\\yolov10b.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v10/yolov10l.yaml",
+      "sha256": "5b35454c02cdb5f09ebee32e8ec8c3cc7893522b391d8deb4a71264388b4f9d0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v10\\yolov10l.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v10/yolov10m.yaml",
+      "sha256": "bfdf8a30df017ae2ff9504be0b7801b80cfeedcf437b3a8973151a1072cabb63",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v10\\yolov10m.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v10/yolov10n.yaml",
+      "sha256": "0ffa1d1aa45b952d88f04db71dc871923ab5f5135eb7f4010068b556f0f40e5e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v10\\yolov10n.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v10/yolov10s.yaml",
+      "sha256": "9851931e39525369eaea31b01063c360a9bfe276e5bc211f403f038d28dc4932",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v10\\yolov10s.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v10/yolov10x.yaml",
+      "sha256": "67006292a358b3ae9888904b1d0fb85547be481ae1ce4b130f6b2733d2332f7d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v10\\yolov10x.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v3/yolov3-spp.yaml",
+      "sha256": "86c33eca1756bfef17956b9a48e56a14970751567e1668c7e108e403d0872595",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v3\\yolov3-spp.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v3/yolov3-tiny.yaml",
+      "sha256": "fc3b4430904e4eb892693500dc0c392efc205f2737bfff3ebae0a9838e5c5324",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v3\\yolov3-tiny.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v3/yolov3.yaml",
+      "sha256": "16fb78fcf4f02c1a51c37478bf8550fb53c88a88e9a05643d6eb93672494612c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v3\\yolov3.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v5/yolov5-p6.yaml",
+      "sha256": "54a116ca492cca44a5cefbb2ee27f8c85a3d5a56e50b785da9c37127d6f01de9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v5\\yolov5-p6.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v5/yolov5.yaml",
+      "sha256": "403f1d45ee5ee72b39db05cf2af3499fadb61ffde25f48cfcc4ff6fbed9d671d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v5\\yolov5.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v6/yolov6.yaml",
+      "sha256": "36b471abf13ac979cc66a25c2d7ac83d9b63f1ea80c45c52033e0c0c519cc048",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v6\\yolov6.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yoloe-v8-seg.yaml",
+      "sha256": "f8579ae962415ad7949eee959b23a665407021480602ae338530abdfdea4a73c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yoloe-v8-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yoloe-v8.yaml",
+      "sha256": "bd063bb80973f0e7325e6a19ccb26db97672a2115a084e2962e6b5b41ff5b9dd",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yoloe-v8.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-cls-resnet101.yaml",
+      "sha256": "d09689a2cddd62b0ebcb2fca762cdf2d970651ac1a36d1478dc2f619924dce60",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-cls-resnet101.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-cls-resnet50.yaml",
+      "sha256": "0ef147e2fc29caa3d990b73fcd8e0a70241b7c01e3f4b52fde70232b1e1f7e8c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-cls-resnet50.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-cls.yaml",
+      "sha256": "1b9d269f0f82d125ab669665e70ce8bf576e81d8d930ceb34f7d2de5c42b7094",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-cls.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-ghost-p2.yaml",
+      "sha256": "d050553605d6804a189960eba10ca3e49707522d2282917807867d728a911357",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-ghost-p2.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-ghost-p6.yaml",
+      "sha256": "034fe2028c3131a9ecf95148c86b755f214054f64990c6bb137b9b545052d4c8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-ghost-p6.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-ghost.yaml",
+      "sha256": "49730834874a6953ccf13ddf906fd08de6e7573f95f836c57f31e65fdab02ca8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-ghost.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-obb.yaml",
+      "sha256": "92c36599acca5f15a006dc10e451b2e612b28e5c5c6f803592b78bffd9ad1190",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-obb.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-p2.yaml",
+      "sha256": "f1097b05e6a0b04de0ca8b390f443abbe123219fd7275ad22572a9186dfb305f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-p2.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-p6.yaml",
+      "sha256": "4ea22c6bc80d116d382a674bc710bdaea85decf087954aa4ce8883c673138a8d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-p6.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-pose-p6.yaml",
+      "sha256": "c066b105b7fdd87afa1375a4f2f79f759480df03a871977815c91200464a58d4",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-pose-p6.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-pose.yaml",
+      "sha256": "2ddcdb8885649d940c2d8076c33087aae97736295f2a9e27c7949d68642c17ab",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-pose.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-rtdetr.yaml",
+      "sha256": "11446877e41204b8a333bf5abf8238dce6e844559b2ca985686551c886b0d96a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-rtdetr.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-seg-p6.yaml",
+      "sha256": "6a71163c8f0b77ccdc083bdb1d00b1f05320d8f47ab090a3a082bba5cb65f118",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-seg-p6.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-seg.yaml",
+      "sha256": "8457a23855704d5e33bf4f08ae64c8bb325c519998918ed2222da8577db67ba5",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-world.yaml",
+      "sha256": "8d6a58a21f85d53880363e3a8a341d50fbdfd1f59c61b9e8147fb452fe0dceeb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-world.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8-worldv2.yaml",
+      "sha256": "302a8dd903b87e801cac5ac321319ca49ddfb1b4a03eb13e73958e878152f75c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8-worldv2.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v8/yolov8.yaml",
+      "sha256": "405a3c302eb6096103a99af4d82c1d2d8b2bbff469a228c55aac944b2c19672a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v8\\yolov8.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9c-seg.yaml",
+      "sha256": "5011e843f709576ca9eab3331d7469e3ab8101498a22b6e07778e21013d1bea2",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9c-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9c.yaml",
+      "sha256": "c7592eb3fda641d53d5776468345dd139593514de3f1fc067b53aedf1d9a5f92",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9c.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9e-seg.yaml",
+      "sha256": "595a54e631e0a14b823158abbe69ff49c3a61fd775332555217f17018f3bf3b7",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9e-seg.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9e.yaml",
+      "sha256": "3a5af63e5003a640fa3754e257200910cce4ac0ed26cdba5d6739a505f024b7f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9e.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9m.yaml",
+      "sha256": "59c290df146c0b524c800e361f1e31cebe05666b44e81df02afaa1950c64ab0f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9m.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9s.yaml",
+      "sha256": "8ffbf725668fb62b8cf1a289b75e59ff81cf442a075a7fc6e99d3bb7c099ca39",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9s.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/models/v9/yolov9t.yaml",
+      "sha256": "43c1a949713b7ee9a1b898908386b64a4b92fd49a75eaa7e7a86715bf0b4bc4a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\models\\v9\\yolov9t.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/trackers/botsort.yaml",
+      "sha256": "4e945a2b9907ffe41b8c243b7a4338b3fee3f08f2d8b7abc1eced60f3e2b1300",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\trackers\\botsort.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/cfg/trackers/bytetrack.yaml",
+      "sha256": "eaefad899964d7a12a13090d5da32bcdae8f0109968ffca982fdba2c60ad3c38",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\cfg\\trackers\\bytetrack.yaml"
+    },
+    {
+      "path": "vendor/ultralytics/data/__init__.py",
+      "sha256": "9c05da2f5a6e09cef3fcd8f340d9499e16d5853f4595adaeec3b2aa3bab57407",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/annotator.py",
+      "sha256": "b8081decafb2b9dc62c1d36a1f3d2e6df160e49b1f36569ee1c83176f08ccae6",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\annotator.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/augment.py",
+      "sha256": "3ecd6cfae83fa17772033e09caeafa3a6c73465cb3c0fdd53fede10da952c63f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\augment.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/base.py",
+      "sha256": "99172e7a12b5b6136ebb34062fa0f501a664a1def5a0745d613a1dff37506508",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\base.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/build.py",
+      "sha256": "4df30b48f31b13684665530b975efc35316b8a10b5fb9d2334eb757b1f5e971c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\build.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/converter.py",
+      "sha256": "744c44955d2f59de04983b59685302d1c94498b76344321d1625dfd353d4bd00",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\converter.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/dataset.py",
+      "sha256": "1a1a05cc18ae1af4ebff9fb7a73816bba0ffdda415c16fa1712ee40a8f17b1c3",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\dataset.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/loaders.py",
+      "sha256": "bbdb04c5318fcb58a2a9577fa76f735681244370b7ea0dab1341446d83c44f40",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\loaders.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/scripts/download_weights.sh",
+      "sha256": "d32f17b59c4eaeeedd5538570c55172c706e20280e22a64d530a722f8461ea58",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\scripts\\download_weights.sh"
+    },
+    {
+      "path": "vendor/ultralytics/data/scripts/get_coco.sh",
+      "sha256": "52e26925ea37a90a531d520d78ea663f43589a0f0f844144dc0f09de32ab9cfc",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\scripts\\get_coco.sh"
+    },
+    {
+      "path": "vendor/ultralytics/data/scripts/get_coco128.sh",
+      "sha256": "aa645097f84e2abb1d1eb4eb9f242e1481f4d680f3de57dacf5dfc3a019f2edf",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\scripts\\get_coco128.sh"
+    },
+    {
+      "path": "vendor/ultralytics/data/scripts/get_imagenet.sh",
+      "sha256": "86be361f5e9b338ee24f6eeb812ecca44a3e19e3990185105e0af40767309f8f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\scripts\\get_imagenet.sh"
+    },
+    {
+      "path": "vendor/ultralytics/data/split.py",
+      "sha256": "17a3bbddb01b1128fbd05419cea93275741e5e03d71871a20b4e9be4c90b1e34",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\split.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/split_dota.py",
+      "sha256": "aebfa52e94d455a159320815fdf51865d15520993fcdb6d23a9801fd0a79d3f3",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\split_dota.py"
+    },
+    {
+      "path": "vendor/ultralytics/data/utils.py",
+      "sha256": "600d1f2c0c318177446d09db89e12fe303c586d9e6257d4bebb2f355b5705599",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\data\\utils.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/__init__.py",
+      "sha256": "966e8c72415808f4dba88a17ef0d2cfdd6b176335e05e296e835e9a6fd7e4143",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/exporter.py",
+      "sha256": "56becaf187f7c327fdd59bc3a51a2c0288706bf5b4a1ee2a5be26faa28023df9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\exporter.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/model.py",
+      "sha256": "f3beeeda7d084b3d8238e62d10c52a41ed04f871c1e00b5bd83b87d57084f7c9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\model.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/predictor.py",
+      "sha256": "8979d407eb6f047b55a4a6c1fb910ab35c124440487ab754c56c77f4c68562e9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\predictor.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/results.py",
+      "sha256": "41c1dc6cf5652c18b2fc03f0001afe4f92bae4747c065d6b473c5ac238cfefa1",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\results.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/trainer.py",
+      "sha256": "dbc15ea804af411c4268af7a4970ccf817cf263ab2e4a3625a17fcbfa1974ee8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\trainer.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/tuner.py",
+      "sha256": "b1f43cff2ce02cd70694acb3f5bdaf033ca0806657890cdd679b4ab2dcaa8c73",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\tuner.py"
+    },
+    {
+      "path": "vendor/ultralytics/engine/validator.py",
+      "sha256": "8344ad1fa58e9fde7304dfa150b0c047952e835a54d9891a78d1f7cf3ab74958",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\engine\\validator.py"
+    },
+    {
+      "path": "vendor/ultralytics/hub/__init__.py",
+      "sha256": "ba53ed71e23786ab9dd379afaa85dc70169ad5ee27bde6300bd71d772b81525a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\hub\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/hub/auth.py",
+      "sha256": "e6e30fcd9b7c68ef98b27116003cdcd6a054b7d737d114c87eb1a8e52593aefe",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\hub\\auth.py"
+    },
+    {
+      "path": "vendor/ultralytics/hub/google/__init__.py",
+      "sha256": "6499d2eaceb0565efdda9f61e5a5269bd2b60e2d43ac79939356845097535e1b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\hub\\google\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/hub/session.py",
+      "sha256": "51e51245b75c95204f2507e948d19e635de06f53b6061ce1d008fb717ba6e8fe",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\hub\\session.py"
+    },
+    {
+      "path": "vendor/ultralytics/hub/utils.py",
+      "sha256": "e7ecb75814f953f2f466c71326b516bc6074d9063054017cd8e885aafbddd2c1",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\hub\\utils.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/__init__.py",
+      "sha256": "0ea40515827821096a2036fad47d47cdc9d953b4ae1cdfb8ddbc3de3e97e6004",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/fastsam/__init__.py",
+      "sha256": "1c627c10a94102c745f9ed9a23040b8d20c0148febd321d1d00d60ceba78bea1",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\fastsam\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/fastsam/model.py",
+      "sha256": "216d100a042018d5a3553a0422767c8d5c1e99f7375e73c0efc03fcd13b0df19",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\fastsam\\model.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/fastsam/predict.py",
+      "sha256": "7deb5af70f540fbc656df077a79402ba6df5459f9e0cc9d6b74d5509d55d4f8e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\fastsam\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/fastsam/utils.py",
+      "sha256": "cae0970780958d1c7c9437fad433fc07aa8cc7b4d57fb0329d0bdd59111e15ca",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\fastsam\\utils.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/fastsam/val.py",
+      "sha256": "a0bc41f2f04a4df893ede05b4f3be9aaaff1352bc33a319d3f527b7a01c6b020",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\fastsam\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/nas/__init__.py",
+      "sha256": "c326de1d9b805cc35e5cc8ca4db2b9e456665c9900e0af48a330de14cf4e07eb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\nas\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/nas/model.py",
+      "sha256": "092b5f139c74f2e3c827ec18ffc3585665655a2a26e684c5f644fa8c828ce527",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\nas\\model.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/nas/predict.py",
+      "sha256": "278513ee7c22fe1eb7949ddafe061a73e5acf301588a781920dc4ca92a1a5f91",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\nas\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/nas/val.py",
+      "sha256": "4144c4df3ba124b56a98319dda7ee249293b5fa8ca642471b9f16405bcb1618a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\nas\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/rtdetr/__init__.py",
+      "sha256": "fe310798e8c8fd03ff9d3dd72572e060743a6d71b810bf069ef9f5cbf79ebf58",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\rtdetr\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/rtdetr/model.py",
+      "sha256": "7b6bba9101186b04571863ba1db143135bb21dfb08aaf2a4e08a558e360de359",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\rtdetr\\model.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/rtdetr/predict.py",
+      "sha256": "26aa2babc3a41a05c20914bc0e67ae1908f75c9c44873f7b9b6da9ed5c735d3c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\rtdetr\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/rtdetr/train.py",
+      "sha256": "e850379c311c1f5762150f0acb4c44369f5c38e6004c7c54e9fe36cfd9e932fb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\rtdetr\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/rtdetr/val.py",
+      "sha256": "413ec934a149983f1da945525016fbf2df701ad13b284c3997dd82289539d133",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\rtdetr\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/__init__.py",
+      "sha256": "891ec1d3aac01278b6d5ea6d83c9f8acb38fd19fea57dcbd3cbf8bf779f8ffbb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/amg.py",
+      "sha256": "22972e21f0b9281462178b1daec3e5d5e716109cbbe5ac68d721b6debe4116cc",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\amg.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/build.py",
+      "sha256": "27a9fefd03982daeb78e57446668517bd0f722cfc0244f31c992d48f37d1c936",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\build.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/model.py",
+      "sha256": "8f54f0b0b9adc61897c9c794df554fcc65648d15c6ca5a612ab74f4b35094497",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\model.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/__init__.py",
+      "sha256": "966e8c72415808f4dba88a17ef0d2cfdd6b176335e05e296e835e9a6fd7e4143",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/blocks.py",
+      "sha256": "9673219dec6f5de8f3862c56450432aa3ae900ba0886e392c274865be73d9199",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\blocks.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/decoders.py",
+      "sha256": "53d8ea151903d0998eddeba04a6c0b0f4b109221aa2492f29a958d3bcde8b063",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\decoders.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/encoders.py",
+      "sha256": "b2bb71adfcb749f51aae40b8d4bd52f2d63819d16e794b91daa403159e993e5e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\encoders.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/memory_attention.py",
+      "sha256": "1755c90314b0868dbe2cc96b6a8fe28f432800b4ef8642be3958218b40f8714d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\memory_attention.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/sam.py",
+      "sha256": "0a33383363df465b501671c53a9d86e9001d624f41c5696eaf1f361525ff4d8a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\sam.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/tiny_encoder.py",
+      "sha256": "966508799f7edccf82dd898906cd775bab7ffddcde265a0e974a8547d2e5f1ec",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\tiny_encoder.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/transformer.py",
+      "sha256": "c5cda0ea06f48efafb70990793321b64e19c4eb9ac3a7da88efb87f8c548315b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\transformer.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/modules/utils.py",
+      "sha256": "f8f6122c4c6d05a8dba2d05d2da9fd274eda15a797274dd6ce8a40bf825c61de",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\modules\\utils.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/sam/predict.py",
+      "sha256": "477d898c4c5104be5cdb305c0dd6ae857e1433c13c90cac12e86b4b19f6f93a2",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\sam\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/utils/__init__.py",
+      "sha256": "966e8c72415808f4dba88a17ef0d2cfdd6b176335e05e296e835e9a6fd7e4143",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\utils\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/utils/loss.py",
+      "sha256": "13eeb54df2cf734e0875e2fa2251438adc83a0f8eefa8bf4a2e595fdc358e0a8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\utils\\loss.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/utils/ops.py",
+      "sha256": "3ebefb9fc5d6db9494131e17ddb06f5dc5486d17493e869726e1b429659ac114",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\utils\\ops.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/__init__.py",
+      "sha256": "a2bd23e71bdc334bac325b054d884d00e71052b8bbade0f4703f494796fbcc39",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/classify/__init__.py",
+      "sha256": "f7ef8755a34e7c8d4aeeb9ffad1a9c94bf055009e97de06b46a11021a430db13",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/classify/predict.py",
+      "sha256": "16a002d985dedb96d1c1e74c6611772f0d306a863e6bad3130a10b8710293fd2",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/classify/train.py",
+      "sha256": "57e85ebdce97ef17a69e9cabbbce0e7d3440efb78d9e4552304cf5ebf394be8e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/classify/val.py",
+      "sha256": "8906514ba0f7f98423ca00611690bc54224c234e4bdee50f7b8ba4c1b56d49d2",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\classify\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/detect/__init__.py",
+      "sha256": "18846c2d847e913e09271ee5878659005181663d1a79ba24b94d00ec96e30d50",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\detect\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/detect/predict.py",
+      "sha256": "c9252c7487fc770d346f35a17313758d9c0b58a3d14f633bf8ded334bde8e33a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\detect\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/detect/train.py",
+      "sha256": "1e5682a0727a6364e90975d669b311640a4062a06f8ee33f6102545792580afc",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\detect\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/detect/val.py",
+      "sha256": "abf9293f77b2550e734e4a90fa473926159a286aed21d374efa6ccb41eb07368",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\detect\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/model.py",
+      "sha256": "0e9791cf34ab8d6eecf3899e0ac4b5e41859c311db5964ce1fb7d5c10d25ac12",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\model.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/obb/__init__.py",
+      "sha256": "b509a91bcc151ec6a35a465d983e9c8c6a21278922eb88925d04fc258fddc9da",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\obb\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/obb/predict.py",
+      "sha256": "e2bd5e4a577a4cd26593d246e7a7be0d7ea83cbf2e041aa2bb3b72069c569471",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\obb\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/obb/train.py",
+      "sha256": "6e760500cbabed4bdbc390dcd3df92da07bb074e62197faddfb2ac81cd1e7fa8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\obb\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/obb/val.py",
+      "sha256": "a521d067a61e742aabc986ce88db5509665115e2986bc109cc0180d877aedebd",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\obb\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/pose/__init__.py",
+      "sha256": "eb7c66b8764b37357c23be878555c0ab87f65b429393c3a2f5e2fe636d382f24",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\pose\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/pose/predict.py",
+      "sha256": "3340bb65f557c7841782ffacce39da5d810f6acefa64b18080334d875186d2f2",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\pose\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/pose/train.py",
+      "sha256": "1b2bcd9c33c9dd416affdd0737cfc527475bc11930dc925356990c147d2f0b4a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\pose\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/pose/val.py",
+      "sha256": "e1a393828afc11c5af2c4379c026e4f48ec82c5bdbd6af3f1752e51ee931594b",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\pose\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/segment/__init__.py",
+      "sha256": "dc84e1859d7096463d16f9969bd704fb9f99c84e85d4583302d43a8ce385cf3c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\segment\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/segment/predict.py",
+      "sha256": "aa5a6b402667e3f6e98e9234f14d0c53d43dff58291ebc3fecc5f0b571359756",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\segment\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/segment/train.py",
+      "sha256": "5eb3e45d488dbb526f867f220dec3f45a2cb8d9037ba7eb9acaf901fd9ad348c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\segment\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/segment/val.py",
+      "sha256": "c342efc7424eaa3d681c9c66955843a98531652f72c732d6a1c3a2c703719caa",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\segment\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/world/__init__.py",
+      "sha256": "9e587c23ab7c84c1b3fef660f104a5b145b547ed9e2af9fd0865283cf4041a10",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\world\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/world/train.py",
+      "sha256": "c012a7482f93beb2963354dac6ac28d775dcc061f0c005f3358575b66a9c3a97",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\world\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/world/train_world.py",
+      "sha256": "964f73fc83463d24cffd6ed18e1deaad64a68c76b1389b469e0a27875723d923",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\world\\train_world.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/yoloe/__init__.py",
+      "sha256": "e922f2b5d26dc2edfba9ec1fec2a1b1bb0bb5a5d66fb1b4d76f09711ab1f3c31",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\yoloe\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/yoloe/predict.py",
+      "sha256": "1a64310907bbb0ba2602e8dd7b9de3433aaecebc8d9fa7c48d2e0e6a57f798fb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\yoloe\\predict.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/yoloe/train.py",
+      "sha256": "5d8a506129d20fcbe2ffd5528ff4b9a08b0d504aa6ddeebabcf4fcacd148fc76",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\yoloe\\train.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/yoloe/train_seg.py",
+      "sha256": "68257b33ca103af383167538a6265d261ded22b049600cd97d1551c75bd1831a",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\yoloe\\train_seg.py"
+    },
+    {
+      "path": "vendor/ultralytics/models/yolo/yoloe/val.py",
+      "sha256": "c9e6cf931c0a2adfff718d3965b875617838fc12b3ce97037370afdc52794800",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\models\\yolo\\yoloe\\val.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/__init__.py",
+      "sha256": "ae3a1c8980fd968fcaf9dfb5b3a4db7569253cb8d37041e4ece22544326cb481",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/autobackend.py",
+      "sha256": "50cf4e6d778b0749606a4d50e684a2d8803e47f3b0afa35d24d040b00de649ba",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\autobackend.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/__init__.py",
+      "sha256": "8dcced60bf1cd2f3041ae25f9bd2469a177cccd53a4da93b891d1d46009a8378",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/activation.py",
+      "sha256": "ef925c20c1f60aef464c2d947f9e6bff960ba7172b5d00da5687864348655005",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\activation.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/block.py",
+      "sha256": "8688a1f93f4fcbacd46434f245d720b59dbb43ac3d792c571f47470378b408c8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\block.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/conv.py",
+      "sha256": "78cfedd21430bc41f8ae5949b9ca9130dabb2288a91236d36bf10b44ebb8b9bb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\conv.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/head.py",
+      "sha256": "5a2609fa87445a2b1664a29b3aebe3d5d264524cb667a0f7c824c5aa244ef81d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\head.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/transformer.py",
+      "sha256": "3d6e7eea0cce3f7feb67fb80926c6f238da75396e4ae06e02ca0b2e4f0b9a71e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\transformer.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/modules/utils.py",
+      "sha256": "ae7f324ce6d91a4428a95ce36d958b6878b2b69a46e1f7e330c1382f0eb48253",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\modules\\utils.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/tasks.py",
+      "sha256": "23656f0c819f63729bdd72ebf0edb2da8370927def36cec259a4a977cb5614dd",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\tasks.py"
+    },
+    {
+      "path": "vendor/ultralytics/nn/text_model.py",
+      "sha256": "718c03fb47a5e15793a0304fe223c53901aac8441ab493811eb57238d2f72bfb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\nn\\text_model.py"
+    },
+    {
+      "path": "vendor/ultralytics/py.typed",
+      "sha256": "95aebb28195b8d737effe0df18d71d39c8d8ba6569286fd3930fbc9f9767181e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\py.typed"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/__init__.py",
+      "sha256": "66878041abd32e9f1a0a59e167db5b97a971cbce86c687f21af6564f1d9a5a42",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/ai_gym.py",
+      "sha256": "c307d3a97ec6de66579de3308a26c47d86d561a245fc9517dd241db1d414bc13",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\ai_gym.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/analytics.py",
+      "sha256": "687c0a8d2116ff7cb8ecbaf3ba025b3c1dd54064c340221be60a223eec679ab7",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\analytics.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/config.py",
+      "sha256": "09ebcbf25cde49b892000039d7809389db82836fd6874e0fd11681fe49b025af",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\config.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/distance_calculation.py",
+      "sha256": "4d85fba5194cd6fed74eaeb04d37c99a3dd61d3df344185145cbb9d2e650fc01",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\distance_calculation.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/heatmap.py",
+      "sha256": "841251fd9dcbbbd25cbc2684c2777eb8dfd61225cad7814345779d81a23ca2a5",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\heatmap.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/instance_segmentation.py",
+      "sha256": "ccf30163d8b19f8626668cc10f6132a302c169dbb874ebd9c24fa6eb91308039",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\instance_segmentation.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/object_blurrer.py",
+      "sha256": "f7a28e0046a093852812b9543222032ba8f5096b369cdd5d709e55ea997d2fef",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\object_blurrer.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/object_counter.py",
+      "sha256": "cc3f84608c6eff2eea085124bfa6aa57ad28302678aba6ff90bfecb572a87ff0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\object_counter.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/object_cropper.py",
+      "sha256": "9512ad5883407bd183c5abb55de8db8f276caa0da1ae91995cfb59c1382fc8a4",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\object_cropper.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/parking_management.py",
+      "sha256": "21f3d49f5e5a7a5c73e9864da3d598915125e483954b0f150f43aba4ab44c4f1",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\parking_management.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/queue_management.py",
+      "sha256": "8139082f1e1d55cb0a4595d2097b5e9641230918834b98b39dbdc59dd742eb57",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\queue_management.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/region_counter.py",
+      "sha256": "35c77afea2179924175310b0424818736fa723b2a27d0621c4f8b7a4e7a565a9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\region_counter.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/security_alarm.py",
+      "sha256": "73311a31ccb4e2afa20642aa4ffd7877c1f6d02141eb370a1ffdf59c11909f2c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\security_alarm.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/similarity_search.py",
+      "sha256": "735f132b4a96e40bda9d7536f27017e28fd6b41d520c0252b54b722c3b840474",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\similarity_search.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/solutions.py",
+      "sha256": "f5d4e4031d56fb4a1a646c0acb2b174f128260d0445789138518eab1079ad954",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\solutions.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/speed_estimation.py",
+      "sha256": "72183fb41b8a170dc49c58affe86cd0da5172c0a3e172a710bb82c0de07f5542",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\speed_estimation.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/streamlit_inference.py",
+      "sha256": "aa0bc7e50c495905a3f8936f0ae21167f3d5d88f6d1fe03acdb77154fae67510",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\streamlit_inference.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/templates/similarity-search.html",
+      "sha256": "9f2caeae95a592f6250de361fbbe13955e1cb42a5392cbe4572d987382264355",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\templates\\similarity-search.html"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/trackzone.py",
+      "sha256": "9084bde2b35f2f7c953c0b526e75bc17e68b3315e8c10b6c7ca341fa32decf3f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\trackzone.py"
+    },
+    {
+      "path": "vendor/ultralytics/solutions/vision_eye.py",
+      "sha256": "27f9ec5e15a485f5b3f131cd254e186a0e306cfbfbf3299bcba4a534a792ba4e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\solutions\\vision_eye.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/__init__.py",
+      "sha256": "665bbf220e68b27ee1a9c87f83905efdee29c1952479e4d089eb090a2d291462",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/basetrack.py",
+      "sha256": "fac9011456adce024500f37d16b9b5bb587f443520dd63a5c46e9e1d0c69d86c",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\basetrack.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/bot_sort.py",
+      "sha256": "a3b16023b861e5471f7399d43ab3f518a4db09eb43e0058e6cbdb06152c952fa",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\bot_sort.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/byte_tracker.py",
+      "sha256": "a7c81299d4e80a436a378b28d2b3bb713a53bca5c0bae5966e306df14c93effd",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\byte_tracker.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/track.py",
+      "sha256": "307332743b7f31f5dd8fa9da3b694bb843c5e3aa5951b0e6cf94aab6bd7cf89e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\track.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/utils/__init__.py",
+      "sha256": "966e8c72415808f4dba88a17ef0d2cfdd6b176335e05e296e835e9a6fd7e4143",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\utils\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/utils/gmc.py",
+      "sha256": "f48bc27f932105863da69547ca4374dbfa01587984f7c47c11a60529aca4755d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\utils\\gmc.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/utils/kalman_filter.py",
+      "sha256": "3cf98cd25c0131d4ff846a23bdf2e852c05414c04130d440c4a6cc7106b7c09d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\utils\\kalman_filter.py"
+    },
+    {
+      "path": "vendor/ultralytics/trackers/utils/matching.py",
+      "sha256": "b9262dcb0aa2d6513fb8d375170b8114fc8849f0d05c732ef0ae4a1faf67ad12",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\trackers\\utils\\matching.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/__init__.py",
+      "sha256": "2b27335e7d922d1d20f319025697cd68f9210c243803cbcbb7df6d798bbb9acb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/autobatch.py",
+      "sha256": "df79bc6208202c8865b43a8c5d9e4e13e146b364221eb976f8b7e0635988e1cc",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\autobatch.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/autodevice.py",
+      "sha256": "02f81716df1cd4283889c2a1d076e1873f149954365a3c9f75f91e6f60bccdc9",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\autodevice.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/benchmarks.py",
+      "sha256": "6edb22fc1d267cb3df844f06aec0698bbf6f97b4916a6d1862780d140b18f009",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\benchmarks.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/__init__.py",
+      "sha256": "8732fadd171ee9591984fe0b7229bd2ca8da762c5a406f3a9caa8f864ec8912d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\__init__.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/base.py",
+      "sha256": "389eb3e006150ad5cefb0e8f483462c28d537364587acf81cf0293b2bf60fe1d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\base.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/clearml.py",
+      "sha256": "c6be66653fdc63a018fddadb7425c5b7e0e9d9f3a34442f12c3843a1184d3e0f",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\clearml.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/comet.py",
+      "sha256": "62dbfe75a9693011f7eaab1822953f56bb9111af41570149cd80da719b251105",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\comet.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/dvc.py",
+      "sha256": "355d035cc4350794a4e5f9a1eb44055069227eb033fafc22b79aa175fb32a977",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\dvc.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/hub.py",
+      "sha256": "d519868826a88351a84f26bd380c8610b6d0d8b9395f711687b4583319ecd2ca",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\hub.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/mlflow.py",
+      "sha256": "e8af08e738a3d72ab74d45bd73904140da9dcf3dc85ee8108f02a804ebd5e9a8",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\mlflow.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/neptune.py",
+      "sha256": "8fca5e72695cb0cf051b32ca5a8070e7152c8b9b7c1391eec58ed3479526fcef",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\neptune.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/raytune.py",
+      "sha256": "4ba06ad7aa100d0f014209d9cc0d3324718dfc106bf2200cfd6b46a0b8847308",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\raytune.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/tensorboard.py",
+      "sha256": "3033c15bb6837acfbae8e13a62a2975efa80fc4a1c8f310c1d618cfbccfdbd44",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\tensorboard.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/callbacks/wb.py",
+      "sha256": "4e6ffe691af608ddf6309918f6dca5a4c04991bd34efe31244d490eeb0c9e505",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\callbacks\\wb.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/checks.py",
+      "sha256": "abae14e702b27a30fed96d9f08fa89d0e89a6b8ff8beada957157dc29ea5333e",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\checks.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/dist.py",
+      "sha256": "03d9431ad19e7d38d256f552dfcc3ce8639d6ed2f33410d9b8318ad0c4f83d12",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\dist.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/downloads.py",
+      "sha256": "03baf82e9594a231a46a6f7e550dd896ef829f59405062b2244e95cf041ba7b3",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\downloads.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/errors.py",
+      "sha256": "5d3f51bbb8afa018287cae8f967ca2806a1aec599fe67121c87b670fef134572",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\errors.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/export.py",
+      "sha256": "2cafb09539726ffcc82ad4af3a67e6bd1ef445c514f42b7d5010ede709fdfeb6",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\export.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/files.py",
+      "sha256": "6426cb1a57a21747fe3ea61f6b1305016a29f3cc3b535869ade1d797c6f6928d",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\files.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/instance.py",
+      "sha256": "742f37ac7bd05dc880103deb3a249c16cdc1397f4e234e84cb59a3f6c8d42afb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\instance.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/loss.py",
+      "sha256": "066d9186fd9f5e6c2cde03c791ed8f76fd63c672444f914544d32b57e4b302cb",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\loss.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/metrics.py",
+      "sha256": "b508d8c4f774752ce3b9c5722357af2084ae9f2611900057317550a3ae260141",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\metrics.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/ops.py",
+      "sha256": "f1deb47dba67b6b7b12b780fa0b512ea6580606aedad069008e632449b028ee2",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\ops.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/patches.py",
+      "sha256": "3cf5a22b3c066c2bee6b02f30ca551f2d58e4009596c9062f20ffe03a7930980",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\patches.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/plotting.py",
+      "sha256": "e131bf27caf3f5554face5db7634473c9655809ac5615984604d017150dda257",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\plotting.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/tal.py",
+      "sha256": "6976b03a7867f278bae6d256216f8f62a5abfd346f96d6c7063ad3a3ba3a9434",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\tal.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/torch_utils.py",
+      "sha256": "0fbe8fbe6c3938a87ebdde1a26438c3b47522db3395b31abec799db39e213c49",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\torch_utils.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/triton.py",
+      "sha256": "33ba9ee11ced8800c125011640a68842ca7de0444527ff3f0d41c347a4d710e3",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\triton.py"
+    },
+    {
+      "path": "vendor/ultralytics/utils/tuner.py",
+      "sha256": "6c7af4f45cfed3eb747a2e79817e70261fa86f288042889c3fb1d454cd88f2a0",
+      "source": "D:\\ring3\\environments\\cbam_eiou_light_glare_20260506\\yolo_cbam_eiou_light_glare_20260506\\Lib\\site-packages\\ultralytics\\utils\\tuner.py"
+    }
+  ]
+}

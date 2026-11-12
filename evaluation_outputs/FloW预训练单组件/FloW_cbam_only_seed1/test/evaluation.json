@@ -1,0 +1,225 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-09-21T01:33:20.137911+00:00",
+  "job": {
+    "key": "FloW_cbam_only_seed1",
+    "dataset": "FloW",
+    "seed": 1,
+    "arm": "cbam_only",
+    "model_key": "yolov8s",
+    "family": "ablation",
+    "phase": "full",
+    "run_dir": "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/runs/FloW_cbam_only_seed1",
+    "data_yaml": "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/dataset.yaml",
+    "epochs": 150
+  },
+  "evaluation_split": "test",
+  "dedicated_test": true,
+  "observed_source_group_disjoint": true,
+  "unknown_video_provenance_guaranteed": false,
+  "request_sha256": "c805ee4fb20409be4ee033217f2765c47116b904f699132e65ae399976872a44",
+  "adapter_manifest_sha256": "19487480795a7df365feb48164a5eb8fc6145457014aa0fb66fcbf1d130b8d10",
+  "completion_sha256": "445b1a98bfa81752f65da7fea6e6e11194d3c35286b63bc8c158fdeb2c61c396",
+  "checkpoint_sha256": "959b95ee6fd76a4ce9ac5e11823dcbb60ceaa42728535e37770df8fdd66292f5",
+  "checkpoint_selection": {
+    "rule": "native Ultralytics 8.4.124 best.pt; mAP50-95 fitness",
+    "epoch": 29,
+    "fitness": 0.37343
+  },
+  "evaluation_images": 541,
+  "evaluation_boxes": 1090,
+  "manifest_sha256": "bad1371dd87d58a1ec863eee6103b85b493388cab68cc50955c9a61ef2ef62b4",
+  "official_coco": {
+    "evaluator": {
+      "name": "official_pycocotools_COCOeval",
+      "version": "2.0.10",
+      "iouType": "bbox",
+      "maxDets": [
+        1,
+        10,
+        100
+      ],
+      "coordinates": "original_image_pixels",
+      "category_mapping": "YOLO zero-based class plus one",
+      "iscrowd": 0
+    },
+    "inference": {
+      "imgsz": 960,
+      "batch": 1,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "half": false,
+      "augment": false,
+      "rect": false,
+      "device": 0
+    },
+    "metrics": {
+      "mAP50-95": 0.403909496455783,
+      "mAP50": 0.8241818710357773,
+      "mAP75": 0.33806792828164756,
+      "APsmall": 0.2532658177720433,
+      "APmedium": 0.5233493310837378,
+      "APlarge": 0.5259530133626157,
+      "AR1": 0.26917431192660546,
+      "AR10": 0.5119266055045871,
+      "AR100": 0.5295412844036698,
+      "ARsmall": 0.40990099009900993,
+      "ARmedium": 0.6305882352941176,
+      "ARlarge": 0.648
+    },
+    "per_class_AP": {
+      "bottle": 0.403909496455783
+    },
+    "actual_batch_probe": {
+      "forward_calls": 541,
+      "maximum_forward_batch": 1,
+      "input_dtypes": [
+        "torch.float32"
+      ],
+      "input_shapes": [
+        [
+          1,
+          3,
+          960,
+          960
+        ]
+      ]
+    },
+    "images": 541,
+    "predictions": 12765,
+    "ground_truth_sha256": "ca8a4dceb793716b07fe0961db780de395c6ad2afd283dc8bfbc7793fba907af",
+    "predictions_sha256": "2c6d951b01c273c74c693f6003250fc2612748ecf4313605447f3d13bcf27b33",
+    "arrays_sha256": "650d6aa4b4824f8f1a56c80480286b2712365abaad47ce18a4d617bc0254fe3d",
+    "self_test": {
+      "status": "passed",
+      "checks": [
+        "perfect detection",
+        "missing area remains null",
+        "absent class remains null",
+        "empty detections",
+        "wrong category"
+      ]
+    },
+    "preprocessing": "imgsz=960 rect=False FP32 batch=1; native architecture predictor and postprocessing"
+  },
+  "historical_secondary": {
+    "evaluator": "frozen_project_COCO_style_area_evaluator",
+    "metrics": {
+      "mAP50": 0.857777805220312,
+      "mAP50-95": 0.42187841440621154,
+      "APsmall": 0.2677810340719246,
+      "APmedium": 0.5428620172615817,
+      "APlarge": 0.5320614295458908
+    },
+    "area_details": {
+      "all": {
+        "AP50": 0.857777805220312,
+        "AP50_95": 0.42187841440621154,
+        "positive_gt_count": 1090,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 1090,
+            "AP50": 0.857777805220312,
+            "AP50_95": 0.42187841440621154,
+            "AP_by_iou": {
+              "0.50": 0.857777805220312,
+              "0.55": 0.8087227050793266,
+              "0.60": 0.7218404410499936,
+              "0.65": 0.6212273808046103,
+              "0.70": 0.49747077231581743,
+              "0.75": 0.355052283609095,
+              "0.80": 0.2188783527774731,
+              "0.85": 0.10461262287678523,
+              "0.90": 0.02649021304162714,
+              "0.95": 0.006711567287074939
+            }
+          }
+        ]
+      },
+      "small": {
+        "AP50": 0.777709399529277,
+        "AP50_95": 0.2677810340719246,
+        "positive_gt_count": 505,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 505,
+            "AP50": 0.777709399529277,
+            "AP50_95": 0.2677810340719246,
+            "AP_by_iou": {
+              "0.50": 0.777709399529277,
+              "0.55": 0.6804868566025161,
+              "0.60": 0.5169746949931553,
+              "0.65": 0.35238935206483585,
+              "0.70": 0.19787366739526177,
+              "0.75": 0.0998165132709929,
+              "0.80": 0.03892939892437852,
+              "0.85": 0.012629872122076169,
+              "0.90": 0.000982418862442159,
+              "0.95": 1.816695431010991e-05
+            }
+          }
+        ]
+      },
+      "medium": {
+        "AP50": 0.9442651207084715,
+        "AP50_95": 0.5428620172615817,
+        "positive_gt_count": 510,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 510,
+            "AP50": 0.9442651207084715,
+            "AP50_95": 0.5428620172615817,
+            "AP_by_iou": {
+              "0.50": 0.9442651207084715,
+              "0.55": 0.9257320300297547,
+              "0.60": 0.8933387406607379,
+              "0.65": 0.8397776841569125,
+              "0.70": 0.7444221864791857,
+              "0.75": 0.5475492077471182,
+              "0.80": 0.3519209281234612,
+              "0.85": 0.14964009007456458,
+              "0.90": 0.02949893711085908,
+              "0.95": 0.0024752475247524753
+            }
+          }
+        ]
+      },
+      "large": {
+        "AP50": 0.7473450825182907,
+        "AP50_95": 0.5320614295458908,
+        "positive_gt_count": 75,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 75,
+            "AP50": 0.7473450825182907,
+            "AP50_95": 0.5320614295458908,
+            "AP_by_iou": {
+              "0.50": 0.7473450825182907,
+              "0.55": 0.7439729872296317,
+              "0.60": 0.7112434894891831,
+              "0.65": 0.6841837944635311,
+              "0.70": 0.6278400101043027,
+              "0.75": 0.6158555876541285,
+              "0.80": 0.5201266218528563,
+              "0.85": 0.443142965562106,
+              "0.90": 0.19000638568836878,
+              "0.95": 0.03689737089650994
+            }
+          }
+        ]
+      }
+    },
+    "prediction_evidence": {
+      "finite_images": 541,
+      "finite_boxes": 11911
+    },
+    "raw_sha256": "ad3f39165aca13a22bfc2e6cbff102b5f2ec15653e6987adf30fd5484f007d22",
+    "note": "Unchanged historical evaluator and chunked prediction. Only area_evaluation.metrics are used; legacy raw WSODD text is not dataset evidence. Separate from official COCOeval and native training metrics."
+  },
+  "test_used_for_model_selection": false
+}

@@ -1,0 +1,703 @@
+{
+  "protocol": "wsodd_sequence_disjoint_v1",
+  "rationale": "56/14/30 development split preserves the source paper's 70/30 train-test ratio while reserving 20% of the 70% development pool for validation",
+  "seed": 42,
+  "gap_seconds": 60.0,
+  "ratios": {
+    "train": 0.56,
+    "val": 0.14,
+    "test": 0.3
+  },
+  "optimization_score": 2.6041474785021936,
+  "total_images": 7467,
+  "sequence_groups": 147,
+  "split_images": {
+    "train": 3977,
+    "val": 1084,
+    "test": 2406
+  },
+  "split_groups": {
+    "train": 89,
+    "val": 26,
+    "test": 32
+  },
+  "split_class_instances": {
+    "train": {
+      "0": 88,
+      "1": 1541,
+      "2": 4707,
+      "3": 1118,
+      "4": 94,
+      "5": 68,
+      "6": 621,
+      "7": 200,
+      "8": 396,
+      "9": 358,
+      "10": 837,
+      "11": 357,
+      "12": 2053,
+      "13": 98
+    },
+    "val": {
+      "0": 1,
+      "1": 366,
+      "2": 1175,
+      "3": 225,
+      "4": 24,
+      "5": 14,
+      "6": 203,
+      "7": 45,
+      "8": 97,
+      "9": 80,
+      "10": 252,
+      "11": 100,
+      "12": 449,
+      "13": 47
+    },
+    "test": {
+      "0": 5,
+      "1": 702,
+      "2": 2297,
+      "3": 671,
+      "4": 49,
+      "5": 28,
+      "6": 400,
+      "7": 109,
+      "8": 202,
+      "9": 176,
+      "10": 451,
+      "11": 212,
+      "12": 921,
+      "13": 74
+    }
+  },
+  "class_group_support": {
+    "0": {
+      "instances": 94,
+      "groups_with_class": 3,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0090",
+          "instances": 88
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0017",
+          "instances": 5
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0023",
+          "instances": 1
+        }
+      ]
+    },
+    "1": {
+      "instances": 2609,
+      "groups_with_class": 53,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0095",
+          "instances": 692
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0005",
+          "instances": 277
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0017",
+          "instances": 215
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0020",
+          "instances": 203
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0019",
+          "instances": 194
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0015",
+          "instances": 170
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0016",
+          "instances": 116
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0007",
+          "instances": 82
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0000",
+          "instances": 70
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0122",
+          "instances": 55
+        }
+      ]
+    },
+    "2": {
+      "instances": 8179,
+      "groups_with_class": 114,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0092",
+          "instances": 730
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0019",
+          "instances": 489
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0089",
+          "instances": 432
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0090",
+          "instances": 417
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0036",
+          "instances": 388
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0017",
+          "instances": 359
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0103",
+          "instances": 344
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0096",
+          "instances": 309
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0020",
+          "instances": 303
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0097",
+          "instances": 294
+        }
+      ]
+    },
+    "3": {
+      "instances": 2014,
+      "groups_with_class": 42,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0096",
+          "instances": 449
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0090",
+          "instances": 368
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0092",
+          "instances": 197
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0089",
+          "instances": 161
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0095",
+          "instances": 142
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0101",
+          "instances": 115
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0098",
+          "instances": 104
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0094",
+          "instances": 64
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0051",
+          "instances": 45
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0065",
+          "instances": 43
+        }
+      ]
+    },
+    "4": {
+      "instances": 167,
+      "groups_with_class": 26,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0033",
+          "instances": 22
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0068",
+          "instances": 14
+        },
+        {
+          "group": "win:sequence:0005",
+          "instances": 13
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0034",
+          "instances": 12
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0063",
+          "instances": 12
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0029",
+          "instances": 10
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0042",
+          "instances": 10
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0043",
+          "instances": 9
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0065",
+          "instances": 8
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0028",
+          "instances": 7
+        }
+      ]
+    },
+    "5": {
+      "instances": 110,
+      "groups_with_class": 16,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0090",
+          "instances": 21
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0071",
+          "instances": 16
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0103",
+          "instances": 15
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0058",
+          "instances": 14
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0051",
+          "instances": 9
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0057",
+          "instances": 9
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0072",
+          "instances": 6
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0073",
+          "instances": 4
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0059",
+          "instances": 3
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0101",
+          "instances": 3
+        }
+      ]
+    },
+    "6": {
+      "instances": 1224,
+      "groups_with_class": 52,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0101",
+          "instances": 213
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0102",
+          "instances": 179
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0090",
+          "instances": 174
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0098",
+          "instances": 163
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0095",
+          "instances": 120
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0096",
+          "instances": 63
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0103",
+          "instances": 45
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0091",
+          "instances": 30
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0035",
+          "instances": 26
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0097",
+          "instances": 18
+        }
+      ]
+    },
+    "7": {
+      "instances": 354,
+      "groups_with_class": 21,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0017",
+          "instances": 105
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0007",
+          "instances": 88
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0019",
+          "instances": 42
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0058",
+          "instances": 21
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0020",
+          "instances": 16
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0059",
+          "instances": 12
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0055",
+          "instances": 11
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0063",
+          "instances": 11
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0004",
+          "instances": 8
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0008",
+          "instances": 6
+        }
+      ]
+    },
+    "8": {
+      "instances": 695,
+      "groups_with_class": 27,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0007",
+          "instances": 130
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0104",
+          "instances": 110
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0017",
+          "instances": 72
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0091",
+          "instances": 71
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0127",
+          "instances": 51
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0103",
+          "instances": 47
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0119",
+          "instances": 44
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0073",
+          "instances": 24
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0126",
+          "instances": 24
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0072",
+          "instances": 19
+        }
+      ]
+    },
+    "9": {
+      "instances": 614,
+      "groups_with_class": 40,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0065",
+          "instances": 63
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0029",
+          "instances": 60
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0028",
+          "instances": 52
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0038",
+          "instances": 48
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0037",
+          "instances": 42
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0062",
+          "instances": 32
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0060",
+          "instances": 28
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0059",
+          "instances": 25
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0027",
+          "instances": 21
+        },
+        {
+          "group": "win:sequence:0005",
+          "instances": 19
+        }
+      ]
+    },
+    "10": {
+      "instances": 1540,
+      "groups_with_class": 48,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0097",
+          "instances": 362
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0038",
+          "instances": 203
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0035",
+          "instances": 197
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0027",
+          "instances": 124
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0105",
+          "instances": 102
+        },
+        {
+          "group": "win:sequence:0005",
+          "instances": 66
+        },
+        {
+          "group": "win:sequence:0008",
+          "instances": 65
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0104",
+          "instances": 63
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0028",
+          "instances": 37
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0034",
+          "instances": 32
+        }
+      ]
+    },
+    "11": {
+      "instances": 669,
+      "groups_with_class": 69,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0017",
+          "instances": 77
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0035",
+          "instances": 65
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0016",
+          "instances": 38
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0112",
+          "instances": 36
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0015",
+          "instances": 30
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0073",
+          "instances": 28
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0014",
+          "instances": 21
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0042",
+          "instances": 20
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0036",
+          "instances": 19
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0021",
+          "instances": 16
+        }
+      ]
+    },
+    "12": {
+      "instances": 3423,
+      "groups_with_class": 75,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0063",
+          "instances": 378
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0060",
+          "instances": 309
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0062",
+          "instances": 298
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0071",
+          "instances": 281
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0066",
+          "instances": 276
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0065",
+          "instances": 192
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0059",
+          "instances": 183
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0068",
+          "instances": 165
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0064",
+          "instances": 123
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0070",
+          "instances": 123
+        }
+      ]
+    },
+    "13": {
+      "instances": 219,
+      "groups_with_class": 6,
+      "largest_groups": [
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0060",
+          "instances": 65
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0059",
+          "instances": 62
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0057",
+          "instances": 36
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0058",
+          "instances": 36
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0062",
+          "instances": 11
+        },
+        {
+          "group": "ip:192.168.0.64_01_:sequence:0051",
+          "instances": 9
+        }
+      ]
+    }
+  },
+  "group_overlap": {
+    "train-val": 0,
+    "train-test": 0,
+    "val-test": 0
+  },
+  "manifests": {
+    "train": {
+      "path": "train.txt",
+      "sha256": "00c1052014c5bbb96488d419db4da08caa676bbfbb4f54ddfcf602305aeebae1",
+      "lines": 3977
+    },
+    "val": {
+      "path": "val.txt",
+      "sha256": "710669418ccb21f6d2425ca01aff437b792a60ee0fbff29e0425bd931a3590c9",
+      "lines": 1084
+    },
+    "test": {
+      "path": "test.txt",
+      "sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136",
+      "lines": 2406
+    },
+    "trainval": {
+      "path": "trainval.txt",
+      "sha256": "6f5d646ee1b47963f4b084b3f6a907f8b24989609c2302935ab1c38464438585",
+      "lines": 5061
+    }
+  }
+}

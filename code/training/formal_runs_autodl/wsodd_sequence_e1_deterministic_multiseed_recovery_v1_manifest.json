@@ -1,0 +1,34 @@
+{
+  "schema": "ring3.wsodd_sequence_e1_deterministic_multiseed_recovery_release.v1",
+  "status": "locked_additive_hotfix",
+  "purpose": "Resume the completed-seed0 deterministic E1 multiseed queue after an adapter omitted the completion-details return value",
+  "parent_release_manifest_sha256": "1268eef8ea6cfb974ff806424bbea7e844440f65f2abd68de31cd4268ae2dd71",
+  "training_recipe_changed": false,
+  "dataset_protocol_changed": false,
+  "deterministic_assignment_changed": false,
+  "model_or_loss_changed": false,
+  "completed_seed0_reused_without_retraining": true,
+  "seed1_seed2_fresh_pretrained_initialization_required": true,
+  "files": [
+    {
+      "path": "wsodd_sequence_e1_deterministic_multiseed_release_manifest.json",
+      "sha256": "1268eef8ea6cfb974ff806424bbea7e844440f65f2abd68de31cd4268ae2dd71"
+    },
+    {
+      "path": "wsodd_sequence_e1_deterministic_multiseed_recovery_v1.py",
+      "sha256": "d69e738b6924097a56d26ac87ca82ce28962b8c60a278a47e0106f651b170a7b"
+    },
+    {
+      "path": "run_wsodd_sequence_e1_deterministic_multiseed_recovery_v1.sh",
+      "sha256": "f610cc6b6c7c0cc9521e71f5775c9282d1ad45565e1a6a3a090a2365ad51cecd"
+    }
+  ],
+  "invariants": {
+    "original_release_untouched": true,
+    "seed0_artifacts_validated_before_reuse": true,
+    "only_missing_return_adapter_installed": true,
+    "no_cross_run_checkpoint_initialization": true,
+    "no_E2_E3_E4_training": true,
+    "same_fixed_test_evaluator": true
+  }
+}

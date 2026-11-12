@@ -1,0 +1,124 @@
+﻿block,dataset,configuration,seed,folder,epochs_run,source
+Detector reference,SDS,RT-DETR-L,0,01_检测器参照/seadronessee__rtdetr_l,150,run folder
+Detector reference,SDS,YOLO11s,0,01_检测器参照/seadronessee__yolo11s,150,run folder
+Detector reference,SDS,YOLO26s,0,01_检测器参照/seadronessee__yolo26s,150,run folder
+Detector reference,SDS,YOLOv8s,0,01_检测器参照/seadronessee__yolov8s,150,run folder
+Detector reference,WSODD,RT-DETR-L,0,01_检测器参照/wsodd__rtdetr_l,150,run folder
+Detector reference,WSODD,YOLO11s,0,01_检测器参照/wsodd__yolo11s,150,run folder
+Detector reference,WSODD,YOLO26s,0,01_检测器参照/wsodd__yolo26s,150,run folder
+Detector reference,WSODD,YOLOv8s,0,01_检测器参照/wsodd__yolov8s,150,run folder
+Detector reference,FloW,RT-DETR-L,0,01_检测器参照/flow__rtdetr_l,150,run folder
+Detector reference,FloW,YOLO11s,0,01_检测器参照/flow__yolo11s,150,run folder
+Detector reference,FloW,YOLO26s,0,01_检测器参照/flow__yolo26s,150,run folder
+Detector reference,FloW,YOLOv8s,0,01_检测器参照/flow__yolov8s,150,run folder
+Training strategies,FloW,Standard training,0,03_训练策略_FloW/FloW_E0_seed0,150,run folder
+Training strategies,FloW,Standard training,1,03_训练策略_FloW/FloW_E0_seed1,150,run folder
+Training strategies,FloW,Standard training,2,03_训练策略_FloW/FloW_E0_seed2,150,run folder
+Training strategies,FloW,Paired views,0,03_训练策略_FloW/FloW_E2_seed0,148,run folder
+Training strategies,FloW,Paired views,1,03_训练策略_FloW/FloW_E2_seed1,150,run folder
+Training strategies,FloW,Paired views,2,03_训练策略_FloW/FloW_E2_seed2,150,run folder
+Training strategies,FloW,Paired views + small-object weighting,0,03_训练策略_FloW/FloW_E3_seed0,150,run folder
+Training strategies,FloW,Paired views + small-object weighting,1,03_训练策略_FloW/FloW_E3_seed1,150,run folder
+Training strategies,FloW,Paired views + small-object weighting,2,03_训练策略_FloW/FloW_E3_seed2,150,run folder
+Training strategies,FloW,Standard training,123,03_训练策略_FloW/FloW_E0_seed123,150,run folder
+Training strategies,FloW,Standard training,3407,03_训练策略_FloW/FloW_E0_seed3407,150,run folder
+Training strategies,FloW,Standard training,42,03_训练策略_FloW/FloW_E0_seed42,150,run folder
+Training strategies,FloW,Paired views,123,03_训练策略_FloW/FloW_E2_seed123,150,run folder
+Training strategies,FloW,Paired views,3407,03_训练策略_FloW/FloW_E2_seed3407,150,run folder
+Training strategies,FloW,Paired views,42,03_训练策略_FloW/FloW_E2_seed42,150,run folder
+Matched controls,FloW,Identical paired views,0,03_训练策略_FloW/FloW_E2C_seed0,138,run folder
+Matched controls,FloW,Identical paired views,1,03_训练策略_FloW/FloW_E2C_seed1,150,run folder
+Matched controls,FloW,Identical paired views,123,03_训练策略_FloW/FloW_E2C_seed123,150,run folder
+Matched controls,FloW,Identical paired views,2,03_训练策略_FloW/FloW_E2C_seed2,150,run folder
+Matched controls,FloW,Identical paired views,3407,03_训练策略_FloW/FloW_E2C_seed3407,150,run folder
+Matched controls,FloW,Identical paired views,42,03_训练策略_FloW/FloW_E2C_seed42,150,run folder
+Training strategies,FloW,Paired views + small-object weighting,123,03_训练策略_FloW/FloW_E3_seed123,150,run folder
+Training strategies,FloW,Paired views + small-object weighting,3407,03_训练策略_FloW/FloW_E3_seed3407,150,run folder
+Training strategies,FloW,Paired views + small-object weighting,42,03_训练策略_FloW/FloW_E3_seed42,147,run folder
+Matched controls (from scratch),WSODD,Scratch reference,0,04_匹配对照_WSODD从头训练/WSODD_baseline_seed0,150,run folder
+Matched controls (from scratch),WSODD,Scratch reference,1,04_匹配对照_WSODD从头训练/WSODD_baseline_seed1,150,run folder
+Matched controls (from scratch),WSODD,Scratch reference,42,04_匹配对照_WSODD从头训练/WSODD_baseline_seed42,150,run folder
+Matched controls (from scratch),WSODD,Attention + localization loss,0,04_匹配对照_WSODD从头训练/WSODD_bundle_seed0,150,run folder
+Matched controls (from scratch),WSODD,Attention + localization loss,1,04_匹配对照_WSODD从头训练/WSODD_bundle_seed1,150,run folder
+Matched controls (from scratch),WSODD,Attention + localization loss,42,04_匹配对照_WSODD从头训练/WSODD_bundle_seed42,150,run folder
+Matched controls (from scratch),WSODD,Clean copies,0,04_匹配对照_WSODD从头训练/WSODD_duplicate_seed0,150,run folder
+Matched controls (from scratch),WSODD,Clean copies,1,04_匹配对照_WSODD从头训练/WSODD_duplicate_seed1,150,run folder
+Matched controls (from scratch),WSODD,Clean copies,42,04_匹配对照_WSODD从头训练/WSODD_duplicate_seed42,150,run folder
+Matched controls (from scratch),WSODD,GlareSoft copies,0,04_匹配对照_WSODD从头训练/WSODD_refsoft_seed0,150,run folder
+Matched controls (from scratch),WSODD,GlareSoft copies,1,04_匹配对照_WSODD从头训练/WSODD_refsoft_seed1,150,run folder
+Matched controls (from scratch),WSODD,GlareSoft copies,42,04_匹配对照_WSODD从头训练/WSODD_refsoft_seed42,150,run folder
+Matched controls (from scratch),WSODD,Adjusted loss weights,0,04_匹配对照_WSODD从头训练/WSODD_weights_only_seed0,150,run folder
+Matched controls (from scratch),WSODD,Adjusted loss weights,1,04_匹配对照_WSODD从头训练/WSODD_weights_only_seed1,149,run folder
+Matched controls (from scratch),WSODD,Adjusted loss weights,42,04_匹配对照_WSODD从头训练/WSODD_weights_only_seed42,150,run folder
+Matched controls (from scratch),WSODD,Scratch reference,123,04_匹配对照_WSODD从头训练/WSODD_baseline_seed123,150,run folder
+Matched controls (from scratch),WSODD,Scratch reference,2,04_匹配对照_WSODD从头训练/WSODD_baseline_seed2,150,run folder
+Matched controls (from scratch),WSODD,Scratch reference,3407,04_匹配对照_WSODD从头训练/WSODD_baseline_seed3407,150,run folder
+Matched controls (from scratch),WSODD,Attention + localization loss,123,04_匹配对照_WSODD从头训练/WSODD_bundle_seed123,150,run folder
+Matched controls (from scratch),WSODD,Attention + localization loss,2,04_匹配对照_WSODD从头训练/WSODD_bundle_seed2,150,run folder
+Matched controls (from scratch),WSODD,Attention + localization loss,3407,04_匹配对照_WSODD从头训练/WSODD_bundle_seed3407,150,run folder
+Matched controls (from scratch),WSODD,Attention only,0,04_匹配对照_WSODD从头训练/WSODD_cbam_only_seed0,150,run folder
+Matched controls (from scratch),WSODD,Attention only,1,04_匹配对照_WSODD从头训练/WSODD_cbam_only_seed1,144,run folder
+Matched controls (from scratch),WSODD,Attention only,123,04_匹配对照_WSODD从头训练/WSODD_cbam_only_seed123,150,run folder
+Matched controls (from scratch),WSODD,Attention only,2,04_匹配对照_WSODD从头训练/WSODD_cbam_only_seed2,150,run folder
+Matched controls (from scratch),WSODD,Attention only,3407,04_匹配对照_WSODD从头训练/WSODD_cbam_only_seed3407,150,run folder
+Matched controls (from scratch),WSODD,Attention only,42,04_匹配对照_WSODD从头训练/WSODD_cbam_only_seed42,150,run folder
+Matched controls (from scratch),WSODD,Clean copies,123,04_匹配对照_WSODD从头训练/WSODD_duplicate_seed123,150,run folder
+Matched controls (from scratch),WSODD,Clean copies,2,04_匹配对照_WSODD从头训练/WSODD_duplicate_seed2,150,run folder
+Matched controls (from scratch),WSODD,Clean copies,3407,04_匹配对照_WSODD从头训练/WSODD_duplicate_seed3407,150,run folder
+Matched controls (from scratch),WSODD,Localization loss only,0,04_匹配对照_WSODD从头训练/WSODD_focal_only_seed0,150,run folder
+Matched controls (from scratch),WSODD,Localization loss only,1,04_匹配对照_WSODD从头训练/WSODD_focal_only_seed1,150,run folder
+Matched controls (from scratch),WSODD,Localization loss only,123,04_匹配对照_WSODD从头训练/WSODD_focal_only_seed123,150,run folder
+Matched controls (from scratch),WSODD,Localization loss only,2,04_匹配对照_WSODD从头训练/WSODD_focal_only_seed2,148,run folder
+Matched controls (from scratch),WSODD,Localization loss only,3407,04_匹配对照_WSODD从头训练/WSODD_focal_only_seed3407,150,run folder
+Matched controls (from scratch),WSODD,Localization loss only,42,04_匹配对照_WSODD从头训练/WSODD_focal_only_seed42,150,run folder
+Matched controls (from scratch),WSODD,GlareSoft copies,123,04_匹配对照_WSODD从头训练/WSODD_refsoft_seed123,150,run folder
+Matched controls (from scratch),WSODD,GlareSoft copies,2,04_匹配对照_WSODD从头训练/WSODD_refsoft_seed2,150,run folder
+Matched controls (from scratch),WSODD,GlareSoft copies,3407,04_匹配对照_WSODD从头训练/WSODD_refsoft_seed3407,150,run folder
+Matched controls (from scratch),WSODD,Adjusted loss weights,123,04_匹配对照_WSODD从头训练/WSODD_weights_only_seed123,145,run folder
+Matched controls (from scratch),WSODD,Adjusted loss weights,2,04_匹配对照_WSODD从头训练/WSODD_weights_only_seed2,150,run folder
+Matched controls (from scratch),WSODD,Adjusted loss weights,3407,04_匹配对照_WSODD从头训练/WSODD_weights_only_seed3407,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + clean copies,0,05_匹配对照_WSODD预训练副本/WSODD_pretrained_clean_seed0,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + clean copies,1,05_匹配对照_WSODD预训练副本/WSODD_pretrained_clean_seed1,122,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + clean copies,123,05_匹配对照_WSODD预训练副本/WSODD_pretrained_clean_seed123,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + clean copies,2,05_匹配对照_WSODD预训练副本/WSODD_pretrained_clean_seed2,141,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + clean copies,3407,05_匹配对照_WSODD预训练副本/WSODD_pretrained_clean_seed3407,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + clean copies,42,05_匹配对照_WSODD预训练副本/WSODD_pretrained_clean_seed42,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + GlareSoft copies,0,05_匹配对照_WSODD预训练副本/WSODD_pretrained_glaresoft_seed0,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + GlareSoft copies,1,05_匹配对照_WSODD预训练副本/WSODD_pretrained_glaresoft_seed1,118,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + GlareSoft copies,123,05_匹配对照_WSODD预训练副本/WSODD_pretrained_glaresoft_seed123,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + GlareSoft copies,2,05_匹配对照_WSODD预训练副本/WSODD_pretrained_glaresoft_seed2,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + GlareSoft copies,3407,05_匹配对照_WSODD预训练副本/WSODD_pretrained_glaresoft_seed3407,150,run folder
+Matched controls (pretrained fine-tuning),WSODD,Pretrained + GlareSoft copies,42,05_匹配对照_WSODD预训练副本/WSODD_pretrained_glaresoft_seed42,112,run folder
+Training strategies,SDS,Standard training,0,02_训练策略_SDS_WSODD/SDS_E0_seed0,125,exported from AD0061_last.pt (weights not copied)
+Training strategies,SDS,Standard training,1,02_训练策略_SDS_WSODD/SDS_E0_seed1,113,exported from AD0069_last.pt (weights not copied)
+Training strategies,SDS,Standard training,2,02_训练策略_SDS_WSODD/SDS_E0_seed2,116,exported from AD0070_last.pt (weights not copied)
+Training strategies,SDS,Fixed single view,0,02_训练策略_SDS_WSODD/SDS_E1_seed0,122,exported from AD0071_last.pt (weights not copied)
+Training strategies,SDS,Fixed single view,1,02_训练策略_SDS_WSODD/SDS_E1_seed1,123,exported from AD0072_last.pt (weights not copied)
+Training strategies,SDS,Fixed single view,2,02_训练策略_SDS_WSODD/SDS_E1_seed2,127,exported from AD0073_last.pt (weights not copied)
+Training strategies,WSODD,Standard training,0,02_训练策略_SDS_WSODD/WSODD_E0_seed0,150,exported from AD0076_best.pt (weights not copied)
+Training strategies,WSODD,Standard training,1,02_训练策略_SDS_WSODD/WSODD_E0_seed1,118,exported from AD0080_best.pt (weights not copied)
+Training strategies,WSODD,Standard training,123,02_训练策略_SDS_WSODD/WSODD_E0_seed123,150,exported from AD0082_best.pt (weights not copied)
+Training strategies,WSODD,Standard training,2,02_训练策略_SDS_WSODD/WSODD_E0_seed2,150,exported from AD0081_best.pt (weights not copied)
+Training strategies,WSODD,Standard training,3407,02_训练策略_SDS_WSODD/WSODD_E0_seed3407,150,exported from AD0083_best.pt (weights not copied)
+Training strategies,WSODD,Standard training,42,02_训练策略_SDS_WSODD/WSODD_E0_seed42,150,exported from AD0084_best.pt (weights not copied)
+Training strategies,WSODD,Fixed single view,0,02_训练策略_SDS_WSODD/WSODD_E1_seed0,150,exported from AD0085_best.pt (weights not copied)
+Training strategies,WSODD,Fixed single view,1,02_训练策略_SDS_WSODD/WSODD_E1_seed1,150,exported from AD0086_best.pt (weights not copied)
+Training strategies,WSODD,Fixed single view,123,02_训练策略_SDS_WSODD/WSODD_E1_seed123,150,exported from AD0088_best.pt (weights not copied)
+Training strategies,WSODD,Fixed single view,2,02_训练策略_SDS_WSODD/WSODD_E1_seed2,150,exported from AD0087_best.pt (weights not copied)
+Training strategies,WSODD,Fixed single view,3407,02_训练策略_SDS_WSODD/WSODD_E1_seed3407,144,exported from AD0089_best.pt (weights not copied)
+Training strategies,WSODD,Fixed single view,42,02_训练策略_SDS_WSODD/WSODD_E1_seed42,118,exported from AD0090_best.pt (weights not copied)
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss + paired views,0,06_FloW预训练单组件/FloW_cbam_focal_e2_seed0,144,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss + paired views,1,06_FloW预训练单组件/FloW_cbam_focal_e2_seed1,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss + paired views,2,06_FloW预训练单组件/FloW_cbam_focal_e2_seed2,141,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss + weighted paired views,0,06_FloW预训练单组件/FloW_cbam_focal_e3_seed0,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss + weighted paired views,1,06_FloW预训练单组件/FloW_cbam_focal_e3_seed1,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss + weighted paired views,2,06_FloW预训练单组件/FloW_cbam_focal_e3_seed2,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss,0,06_FloW预训练单组件/FloW_cbam_focal_seed0,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss,1,06_FloW预训练单组件/FloW_cbam_focal_seed1,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention + localization loss,2,06_FloW预训练单组件/FloW_cbam_focal_seed2,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention only,0,06_FloW预训练单组件/FloW_cbam_only_seed0,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention only,1,06_FloW预训练单组件/FloW_cbam_only_seed1,129,run folder
+Pretrained single-component (FloW),FloW,Pretrained + attention only,2,06_FloW预训练单组件/FloW_cbam_only_seed2,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + localization loss only,0,06_FloW预训练单组件/FloW_focal_eiou_only_seed0,147,run folder
+Pretrained single-component (FloW),FloW,Pretrained + localization loss only,1,06_FloW预训练单组件/FloW_focal_eiou_only_seed1,150,run folder
+Pretrained single-component (FloW),FloW,Pretrained + localization loss only,2,06_FloW预训练单组件/FloW_focal_eiou_only_seed2,150,run folder

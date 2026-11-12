@@ -1,0 +1,20 @@
+# Current local protocol. No independent test split exists yet.
+path: /root/autodl-tmp/datasets/WSODD/current
+train: train/images
+val: val/images
+nc: 14
+names:
+  0: animal
+  1: ball
+  2: boat
+  3: bridge
+  4: buoy
+  5: grass
+  6: harbor
+  7: mast
+  8: person
+  9: platform
+  10: rock
+  11: rubbish
+  12: ship
+  13: tree

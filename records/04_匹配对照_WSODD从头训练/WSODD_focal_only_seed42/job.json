@@ -1,0 +1,6 @@
+{
+  "key": "WSODD_focal_only_seed42",
+  "dataset": "WSODD",
+  "arm": "focal_only",
+  "seed": 42
+}

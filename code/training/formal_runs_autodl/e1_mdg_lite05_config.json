@@ -1,0 +1,65 @@
+{
+  "schema": "ring3.e1_mdg_config.v1",
+  "stage": "E1",
+  "method": "online_maritime_degradation_only",
+  "branch_probabilities": {
+    "clean": 0.4833333333333333,
+    "low_light": 0.1,
+    "glare": 0.1,
+    "mixed": 0.075,
+    "standard_aug_only": 0.2416666666666667
+  },
+  "severity_probabilities": {
+    "mild": 0.3333333333333333,
+    "medium": 0.3333333333333333,
+    "strong": 0.3333333333333334
+  },
+  "low_light": {
+    "mild": {
+      "brightness": [0.95, 0.975],
+      "gamma": [1.025, 1.06]
+    },
+    "medium": {
+      "brightness": [0.93, 0.95],
+      "gamma": [1.06, 1.105]
+    },
+    "strong": {
+      "brightness": [0.91, 0.93],
+      "gamma": [1.105, 1.15]
+    }
+  },
+  "glare": {
+    "mild": {
+      "target_area_ratio": [0.00875, 0.014],
+      "intensity_255": [11.0, 15.0]
+    },
+    "medium": {
+      "target_area_ratio": [0.014, 0.0195],
+      "intensity_255": [15.0, 19.5]
+    },
+    "strong": {
+      "target_area_ratio": [0.0195, 0.025],
+      "intensity_255": [19.5, 24.0]
+    },
+    "aspect_ratio": [1.4, 3.2],
+    "softness": [1.6, 2.4]
+  },
+  "invariants": {
+    "train_only": true,
+    "validation_unchanged": true,
+    "labels_unchanged": true,
+    "dataset_manifests_unchanged": true,
+    "applied_after_standard_yolo_augmentation": true,
+    "consistency_loss": false,
+    "curriculum": false
+  },
+  "provenance": {
+    "source": "e1_mdg_config.json",
+    "probability_scale": 0.5,
+    "strength_scale": 0.5,
+    "probability_rule": "Scale low_light, glare, and mixed branch mass; redistribute the remaining mass to clean and standard_aug_only in their original 2:1 ratio",
+    "low_light_strength_rule": "Scale 1-brightness and gamma-1 from identity",
+    "glare_strength_rule": "Scale target area ratio and additive intensity; preserve aspect ratio and softness",
+    "severity_probabilities_unchanged": true
+  }
+}

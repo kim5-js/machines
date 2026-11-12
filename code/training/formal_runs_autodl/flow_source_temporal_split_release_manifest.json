@@ -1,0 +1,51 @@
+{
+  "schema": "ring3.flow_source_temporal_split_release.v1",
+  "status": "locked",
+  "purpose": "Immutable source/session-disjoint temporal split over the 1,200 available official FloW images",
+  "files": [
+    {
+      "path": "build_flow_source_temporal_protocol.py",
+      "sha256": "d02a79a610bf01c3eaeb7440979734b68c7034b5800cfdf664cce1e28ba9012e"
+    },
+    {
+      "path": "materialize_flow_source_temporal_split.py",
+      "sha256": "d2850f37e7f46bc8b5885d35096af3214ab389c0cde7c30c97cc7e4fb6c77908"
+    },
+    {
+      "path": "audit_flow_source_temporal_split.py",
+      "sha256": "69293d634bd7f1901bb5f7f886a70f280425eff91bbc4f4aa54fc447326bdab8"
+    },
+    {
+      "path": "datasets/flow_source_temporal_disjoint_v1.yaml",
+      "sha256": "aeb32a2ab114e906797195dff5236823f223f76544fd39b97d1d4c0143144eb2"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/train.txt",
+      "sha256": "1630e342c7d4d93d676474f44b681cdf5d5707d8c210f59d5aa4b4df7f1b93db"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/val.txt",
+      "sha256": "cf74a8f13f7f6883a6d8407ad4eabe68ebf2ceb18608228e5e02da74f0faee0e"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/test.txt",
+      "sha256": "1cd110552ff016bf2414014f1d0ce7cc2608b404b6e70a7650171eb92edcca65"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/trainval.txt",
+      "sha256": "66457f4aaf79bdf97456c232268c0daaa2b332f1eed48a19942d494d44b8a84a"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/source_manifest.tsv",
+      "sha256": "887741e6761d2398970d1713d70c725dbfb6990b6e74acf82567b94c27976d41"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/protocol.json",
+      "sha256": "e6eb3e54dca983be36380581ed6fd5d3d1253d80b98f1c30c02ea4428b15f5f7"
+    },
+    {
+      "path": "manifests/flow_source_temporal_disjoint_v1/local_audit.json",
+      "sha256": "9d1203cc657783df45e74a0763711c822f75c0509e5d4a77cfe4da8ad9e40c49"
+    }
+  ]
+}

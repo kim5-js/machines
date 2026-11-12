@@ -1,0 +1,6 @@
+{
+  "key": "WSODD_cbam_only_seed123",
+  "dataset": "WSODD",
+  "arm": "cbam_only",
+  "seed": 123
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "ring3.wsodd_e0_reflection_only_release_manifest.v1",
+  "status": "locked",
+  "purpose": "Immutable one-run release for WSODD formal E0 plus the historical reflection-only p=0.10 soft medium-area training overlay",
+  "comparison_target": "completed pretrained-SGD E0 on the same sequence-disjoint split and fixed test evaluator",
+  "files": [
+    {
+      "path": "wsodd_e0_reflection_only_config.json",
+      "sha256": "595e0cafdc51ca5e5a8356bd5c0143aec031807d1b94bc8fe51190a47258eb77"
+    },
+    {
+      "path": "wsodd_reflection_only_dataset.py",
+      "sha256": "ce33a1bc10e867268a9eb585e4b3dce6b9538ca5f423f24282ede9455f51a1c7"
+    },
+    {
+      "path": "train_wsodd_e0_reflection_only.py",
+      "sha256": "d6a6a4577b37b0e542b4181d3e4ad20fe60d05d844e38eaced05d00e75498a09"
+    },
+    {
+      "path": "evaluate_wsodd_e0_reflection_only.py",
+      "sha256": "d50a3945991835ff177ced2e30f3693c027b145035e96c0c6f03cfe66e92ef92"
+    },
+    {
+      "path": "run_wsodd_e0_reflection_only.sh",
+      "sha256": "0caba541ce8da6db6c7c1f39b34ca5148599787ae12acd8fa919ce85935a5540"
+    },
+    {
+      "path": "evaluate_e3_coco_areas.py",
+      "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"
+    },
+    {
+      "path": "evaluate_pretrained_sgd_robustness.py",
+      "sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f"
+    },
+    {
+      "path": "datasets/wsodd_sequence_disjoint_v1.yaml",
+      "sha256": "180965bbca7a5416d467b0d089965db2c8fc22751843795df295d1376c62907e"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/protocol.json",
+      "sha256": "a2edac79e4b7782d6b39d3d91bf22bfa30469811c095310e5f258714fe9869a8"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/train.txt",
+      "sha256": "00c1052014c5bbb96488d419db4da08caa676bbfbb4f54ddfcf602305aeebae1"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/val.txt",
+      "sha256": "710669418ccb21f6d2425ca01aff437b792a60ee0fbff29e0425bd931a3590c9"
+    },
+    {
+      "path": "manifests/wsodd_sequence_disjoint_v1/test.txt",
+      "sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136"
+    },
+    {
+      "path": "wsodd_annotation_semantics_audit.json",
+      "sha256": "e53493e4a791595e7e7f18f53a5614f53106f09e6ad61a60b4dd23fb1b2d0efd"
+    },
+    {
+      "path": "formal_experiment_lock.json",
+      "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"
+    },
+    {
+      "path": "formal_runtime_amendment.json",
+      "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"
+    }
+  ],
+  "boundaries": {
+    "only_new_training_run": "e0_reflection_only",
+    "formal_e0_e3_unchanged": true,
+    "train_only_overlay": true,
+    "fixed_val_and_test": true,
+    "no_e4": true,
+    "no_git_commit_or_push": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T13:47:50.155000+00:00",
+  "job": {
+    "key": "NEW_FloW_E0_seed42__low_light_L4",
+    "experiment_id": "FloW_E0_seed42",
+    "dataset": "FloW",
+    "family": "strategy",
+    "arm": "FloW_E0_seed42",
+    "seed": "42",
+    "split": "test",
+    "condition": "low_light_L4",
+    "weights": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E0_seed42/weights/best.pt",
+    "weights_sha256": "25e472091a87ef1aad2d633578bf7ff5bb01b9b49ebf65e84c65e75bcb627dc9",
+    "block": "post_train"
+  },
+  "images": 541,
+  "ground_truth_boxes": 1090,
+  "predictions": 9887,
+  "input_pixels_sha256": "d7247518261b0d1f6d4bdbba3180f7d34b1ffd144b7aa4293b2c499457351ea3",
+  "predictions_sha256": "f2f6d7884c17126a65b82b1975ba2fc9a210c7e1606aedc5ad6f1052afa9931b",
+  "metrics": {
+    "mAP50-95": 0.4601218620945997,
+    "mAP50": 0.8775974714345621,
+    "mAP75": 0.4331118296488411,
+    "APsmall": 0.27769702309374256,
+    "APmedium": 0.5841466389893558,
+    "APlarge": 0.6713485036021645,
+    "AR1": 0.29651376146788994,
+    "AR10": 0.5318348623853211,
+    "AR100": 0.5365137614678899,
+    "ARsmall": 0.39643564356435645,
+    "ARmedium": 0.645686274509804,
+    "ARlarge": 0.7373333333333334
+  },
+  "per_class_AP": {
+    "bottle": 0.4601218620945997
+  },
+  "condition_parameters": {
+    "kind": "low",
+    "brightness": 0.7,
+    "gamma": 1.5,
+    "basis": "beyond training range"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 10.41952710133046
+}

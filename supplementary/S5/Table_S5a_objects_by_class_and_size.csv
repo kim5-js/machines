@@ -1,0 +1,24 @@
+﻿evaluation_set,category,objects,small,medium,large,below_16sq,16sq_to_32sq,32sq_to_64sq,64sq_to_96sq
+SeaDronesSee validation,all,10013,2980,4786,2247,853,2127,3218,1568
+WSODD test,all,6297,1126,2538,2633,25,1101,1862,676
+FloW test,all,1090,505,510,75,81,424,382,128
+SeaDronesSee validation,swimmer,6246,2278,3450,518,,,,
+SeaDronesSee validation,boat,2444,379,526,1539,,,,
+SeaDronesSee validation,jetski,415,11,255,149,,,,
+SeaDronesSee validation,buoy,775,203,531,41,,,,
+SeaDronesSee validation,life_saving_appliances,133,109,24,0,,,,
+WSODD test,rock,451,130,276,45,,,,
+WSODD test,ball,702,523,177,2,,,,
+WSODD test,platform,176,12,42,122,,,,
+WSODD test,rubbish,212,60,94,58,,,,
+WSODD test,harbor,400,0,65,335,,,,
+WSODD test,boat,2297,362,1413,522,,,,
+WSODD test,person,202,31,135,36,,,,
+WSODD test,ship,921,2,108,811,,,,
+WSODD test,mast,109,0,75,34,,,,
+WSODD test,animal,5,5,0,0,,,,
+WSODD test,buoy,49,1,35,13,,,,
+WSODD test,bridge,671,0,117,554,,,,
+WSODD test,tree,74,0,0,74,,,,
+WSODD test,grass,28,0,1,27,,,,
+FloW test,bottle,1090,505,510,75,,,,

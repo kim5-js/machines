@@ -1,0 +1,95 @@
+{
+  "request_sha256": "c805ee4fb20409be4ee033217f2765c47116b904f699132e65ae399976872a44",
+  "files": [
+    {
+      "path": "adapter/coco_functions.py",
+      "bytes": 2754,
+      "sha256": "6bd3ff062ab83b0775ee9924bda4278578fdd3a076ade1535fa3a0e6c566943c"
+    },
+    {
+      "path": "adapter/common.py",
+      "bytes": 13964,
+      "sha256": "ca177662de9d3bf0be5a2a41669034eaec9cb7b4ca4521ae5022b55d9d5bc1d6"
+    },
+    {
+      "path": "adapter/evaluate.py",
+      "bytes": 8634,
+      "sha256": "4b16ca478030cd829f1440617534c7cfa7c07b3fb0313978d27ff02b918180f0"
+    },
+    {
+      "path": "adapter/factorial_trainer.py",
+      "bytes": 13547,
+      "sha256": "0aecc34bff29b1e792d97675292fce361923f2af985a962376c853913cb780bf"
+    },
+    {
+      "path": "adapter/finalize.py",
+      "bytes": 6717,
+      "sha256": "566db69f92fc6623baa1f14f07ee852a2a9ec564cffba2bd9509b022b599b570"
+    },
+    {
+      "path": "adapter/supervise.py",
+      "bytes": 2819,
+      "sha256": "2a43acaa948e849851c0754de6207496eec8b7e89d6bff057047ff45de5c4881"
+    },
+    {
+      "path": "adapter/train.py",
+      "bytes": 20638,
+      "sha256": "66ec8740e55c694d4f3b8522818ededaa8a8e05783b890a77c9162231681b111"
+    },
+    {
+      "path": "adapter/training_helpers.py",
+      "bytes": 7131,
+      "sha256": "8a36b0a12e720c940f9781b161a8840215b2cd3af7d5497a3b3648ac08e97e54"
+    },
+    {
+      "path": "collect.py",
+      "bytes": 1523,
+      "sha256": "f6f556dc953cbddc578a859ff3457c86cc5542393249e4a9adfa60126f149278"
+    },
+    {
+      "path": "data_records.json",
+      "bytes": 2530488,
+      "sha256": "18dd38eec1912bf88e3a2f3b67aa72ad6d6040fa26c03642d06943ebb2a77f75"
+    },
+    {
+      "path": "dataset.yaml",
+      "bytes": 189,
+      "sha256": "1e8ef7adcb3c4f579d54146b8deeb18ccf107ce70460d29d58ea7e169051577c"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 1873,
+      "sha256": "bf2025b0bf62636cb203d9cc70b9c6f3399321a37e13f8f5607edf089467d56f"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 5760,
+      "sha256": "71a26a153940cd7fbd9a5551cc4f1ad69f771015e7287c105eac50f7f5191f40"
+    },
+    {
+      "path": "probe.py",
+      "bytes": 1972,
+      "sha256": "8274f295cda6cc51ac36721e5bfa96304b44d9c1bdeb5f6b3f6ff7a5bf9c93e2"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 3037,
+      "sha256": "24d81067bc0b1fa2248826acbceaf4abc8496b29cd331a3030c055c4d962f677"
+    },
+    {
+      "path": "request.json",
+      "bytes": 48142,
+      "sha256": "c805ee4fb20409be4ee033217f2765c47116b904f699132e65ae399976872a44"
+    },
+    {
+      "path": "source_files.json",
+      "bytes": 1092867,
+      "sha256": "c0dc27213ebc04445e05d7c60e29c384a07f6a5449e2a8fbb96aee846d3563e2"
+    },
+    {
+      "path": "staging_manifest.json",
+      "bytes": 74648,
+      "sha256": "61ac46ece79800c18b06b5e0c8e7c7add0391bd99c99fc94a897c8a2a4c4ee5a"
+    }
+  ]
+}

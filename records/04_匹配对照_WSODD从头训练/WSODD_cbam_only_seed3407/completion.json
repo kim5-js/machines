@@ -1,0 +1,59 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T03:20:24.675360+00:00",
+  "job": {
+    "key": "WSODD_cbam_only_seed3407",
+    "dataset": "WSODD",
+    "arm": "cbam_only",
+    "seed": 3407
+  },
+  "smoke": false,
+  "protocol_sha256": "af6d49831606c02786d828634fd544c588b3b2a4181c40711dd0465bb98f1caf",
+  "runtime": {
+    "ultralytics_version": "8.3.182",
+    "ultralytics_file": "/root/autodl-tmp/refsoft_extension_20261109/release_v1/code/vendor/ultralytics/__init__.py",
+    "pretrained": false,
+    "scale": "s",
+    "parameters": 11223518,
+    "cbam_indices": [
+      4,
+      6
+    ],
+    "criterion": "v8DetectionLoss",
+    "bbox_loss": "ciou",
+    "box": 4.0,
+    "dfl": 1.3,
+    "initial_state_sha256": "963541943f941b284b4f8f1a6820b3652ff9e6789000b88646a189aadf38301c",
+    "train_images": 3977,
+    "batches_per_epoch": 995,
+    "optimizer": "SGD",
+    "amp": true,
+    "protocol_sha256": "af6d49831606c02786d828634fd544c588b3b2a4181c40711dd0465bb98f1caf",
+    "job": {
+      "key": "WSODD_cbam_only_seed3407",
+      "dataset": "WSODD",
+      "arm": "cbam_only",
+      "seed": 3407
+    },
+    "smoke": false
+  },
+  "epochs_completed": 150,
+  "maximum_epochs": 150,
+  "early_stopped": false,
+  "elapsed_seconds": 20642.42026984971,
+  "optimizer_step_calls": 75371,
+  "optimizer_parameter_changed": true,
+  "best_map_epoch": 126,
+  "peak_val_map": 0.19044,
+  "checkpoints": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/refsoft_extension_20261109/release_v1/runs/WSODD_cbam_only_seed3407/weights/best.pt",
+      "sha256": "9a698aef4d731911563ce0628807631abf36eb516380ee96f87ee93e18449371"
+    },
+    "best_map.pt": {
+      "path": "/root/autodl-tmp/refsoft_extension_20261109/release_v1/runs/WSODD_cbam_only_seed3407/weights/best_map.pt",
+      "sha256": "62320a2622e14d379c9488ffdaa6e5ff455d356e5a40c47ffedb56ce58bebc32"
+    }
+  },
+  "results_sha256": "1ba104ee61b6534644a6a1a19dfd5ebcd93e3d0d7382d56a3302de960ec33fca"
+}

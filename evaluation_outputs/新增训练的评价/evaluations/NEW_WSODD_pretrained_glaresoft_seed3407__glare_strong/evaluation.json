@@ -1,0 +1,81 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T13:55:24.286999+00:00",
+  "job": {
+    "key": "NEW_WSODD_pretrained_glaresoft_seed3407__glare_strong",
+    "experiment_id": "WSODD_pretrained_glaresoft_seed3407",
+    "dataset": "WSODD",
+    "family": "strategy",
+    "arm": "WSODD_pretrained_glaresoft_seed3407",
+    "seed": "3407",
+    "split": "test",
+    "condition": "glare_strong",
+    "weights": "/root/autodl-tmp/pretrained_copies_20261109/runs/WSODD_pretrained_glaresoft_seed3407/weights/best.pt",
+    "weights_sha256": "acd2314cafcce216cc407195376087601719b68cea05566acf0c9520b1292317",
+    "block": "post_train"
+  },
+  "images": 2406,
+  "ground_truth_boxes": 6297,
+  "predictions": 42436,
+  "input_pixels_sha256": "252bdc55708fa6c27b38a006f84516bea744386256482f0d7908c1b6ed64bfa2",
+  "predictions_sha256": "c05a8b81a85770cc682ebe917ce6ab67de14543f65bad5376583e874824d3dc0",
+  "metrics": {
+    "mAP50-95": 0.21667558988357327,
+    "mAP50": 0.4372200746469254,
+    "mAP75": 0.1840815420933082,
+    "APsmall": 0.12726952948607148,
+    "APmedium": 0.16184654336158827,
+    "APlarge": 0.3283838106250799,
+    "AR1": 0.22411146272287152,
+    "AR10": 0.32200385630589007,
+    "AR100": 0.34810850886261263,
+    "ARsmall": 0.20860191291790414,
+    "ARmedium": 0.32088597687190934,
+    "ARlarge": 0.4577706850081194
+  },
+  "per_class_AP": {
+    "animal": 0.0,
+    "ball": 0.24522208291259193,
+    "boat": 0.3728554166254928,
+    "bridge": 0.44078586900952554,
+    "buoy": 0.12876707629687056,
+    "grass": 0.21517544650824466,
+    "harbor": 0.22761861065519576,
+    "mast": 0.3001828037554663,
+    "person": 0.11247802292539777,
+    "platform": 0.2118636870845023,
+    "rock": 0.09373839914157941,
+    "rubbish": 0.04723194750744337,
+    "ship": 0.4098305077066675,
+    "tree": 0.2277083882410479
+  },
+  "condition_parameters": {
+    "target_area_ratio": 0.0445,
+    "intensity_255": 43.5,
+    "aspect_ratio": 2.3,
+    "softness": 2.0,
+    "center_policy": "deterministic per image and shared across severities",
+    "random_seed_namespace": "ring3/cross-dataset/e0-e1/controlled-strong/v1/WSODD"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 73.93073665909469
+}

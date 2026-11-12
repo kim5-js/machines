@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "updated_utc": "2026-09-20T18:43:57.577988+00:00",
+  "supervisor_pid": 180465,
+  "formal_training_jobs": 13,
+  "smoke_training_jobs": 7,
+  "completed_val_test_evaluations": 26,
+  "ablation_historical_secondary_evaluations": 18,
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "other_jobs_modified": false
+}

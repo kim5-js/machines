@@ -1,0 +1,264 @@
+{
+  "schema": "ring3.wsodd_legacy_split_coco_area_metrics.v2",
+  "status": "completed",
+  "experiment": "FLOW_FOCAL_EIOU_ONLY_SEED0",
+  "dataset_protocol": "wsodd_legacy_image_split_v1",
+  "evidence_class": "legacy_protocol_reproduction_not_formal_generalization_evidence",
+  "selection": "best validation metrics/mAP50-95(B)",
+  "best_epoch": 47,
+  "best_metrics": {
+    "Precision": 0.85277,
+    "Recall": 0.8018,
+    "mAP50": 0.83397,
+    "mAP50-95": 0.38131,
+    "APsmall": 0.28112897244008705,
+    "APmedium": 0.5860274952953237,
+    "APlarge": 0.6547265197783502
+  },
+  "final_epoch": 147,
+  "final_metrics": {
+    "Precision": 0.87592,
+    "Recall": 0.80488,
+    "mAP50": 0.83838,
+    "mAP50-95": 0.35805
+  },
+  "area_evaluation": {
+    "protocol": "COCO-style 10 IoU thresholds and 101 recall points",
+    "area_coordinates": "original validation image pixels",
+    "area_ranges": {
+      "small": "[0, 32^2)",
+      "medium": "[32^2, 96^2)",
+      "large": "[96^2, inf)"
+    },
+    "max_detections_per_image": 100,
+    "prediction_confidence_floor": 0.001,
+    "prediction_nms_iou": 0.7,
+    "prediction_max_detections_per_image": 300,
+    "prediction_chunk_size": 4,
+    "metrics": {
+      "all": {
+        "AP50": 0.8969423937553284,
+        "AP50_95": 0.4589507167856205,
+        "positive_gt_count": 1090,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 1090,
+            "AP50": 0.8969423937553284,
+            "AP50_95": 0.4589507167856205,
+            "AP_by_iou": {
+              "0.50": 0.8969423937553284,
+              "0.55": 0.8470357305897954,
+              "0.60": 0.7760393840833881,
+              "0.65": 0.662315249657324,
+              "0.70": 0.5543129473161197,
+              "0.75": 0.4060445703464598,
+              "0.80": 0.2771834132937614,
+              "0.85": 0.13627384133360917,
+              "0.90": 0.03193466511707687,
+              "0.95": 0.0014249723633423428
+            }
+          }
+        ]
+      },
+      "small": {
+        "AP50": 0.7922255423282706,
+        "AP50_95": 0.28112897244008705,
+        "positive_gt_count": 505,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 505,
+            "AP50": 0.7922255423282706,
+            "AP50_95": 0.28112897244008705,
+            "AP_by_iou": {
+              "0.50": 0.7922255423282706,
+              "0.55": 0.685989678632723,
+              "0.60": 0.5442812147381625,
+              "0.65": 0.3754330885104999,
+              "0.70": 0.2349431224241481,
+              "0.75": 0.11923947921046285,
+              "0.80": 0.04020568850042335,
+              "0.85": 0.015635387902378183,
+              "0.90": 0.0033351608187134505,
+              "0.95": 1.361335088548041e-06
+            }
+          }
+        ]
+      },
+      "medium": {
+        "AP50": 0.9773026686313075,
+        "AP50_95": 0.5860274952953237,
+        "positive_gt_count": 510,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 510,
+            "AP50": 0.9773026686313075,
+            "AP50_95": 0.5860274952953237,
+            "AP_by_iou": {
+              "0.50": 0.9773026686313075,
+              "0.55": 0.9716893415315112,
+              "0.60": 0.953733767263401,
+              "0.65": 0.878190616613634,
+              "0.70": 0.7888257078639372,
+              "0.75": 0.6052329245996693,
+              "0.80": 0.4412586835879717,
+              "0.85": 0.20425625799159836,
+              "0.90": 0.039213773902956196,
+              "0.95": 0.0005712109672505713
+            }
+          }
+        ]
+      },
+      "large": {
+        "AP50": 0.9318252094567638,
+        "AP50_95": 0.6547265197783502,
+        "positive_gt_count": 75,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 75,
+            "AP50": 0.9318252094567638,
+            "AP50_95": 0.6547265197783502,
+            "AP_by_iou": {
+              "0.50": 0.9318252094567638,
+              "0.55": 0.9048387372634938,
+              "0.60": 0.864449360756067,
+              "0.65": 0.8435725848609487,
+              "0.70": 0.823008369605774,
+              "0.75": 0.7907804035037921,
+              "0.80": 0.7240752654367671,
+              "0.85": 0.4503675683937809,
+              "0.90": 0.1932098704375932,
+              "0.95": 0.021137828068521138
+            }
+          }
+        ]
+      }
+    }
+  },
+  "artifacts": {
+    "run_dir": "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/runs/FloW_focal_eiou_only_seed0",
+    "results_csv": "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/runs/FloW_focal_eiou_only_seed0/results.csv",
+    "results_csv_sha256": "ab81f13523cb4bcde4679e121f5a6bb18821f22d529f6d8201b1988a3f3fa085",
+    "best_weights": "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/runs/FloW_focal_eiou_only_seed0/weights/best.pt",
+    "best_weights_sha256": "79c1921f641f2ed5db6ab44f18dbf4d18635fc6a4af6e25f348c6727b98d0aba",
+    "data_yaml": "/root/autodl-tmp/flow_source_cbam_20260920/release_v1/evaluation_data/test.yaml",
+    "data_yaml_sha256": "b8f66c79a0ebd2a11b703079b77ed78390b196148f88797c24af8048bb41a25f",
+    "validation_image_count": 541,
+    "ground_truth_count": 1090,
+    "prediction_count": 16755,
+    "ultralytics_version": "8.4.124"
+  },
+  "evaluator_self_test": {
+    "status": "passed",
+    "perfect_match_area_metrics": {
+      "all": {
+        "AP50": 1.0,
+        "AP50_95": 1.0,
+        "positive_gt_count": 3,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 3,
+            "AP50": 1.0,
+            "AP50_95": 1.0,
+            "AP_by_iou": {
+              "0.50": 1.0,
+              "0.55": 1.0,
+              "0.60": 1.0,
+              "0.65": 1.0,
+              "0.70": 1.0,
+              "0.75": 1.0,
+              "0.80": 1.0,
+              "0.85": 1.0,
+              "0.90": 1.0,
+              "0.95": 1.0
+            }
+          }
+        ]
+      },
+      "small": {
+        "AP50": 1.0,
+        "AP50_95": 1.0,
+        "positive_gt_count": 1,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 1,
+            "AP50": 1.0,
+            "AP50_95": 1.0,
+            "AP_by_iou": {
+              "0.50": 1.0,
+              "0.55": 1.0,
+              "0.60": 1.0,
+              "0.65": 1.0,
+              "0.70": 1.0,
+              "0.75": 1.0,
+              "0.80": 1.0,
+              "0.85": 1.0,
+              "0.90": 1.0,
+              "0.95": 1.0
+            }
+          }
+        ]
+      },
+      "medium": {
+        "AP50": 1.0,
+        "AP50_95": 1.0,
+        "positive_gt_count": 1,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 1,
+            "AP50": 1.0,
+            "AP50_95": 1.0,
+            "AP_by_iou": {
+              "0.50": 1.0,
+              "0.55": 1.0,
+              "0.60": 1.0,
+              "0.65": 1.0,
+              "0.70": 1.0,
+              "0.75": 1.0,
+              "0.80": 1.0,
+              "0.85": 1.0,
+              "0.90": 1.0,
+              "0.95": 1.0
+            }
+          }
+        ]
+      },
+      "large": {
+        "AP50": 1.0,
+        "AP50_95": 1.0,
+        "positive_gt_count": 1,
+        "per_class": [
+          {
+            "class_id": 0,
+            "positive_gt_count": 1,
+            "AP50": 1.0,
+            "AP50_95": 1.0,
+            "AP_by_iou": {
+              "0.50": 1.0,
+              "0.55": 1.0,
+              "0.60": 1.0,
+              "0.65": 1.0,
+              "0.70": 1.0,
+              "0.75": 1.0,
+              "0.80": 1.0,
+              "0.85": 1.0,
+              "0.90": 1.0,
+              "0.95": 1.0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "single_seed_mechanism_evidence_only": true,
+  "sequence_leakage_disclosed": true,
+  "training_started": false,
+  "checkpoint_updates": false,
+  "e4_started": false
+}

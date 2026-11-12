@@ -1,0 +1,47 @@
+{
+  "schema": "ring3.p3_region_cosine_diagnostic_config.v1",
+  "purpose": "Measure regional P3 cosine after the isolated 30-epoch CBAM plus Focal-EIoU lambda-zero interaction pilot",
+  "source_run": "",
+  "source_args_sha256": "",
+  "checkpoint": "",
+  "checkpoint_sha256": "",
+  "formal_lock_sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1",
+  "runtime_amendment_sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e",
+  "mdg_config_sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+  "formal_batches": 200,
+  "batch": 8,
+  "imgsz": 960,
+  "workers": 8,
+  "seed": 0,
+  "device": "0",
+  "amp": true,
+  "model_mode": "train_no_grad",
+  "region_definition": {
+    "foreground": "union of post-augmentation GT boxes projected to overlapping P3 cells",
+    "background": "P3 cells outside the foreground union",
+    "small_object": "union of GT boxes with normalized post-augmentation area <= 0.0025",
+    "small_object_area_ratio_threshold": 0.0025
+  },
+  "reference": {
+    "global_cosine_mean": 0.0,
+    "source": "filled from the completed pilot epoch-30 lambda-zero evidence",
+    "absolute_tolerance": 0.003
+  },
+  "gate": {
+    "minimum_valid_foreground_pairs": 500,
+    "minimum_batch_fraction_foreground_discrepancy_gt_background": 0.7,
+    "minimum_mean_discrepancy_ratio_foreground_over_background": 1.05,
+    "bootstrap_samples": 10000,
+    "bootstrap_confidence": 0.95
+  },
+  "output_root": "/root/autodl-tmp/diagnostics/p3_region_cosine_cbam_focal_lambda0",
+  "interaction_pilot": {
+    "paper_result_eligible": false,
+    "expected_epochs": 30,
+    "cbam_layer_indices": [4, 6],
+    "bbox_regression": "Focal-EIoU",
+    "dfl_preserved": true,
+    "consistency_lambda": 0.0,
+    "object_aware_or_e3_auto_start": false
+  }
+}

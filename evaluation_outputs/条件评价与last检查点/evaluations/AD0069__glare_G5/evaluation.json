@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "utc": "2026-11-09T18:15:57.113524+00:00",
+  "job": {
+    "experiment_id": "AD0069",
+    "dataset": "SeaDronesSee",
+    "arm": "E0",
+    "seed": "1",
+    "split": "val",
+    "family": "strategy",
+    "key": "AD0069__glare_G5",
+    "condition": "glare_G5",
+    "weights": "weights/AD0069_best.pt",
+    "weights_sha256": "39d308e502a2532dc924cef806914e690389f5ba0e884f237a632972965961cc",
+    "block": "severity"
+  },
+  "images": 1555,
+  "ground_truth_boxes": 10013,
+  "predictions": 59421,
+  "input_pixels_sha256": "4be3313b407c7ff659eb698e0e15696540b31668ac7434b6c056caf7c0f0ee40",
+  "predictions_sha256": "2e61cba5ee83f1e328575c80004958247580ad8c5de230a57005439f3b2bd1c8",
+  "metrics": {
+    "mAP50-95": 0.4688684982830905,
+    "mAP50": 0.703070002334688,
+    "mAP75": 0.520100356225537,
+    "APsmall": 0.29612270713449124,
+    "APmedium": 0.4751363566522708,
+    "APlarge": 0.7272598383927371,
+    "AR1": 0.36725754299263313,
+    "AR10": 0.5313653099801363,
+    "AR100": 0.5361584266746572,
+    "ARsmall": 0.3942338824136485,
+    "ARmedium": 0.5532988619087906,
+    "ARlarge": 0.7857593781679398
+  },
+  "per_class_AP": {
+    "swimmer": 0.3453158933720529,
+    "boat": 0.7183596158686547,
+    "jetski": 0.6230931151832735,
+    "life_saving_appliances": 0.0005657708628005657,
+    "buoy": 0.6570080961286708
+  },
+  "condition_parameters": {
+    "kind": "glare",
+    "area": 0.15,
+    "intensity": 120.0,
+    "basis": "beyond training range"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 71.31243729125708
+}

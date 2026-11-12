@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "utc": "2026-09-12T22:08:42.673317+00:00",
+  "job": {
+    "key": "WSODD_duplicate_seed1",
+    "dataset": "WSODD",
+    "arm": "duplicate",
+    "seed": 1
+  },
+  "smoke": false,
+  "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+  "runtime": {
+    "ultralytics_version": "8.3.182",
+    "ultralytics_file": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/code/vendor/ultralytics/__init__.py",
+    "pretrained": false,
+    "scale": "s",
+    "parameters": 11223518,
+    "cbam_indices": [
+      4,
+      6
+    ],
+    "criterion": "v8DetectionLoss",
+    "bbox_loss": "focal_eiou",
+    "box": 4.0,
+    "dfl": 1.3,
+    "initial_state_sha256": "a3bc170ed44f4f6d15dadc5b3420fcfeb0bbeefd06e6797644de439c6b396852",
+    "train_images": 4374,
+    "batches_per_epoch": 1094,
+    "optimizer": "SGD",
+    "amp": true,
+    "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+    "job": {
+      "key": "WSODD_duplicate_seed1",
+      "dataset": "WSODD",
+      "arm": "duplicate",
+      "seed": 1
+    },
+    "smoke": false,
+    "monitoring_revision": "recovery_v1",
+    "recovery_manifest_sha256": "ed51f53291d984898ef5bdd8802f6305599b32060c5133eff3fb69799877374b"
+  },
+  "epochs_completed": 150,
+  "maximum_epochs": 150,
+  "early_stopped": false,
+  "elapsed_seconds": 12645.760502457619,
+  "optimizer_step_calls": 82870,
+  "optimizer_parameter_changed": true,
+  "best_map_epoch": 129,
+  "peak_val_map": 0.1843,
+  "checkpoints": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_duplicate_seed1/weights/best.pt",
+      "sha256": "663d99423f946702c14f81c924d0e70e784007008af9ce1170d76403ba4223ba"
+    },
+    "best_map.pt": {
+      "path": "/root/autodl-tmp/refsoft_reproduction_20260910/release_v1/runs/WSODD_duplicate_seed1/weights/best_map.pt",
+      "sha256": "c28c8a459992b1ee5c38981a849f8e537397a2f2f52e2e307a652a55277f50db"
+    }
+  },
+  "results_sha256": "dfcd75876bc6d8f9cfece1101d9c79ee92b2cad99d0c0b1f84989c4da0afb9ae",
+  "monitoring_revision": "recovery_v1",
+  "recovery_manifest_sha256": "ed51f53291d984898ef5bdd8802f6305599b32060c5133eff3fb69799877374b",
+  "validation_overflow_epochs": [],
+  "failed_prefix_reproduced": null
+}

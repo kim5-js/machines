@@ -1,0 +1,22 @@
+{
+  "status": "dispatched",
+  "utc": "2026-09-20T06:41:46.298696+00:00",
+  "pid": 180465,
+  "process": {
+    "pid": 180465,
+    "state": "R",
+    "ppid": 180464,
+    "pgid": 180465,
+    "starttime": 6377648629,
+    "cpu_ticks": 0
+  },
+  "command": [
+    "/root/autodl-tmp/envs/mdc-yolo26/bin/python",
+    "-B",
+    "-u",
+    "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/adapter/supervise.py"
+  ],
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "order": "four baseline trainings and evaluations first; then nine ablation trainings and evaluations",
+  "other_jobs_modified": false
+}

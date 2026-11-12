@@ -1,0 +1,33 @@
+{
+  "schema": "ring3.pretrained_sgd_alpha_ablation_release_manifest.v1",
+  "status": "locked",
+  "purpose": "Lock the two-run pretrained-SGD degraded-small alpha ablation release",
+  "files": [
+    {"path": "pretrained_sgd_alpha_ablation_config.json", "sha256": "6089f44146d987a183ba0830a05d398510225776f6b5b1596fe5f028e096e34d"},
+    {"path": "train_pretrained_sgd_alpha_ablation.py", "sha256": "2338248add22157ba58bf308c5525d2dde98868d9d272cb2d995978761f3b464"},
+    {"path": "run_pretrained_sgd_alpha_ablation.sh", "sha256": "567ac137eb095f025b962f4d488ed67079be2a4e7663734e55429e2f56eef0a9"},
+    {"path": "PRETRAINED_SGD_ALPHA_ABLATION.md", "sha256": "42184d3db5d10d53c37be23e0d21b758eed24e8dd2c12ab4445d81a91d314fb5"},
+    {"path": "train_pretrained_sgd_mainline.py", "sha256": "8d8d46976d2be9d2473886f7de25e91bbd788a4ed368bd51b7998d42fcc2e413"},
+    {"path": "pretrained_sgd_mainline_models.py", "sha256": "4f797d6a0e9428227266d9189c74f43a5d4c3f52d2b6e7020763412d845f8fca"},
+    {"path": "pretrained_sgd_mainline_supervisor_patch.py", "sha256": "0281cc5da384a6c936410cd5ca30a522ed01245586b789c11de2af572ba5e246"},
+    {"path": "e3_small_object_weighting.py", "sha256": "5df5e0d4b39f17c0abb08288ff0d826b4894f6245bdd90dd6be6458590ecd67b"},
+    {"path": "cbam_focal_formal_models.py", "sha256": "58ad7ef9a2e996729f6263312cfd692880eaf9279eb946684611e31299667fff"},
+    {"path": "maritime_degradation.py", "sha256": "b0d60602f77db9bbb935f5e48f44a5766f361ef35bc07e90fd06b23c3f8b85cc"},
+    {"path": "e1_mdg_config.json", "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"},
+    {"path": "formal_experiment_lock.json", "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"},
+    {"path": "formal_runtime_amendment.json", "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"},
+    {"path": "verify_yolo_dataset.py", "sha256": "faf305177a9e61477affb7f42d5030a8142b95b22335be8b602e6e418813002c"}
+  ],
+  "invariants": {
+    "only_new_runs": ["e3_alpha12", "e3_alpha135"],
+    "existing_alpha1.0_and_alpha1.5_not_rerun": true,
+    "alpha_only_variable": true,
+    "no_cbam": true,
+    "no_focal_eiou": true,
+    "no_consistency_loss": true,
+    "no_severity_weighting": true,
+    "no_curriculum": true,
+    "no_e4": true,
+    "no_git_commit_or_push": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T13:49:05.757154+00:00",
+  "job": {
+    "key": "NEW_FloW_E2_seed123__low_light_L5",
+    "experiment_id": "FloW_E2_seed123",
+    "dataset": "FloW",
+    "family": "strategy",
+    "arm": "FloW_E2_seed123",
+    "seed": "123",
+    "split": "test",
+    "condition": "low_light_L5",
+    "weights": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E2_seed123/weights/best.pt",
+    "weights_sha256": "5e5d4b7dfe35e60244aa6660edfd3eb12c6adde0c06efe55b3c54fedb5d0959a",
+    "block": "post_train"
+  },
+  "images": 541,
+  "ground_truth_boxes": 1090,
+  "predictions": 9990,
+  "input_pixels_sha256": "4c2f11773d9a54f4c48219faf961e4a3097e0fbd9171b24de90af783be60ebdf",
+  "predictions_sha256": "22423d1865c8bdb5ca79b03963dbf87bf78dc96c569c8fdc360422baf3af7b4f",
+  "metrics": {
+    "mAP50-95": 0.42476546067629145,
+    "mAP50": 0.8400235431170919,
+    "mAP75": 0.38262878815211954,
+    "APsmall": 0.24111396364421225,
+    "APmedium": 0.5594878200790676,
+    "APlarge": 0.6210074293409171,
+    "AR1": 0.28440366972477066,
+    "AR10": 0.5146788990825687,
+    "AR100": 0.525229357798165,
+    "ARsmall": 0.3897029702970297,
+    "ARmedium": 0.6329411764705883,
+    "ARlarge": 0.7053333333333335
+  },
+  "per_class_AP": {
+    "bottle": 0.42476546067629145
+  },
+  "condition_parameters": {
+    "kind": "low",
+    "brightness": 0.5,
+    "gamma": 2.0,
+    "basis": "beyond training range"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "0"
+  },
+  "elapsed_seconds": 15.936205913312733
+}

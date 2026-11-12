@@ -1,0 +1,23 @@
+{
+  "revision": "recovery_v1",
+  "created_utc": "2026-09-11",
+  "reason": "Original auxiliary val/cls_loss FP16 BCE reduction overflow caused the added finite-metric monitor to abort; exact checkpoint and full validation set reproduced finite predictions and elementwise BCE, inf FP16 sums, finite FP32 sums.",
+  "protocol_sha256": "6290fa48f4bf31b6c39973c76adc4af2fea52a094aecf6d791b5194769f97e92",
+  "scientific_conditions_changed": false,
+  "handling": "No change to historical loss computation. Observe only; retain raw CSV inf, encode audited positive val/cls inf as null plus explicit +inf metadata in JSON. All training loss, predictions, BCE elements, AP and other validation losses must remain finite. Check model/EMA/optimizer state on any permitted overflow.",
+  "run_overrides": {
+    "FloW_duplicate_seed42": "runs_recovery_v1/FloW_duplicate_seed42"
+  },
+  "preserved_failed_files": {
+    "runs/FloW_duplicate_seed42/weights/last.pt": "2bf7e892b87930c1742368c77c873b46cccf8a09b376754e0e833e01c88b9533",
+    "runs/FloW_duplicate_seed42/weights/best.pt": "2cee417303d31b401d83b89411560faf2566204ef221575f81b83780c2802f33",
+    "runs/FloW_duplicate_seed42/weights/best_map.pt": "2cee417303d31b401d83b89411560faf2566204ef221575f81b83780c2802f33",
+    "logs/FloW_duplicate_seed42_train.py.log": "301eb0d8c2ba38d24f61ca844fcf97eb25efd8b352959db3a42625f8ba25d42b"
+  },
+  "replay": "One explicit same-seed from-scratch attempt in a separate directory. Original 3-epoch CSV excluding time must be identical at epochs 1,2,3; mismatch stops queue. No checkpoint resume, seed replacement, hyperparameter changes, or test-driven choices.",
+  "coverage": "Same monitoring-only rules for all remaining 22 full jobs; previous 8 complete runs have finite validation losses and remain untouched.",
+  "diagnosis": "diagnostics/val_cls_overflow_20260911_v1/diagnosis.json",
+  "scientific_jobs": 30,
+  "completed_before_recovery": 8,
+  "failed_partial_attempts": 1
+}

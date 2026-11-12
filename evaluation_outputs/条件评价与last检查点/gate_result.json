@@ -1,0 +1,82 @@
+[
+  {
+    "key": "GATE_AD0076__low_light_strong",
+    "pixels_identical": true,
+    "predictions_identical": false,
+    "diff_pp": {
+      "mAP50-95": 0.0025,
+      "mAP50": -0.0012,
+      "APsmall": 0.0001,
+      "APmedium": -0.0223,
+      "APlarge": 0.006,
+      "AR100": 0.0022
+    },
+    "max_abs_diff_pp": 0.0223,
+    "seconds": 60,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  {
+    "key": "GATE_AD0072__glare_strong",
+    "pixels_identical": true,
+    "predictions_identical": false,
+    "diff_pp": {
+      "mAP50-95": -0.0002,
+      "mAP50": 0.0001,
+      "APsmall": -0.0002,
+      "APmedium": 0.0022,
+      "APlarge": -0.0003,
+      "AR100": -0.0003
+    },
+    "max_abs_diff_pp": 0.0022,
+    "seconds": 64,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  {
+    "key": "GATE_AD0090__normal",
+    "pixels_identical": true,
+    "predictions_identical": false,
+    "diff_pp": {
+      "mAP50-95": 0.0086,
+      "mAP50": 0.0197,
+      "APsmall": 0.0001,
+      "APmedium": 0.0176,
+      "APlarge": -0.0038,
+      "AR100": 0.006
+    },
+    "max_abs_diff_pp": 0.0197,
+    "seconds": 63,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  {
+    "key": "GATE_AD0128__normal",
+    "pixels_identical": true,
+    "predictions_identical": false,
+    "diff_pp": {
+      "mAP50-95": 0.0,
+      "mAP50": 0.0,
+      "APsmall": 0.0,
+      "APmedium": 0.0,
+      "APlarge": 0.0,
+      "AR100": 0.0
+    },
+    "max_abs_diff_pp": 0.0,
+    "seconds": 60,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  {
+    "key": "GATE_AD0177__normal",
+    "pixels_identical": true,
+    "predictions_identical": false,
+    "diff_pp": {
+      "mAP50-95": -0.0001,
+      "mAP50": 0.0007,
+      "APsmall": 0.0003,
+      "APmedium": 0.0002,
+      "APlarge": 0.0013,
+      "AR100": 0.0
+    },
+    "max_abs_diff_pp": 0.0013,
+    "seconds": 13,
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+]

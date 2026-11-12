@@ -1,0 +1,81 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T13:38:24.122140+00:00",
+  "job": {
+    "key": "NEW_WSODD_duplicate_seed2__glare_strong",
+    "experiment_id": "WSODD_duplicate_seed2",
+    "dataset": "WSODD",
+    "family": "matched",
+    "arm": "WSODD_duplicate_seed2",
+    "seed": "2",
+    "split": "test",
+    "condition": "glare_strong",
+    "weights": "/root/autodl-tmp/refsoft_extension_20261109/release_v1/runs/WSODD_duplicate_seed2/weights/best.pt",
+    "weights_sha256": "6b8cd6028a1cb538294c02d7a27797ab32c2d4a82bd9a93ae75f383da01e69c6",
+    "block": "post_train"
+  },
+  "images": 2406,
+  "ground_truth_boxes": 6297,
+  "predictions": 50885,
+  "input_pixels_sha256": "252bdc55708fa6c27b38a006f84516bea744386256482f0d7908c1b6ed64bfa2",
+  "predictions_sha256": "b2b40c3fd4af51e21cff6c8175f2d89420751aa2d657be00a26740610806b9d8",
+  "metrics": {
+    "mAP50-95": 0.1914383583639458,
+    "mAP50": 0.38815175086014847,
+    "mAP75": 0.17265973075089505,
+    "APsmall": 0.09241861122095088,
+    "APmedium": 0.14071888788388942,
+    "APlarge": 0.2735952339213472,
+    "AR1": 0.19940761396811166,
+    "AR10": 0.29034591684229044,
+    "AR100": 0.31271050237000225,
+    "ARsmall": 0.16434333520315608,
+    "ARmedium": 0.2750530005701256,
+    "ARlarge": 0.40295256067532265
+  },
+  "per_class_AP": {
+    "animal": 0.0,
+    "ball": 0.232315687390419,
+    "boat": 0.36078677211111415,
+    "bridge": 0.43804822470070004,
+    "buoy": 0.0746530811310907,
+    "grass": 0.20517028215812091,
+    "harbor": 0.2923768768226405,
+    "mast": 0.13464753420330083,
+    "person": 0.03294902614357502,
+    "platform": 0.1747689440547315,
+    "rock": 0.06793015449343713,
+    "rubbish": 0.05242460783412932,
+    "ship": 0.40066650235885776,
+    "tree": 0.21339932369312353
+  },
+  "condition_parameters": {
+    "target_area_ratio": 0.0445,
+    "intensity_255": 43.5,
+    "aspect_ratio": 2.3,
+    "softness": 2.0,
+    "center_policy": "deterministic per image and shared across severities",
+    "random_seed_namespace": "ring3/cross-dataset/e0-e1/controlled-strong/v1/WSODD"
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.3.182",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/matched_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "0"
+  },
+  "elapsed_seconds": 150.77949253702536
+}

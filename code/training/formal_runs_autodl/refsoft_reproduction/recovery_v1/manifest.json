@@ -1,0 +1,14 @@
+{
+  "files": {
+    "evaluate.py": "937d328dc33c2beceb6024faea9bf120925e90078adcb831efdf2abb87a3841a",
+    "evaluate.py.diff": "ff8e14bde89c425fa52127d839c21f264d395167dbb02c5282eace1333da120c",
+    "observer.py": "33838f6e8e672fbe0b2dfb45e47da125036c8b2677a95b2b0fe99b355b704c49",
+    "recovery_plan.json": "e1d7cf6f108f696080fb487ec50d3b42c2297454cf45125d0c051c929cedca34",
+    "self_test.py": "99f650d44463444792854d88ce74841f76da0d8985ac1d4027bfafb01c20b776",
+    "supervise.py": "91e63464808b638c21f2ae6795dc31e4d6802df34887f7490b23d0bcb5408e75",
+    "supervise.py.diff": "215b281cb59016281fa3a275e05bf4283614c59444c24051c1f1097bd56e5364",
+    "support.py": "08bbbd9ab6bb05ad520459894dfd8dd1d9358981deba3bff6b65eb4d1d1c149e",
+    "train.py": "54fa4f6f29d72bce24db7a87b7081789371628f29d2b4c154a082de3d3a9f304",
+    "train.py.diff": "d6d372921dff04c8c3ccc3399f59a989b730d20d215b3fa95cc0d60ad3f42094"
+  }
+}

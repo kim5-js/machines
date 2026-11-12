@@ -1,0 +1,166 @@
+{
+  "protocol": "seadronessee_source_disjoint_v1",
+  "purpose": "development split only; final model retrains on trainval then uses the official unlabeled test server",
+  "grouping_rule": {
+    "video_frames": "exact source drone|folder_name|video",
+    "still_images": "whole source drone|folder_name acquisition because no flight/session ID is available",
+    "fallback": "singleton only when source metadata has neither video nor image_name"
+  },
+  "seed": 42,
+  "ratios": {
+    "train": 0.85,
+    "val": 0.15
+  },
+  "minimum_validation_source_groups": 5,
+  "optimization_score": 0.09952515620534201,
+  "total_labeled_images": 10477,
+  "source_groups": 39,
+  "video_groups": 37,
+  "still_acquisition_groups": 2,
+  "singleton_groups": 0,
+  "official_train_val_mixed_source_groups": 34,
+  "split_images": {
+    "train": 8922,
+    "val": 1555
+  },
+  "split_source_groups": {
+    "train": 29,
+    "val": 10
+  },
+  "split_class_instances": {
+    "train": {
+      "0": 37041,
+      "1": 12792,
+      "2": 2235,
+      "3": 1120,
+      "4": 4173
+    },
+    "val": {
+      "0": 6246,
+      "1": 2444,
+      "2": 415,
+      "3": 133,
+      "4": 775
+    }
+  },
+  "source_group_overlap": 0,
+  "largest_source_groups": [
+    {
+      "group": "still_acquisition:trinity|rgb",
+      "images": 1338,
+      "assigned": "train"
+    },
+    {
+      "group": "video:m210|NorthSea_Sat_Z30_DJI003|NorthSea_Sat_Z30_DJI003.MP4",
+      "images": 1268,
+      "assigned": "train"
+    },
+    {
+      "group": "video:m210|NorthSea_Sat_Z30_DJI005|NorthSea_Sat_Z30_DJI005.MP4",
+      "images": 566,
+      "assigned": "train"
+    },
+    {
+      "group": "still_acquisition:trinity|multispectral",
+      "images": 475,
+      "assigned": "val"
+    },
+    {
+      "group": "video:mavic|NorthSea_Fri_DJI_0114|NorthSea_Fri_DJI_0114.MP4",
+      "images": 421,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Fri_DJI_0116|NorthSea_Fri_DJI_0116.MP4",
+      "images": 421,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Sat_DJI_0129|NorthSea_Sat_DJI_0129.MP4",
+      "images": 421,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Fri_DJI_0113|NorthSea_Fri_DJI_0113.MP4",
+      "images": 417,
+      "assigned": "val"
+    },
+    {
+      "group": "video:mavic|NorthSea_Sat_DJI_0131|NorthSea_Sat_DJI_0131.MP4",
+      "images": 416,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Fri_DJI_0112|NorthSea_Fri_DJI_0112.MP4",
+      "images": 413,
+      "assigned": "train"
+    },
+    {
+      "group": "video:m210|DJI_0011_d3|DJI_0011_d3.mov",
+      "images": 394,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Thu_DJI_0107|NorthSea_Thu_DJI_0107.MP4",
+      "images": 363,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Sat_DJI_0126|NorthSea_Sat_DJI_0126.MP4",
+      "images": 347,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Fri_DJI_0115|NorthSea_Fri_DJI_0115.MP4",
+      "images": 339,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Sat_DJI_0122|NorthSea_Sat_DJI_0122.MP4",
+      "images": 336,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Thu_DJI_0109|NorthSea_Thu_DJI_0109.MP4",
+      "images": 307,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Fri_DJI_0110|NorthSea_Fri_DJI_0110.MP4",
+      "images": 297,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|NorthSea_Thu_DJI_0108|NorthSea_Thu_DJI_0108.MP4",
+      "images": 292,
+      "assigned": "train"
+    },
+    {
+      "group": "video:mavic|DJI_0069|DJI_0069.MP4",
+      "images": 243,
+      "assigned": "val"
+    },
+    {
+      "group": "video:mavic|DJI_0063|DJI_0063.MP4",
+      "images": 219,
+      "assigned": "train"
+    }
+  ],
+  "manifests": {
+    "train": {
+      "path": "train.tsv",
+      "sha256": "3dd90960394116002ff2a31b67921dc54cb75af90823b1f6198ca3f86e2d14cb",
+      "lines": 8922
+    },
+    "val": {
+      "path": "val.tsv",
+      "sha256": "c03aabe92e34bda87e5d9c6839a243fc721916e72a95c8ce5949bb9e25410503",
+      "lines": 1555
+    },
+    "trainval": {
+      "path": "trainval.tsv",
+      "sha256": "8a8ee3bc533af3519b0fcf71dc21f16f48145d8a64d3d6e7283b011c1fab19d7",
+      "lines": 10477
+    }
+  }
+}

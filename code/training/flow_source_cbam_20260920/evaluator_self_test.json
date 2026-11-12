@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "perfect detection",
+    "missing area remains null",
+    "absent class remains null",
+    "empty detections",
+    "wrong category"
+  ]
+}

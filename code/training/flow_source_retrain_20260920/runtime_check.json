@@ -1,0 +1,8 @@
+{
+  "ultralytics": "8.4.124",
+  "torch": "2.5.1+cu124",
+  "torchvision": "0.20.1+cu124",
+  "numpy": "2.2.6",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "ultralytics_file": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/vendor/ultralytics/__init__.py"
+}

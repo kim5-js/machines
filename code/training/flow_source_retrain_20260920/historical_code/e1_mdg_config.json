@@ -1,0 +1,61 @@
+{
+  "schema": "ring3.e1_mdg_config.v1",
+  "stage": "E1",
+  "method": "online_maritime_degradation_only",
+  "branch_probabilities": {
+    "clean": 0.3,
+    "low_light": 0.2,
+    "glare": 0.2,
+    "mixed": 0.15,
+    "standard_aug_only": 0.15
+  },
+  "severity_probabilities": {
+    "mild": 0.3333333333333333,
+    "medium": 0.3333333333333333,
+    "strong": 0.3333333333333334
+  },
+  "low_light": {
+    "mild": {
+      "brightness": [0.9, 0.95],
+      "gamma": [1.05, 1.12]
+    },
+    "medium": {
+      "brightness": [0.86, 0.9],
+      "gamma": [1.12, 1.21]
+    },
+    "strong": {
+      "brightness": [0.82, 0.86],
+      "gamma": [1.21, 1.3]
+    }
+  },
+  "glare": {
+    "mild": {
+      "target_area_ratio": [0.0175, 0.028],
+      "intensity_255": [22.0, 30.0]
+    },
+    "medium": {
+      "target_area_ratio": [0.028, 0.039],
+      "intensity_255": [30.0, 39.0]
+    },
+    "strong": {
+      "target_area_ratio": [0.039, 0.05],
+      "intensity_255": [39.0, 48.0]
+    },
+    "aspect_ratio": [1.4, 3.2],
+    "softness": [1.6, 2.4]
+  },
+  "invariants": {
+    "train_only": true,
+    "validation_unchanged": true,
+    "labels_unchanged": true,
+    "dataset_manifests_unchanged": true,
+    "applied_after_standard_yolo_augmentation": true,
+    "consistency_loss": false,
+    "curriculum": false
+  },
+  "provenance": {
+    "low_light_envelope": "Existing project range: brightness 0.82-0.95 and gamma 1.05-1.30",
+    "glare_envelope": "Existing project range: target area 0.0175-0.05, aspect 1.4-3.2, intensity 22-48, softness 1.6-2.4",
+    "severity_policy": "The existing envelopes are partitioned into contiguous mild, medium, and strong bands without extending their extrema"
+  }
+}

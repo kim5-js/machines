@@ -1,0 +1,65 @@
+{
+  "schema": "ring3.cbam_focal_interaction_release_manifest.v1",
+  "release": "cbam-focal-eiou-lambda0-interaction-pilot",
+  "paper_result_eligible": false,
+  "formal_files_modified": false,
+  "object_aware_or_e3_auto_start": false,
+  "files": [
+    {
+      "path": "CBAM_FOCAL_INTERACTION_PILOT.md",
+      "sha256": "d241cd65a0a42c811a285c7ed382e3ac3adceec4757001acfeb8aaa20dadbf35"
+    },
+    {
+      "path": "cbam_focal_interaction_pilot_config.json",
+      "sha256": "a2f4edcd3e29c90e395e2b9beb73241123189bd5c2d31f8dfa72f01ec8128b74"
+    },
+    {
+      "path": "cbam_focal_region_diagnostic.py",
+      "sha256": "f7f9fa4f1434a70187283fd62002f2a21c4218aca6ef70098b427875e4f0d858"
+    },
+    {
+      "path": "cbam_focal_region_diagnostic_template.json",
+      "sha256": "11df0ec170d23ecd7e4f45103627f563c26c56679ffbb7a3cc5e6a8a127a9f07"
+    },
+    {
+      "path": "cbam_focal_sdc.py",
+      "sha256": "a24a7eb23d3736b4d44d5317db170e6d8cd73b474738ea6c5698d068de89a537"
+    },
+    {
+      "path": "run_cbam_focal_interaction_pilot.sh",
+      "sha256": "f2169a3f78be73a5e132cbcfa291e110576308f08cdb14ccbefc26fab52f56a0"
+    },
+    {
+      "path": "train_cbam_focal_interaction_pilot.py",
+      "sha256": "31796bae3450357abb1257c06074bc909bfd3541cde083811327984b7d7af579"
+    },
+    {
+      "path": "p3_region_cosine_diagnostic.py",
+      "sha256": "15359a3ce9e01cfe4692946d667f158ea152a02306cc7a61a33c00b357ccd431"
+    },
+    {
+      "path": "formal_experiment_lock.json",
+      "sha256": "9ef3f68ef0791f198d1ed894477234a76e5e5a98113aa4a44d10b4c03c4ed3e1"
+    },
+    {
+      "path": "formal_runtime_amendment.json",
+      "sha256": "c4c6c7f6da5c27b382eed1c65d167106a8681d8d06e627738598ea0944b55d0e"
+    },
+    {
+      "path": "e1_mdg_config.json",
+      "sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a"
+    },
+    {
+      "path": "train_e2_sdc.py",
+      "sha256": "2c5d415a614b5f9bf53d5deb0934548390ef14e8409808167857d11b844dc721"
+    },
+    {
+      "path": "sdc_consistency.py",
+      "sha256": "87979f6b2f7c6d66103d2883c843b8b796866e1db638119337b1b1cf2b62fd38"
+    },
+    {
+      "path": "maritime_degradation.py",
+      "sha256": "b0d60602f77db9bbb935f5e48f44a5766f361ef35bc07e90fd06b23c3f8b85cc"
+    }
+  ]
+}

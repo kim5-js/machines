@@ -1,0 +1,73 @@
+{
+  "schema": "ring3.wsodd_legacy_split_sgd_mainline_release_manifest.v1",
+  "status": "locked",
+  "purpose": "Final v3 release for the isolated WSODD legacy image-split pretrained-SGD E0-E3 reproduction",
+  "base_release_manifest_sha256": "a1a555e7724827a5098fa2f8fb94fc91f1c1f5f5a8f2161d1703b93e48cc016f",
+  "schema_validator_hotfix": "v2 independent training-recipe validation",
+  "entry_release": "v3 locked-manifest routing",
+  "training_recipe_changed_from_strict_mainline": false,
+  "known_sequence_leakage_disclosed": true,
+  "strict_sequence_disjoint_results_untouched": true,
+  "files": [
+    {
+      "path": "wsodd_legacy_split_sgd_mainline_release_manifest.json",
+      "sha256": "a1a555e7724827a5098fa2f8fb94fc91f1c1f5f5a8f2161d1703b93e48cc016f"
+    },
+    {
+      "path": "wsodd_legacy_split_sgd_mainline_config.json",
+      "sha256": "f76c7237533cc11ec75c6da86ae1e04fe5ae6df5782d6af719dbba71c227366d"
+    },
+    {
+      "path": "manifests/wsodd_legacy_image_split_v1/protocol.json",
+      "sha256": "09c540274a0b4632e14e58cff1afe88b7f479aeddb019cc8c7ed85fe43076758"
+    },
+    {
+      "path": "manifests/wsodd_legacy_image_split_v1/train.txt",
+      "sha256": "dfd295ea3f536d33917921b8f68f333eb47533ba1cc8aacbc1624c6ba2260eb3"
+    },
+    {
+      "path": "manifests/wsodd_legacy_image_split_v1/val.txt",
+      "sha256": "ceaaa6f9b92ee5b08fb83bad78607dfc7a962c7b4a5905b7cda021dc582d7fdf"
+    },
+    {
+      "path": "train_wsodd_legacy_split_sgd_mainline.py",
+      "sha256": "8347499151f3c9a7a3b45ffd5bb4a9b0f8e3916910b527000b7ec0a89c03e257"
+    },
+    {
+      "path": "wsodd_legacy_split_sgd_mainline_v2_entry.py",
+      "sha256": "c4bc31912d54d1f5e5e3492640588fb519eeee49ceb9be88651f679bff44d5bd"
+    },
+    {
+      "path": "wsodd_legacy_split_sgd_mainline_v3_entry.py",
+      "sha256": "728c02fd4962ba530dc165c797929d340c9f60e9076b46d699f60f39c203929c"
+    },
+    {
+      "path": "run_wsodd_legacy_split_sgd_mainline_v3.sh",
+      "sha256": "151260312361048367f6c292ad7250010d80a1a5949d0b4db130a9fb04903f0c"
+    },
+    {
+      "path": "train_wsodd_pretrained_sgd_mainline.py",
+      "sha256": "256ac80772bc3c0f23d6ac8e07877c43b333bb681e5b52898e39dbca0d79fd21"
+    },
+    {
+      "path": "train_pretrained_sgd_mainline.py",
+      "sha256": "8d8d46976d2be9d2473886f7de25e91bbd788a4ed368bd51b7998d42fcc2e413"
+    },
+    {
+      "path": "pretrained_sgd_mainline_supervisor_patch.py",
+      "sha256": "0281cc5da384a6c936410cd5ca30a522ed01245586b789c11de2af572ba5e246"
+    },
+    {
+      "path": "train_pretrained_sgd_alpha_ablation_v2.py",
+      "sha256": "afc3c7c33e690db3a745b0c59ebc932cb7250ca2bddc722135e8903be670fc36"
+    },
+    {
+      "path": "evaluate_e3_coco_areas.py",
+      "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"
+    },
+    {
+      "path": "wsodd_pretrained_sgd_hotfix_v3_entry.py",
+      "sha256": "bad6f09ed1e06bb3af74d4fb9f15fa119493b11dd0e45cd1f189c91399f939ef"
+    }
+  ]
+}

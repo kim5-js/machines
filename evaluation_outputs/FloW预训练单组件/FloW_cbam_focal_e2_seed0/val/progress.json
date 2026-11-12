@@ -1,0 +1,8 @@
+{
+  "status": "official_coco_inference",
+  "job": "FloW_cbam_focal_e2_seed0",
+  "split": "val",
+  "images": 335,
+  "target_images": 335,
+  "updated_utc": "2026-09-21T00:01:11.387270+00:00"
+}

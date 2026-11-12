@@ -1,0 +1,7 @@
+path: /root/autodl-tmp/flow_source_retrain_20260920/release_v1/data/FloW_IMG_YOLO_2000_source_disjoint
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names:
+  0: bottle

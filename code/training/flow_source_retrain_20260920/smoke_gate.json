@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "completed_jobs": 3,
+  "utc": "2026-09-20T11:25:31.940005+00:00",
+  "request_sha256": "513b51300ded9eb65db256ad727ca25eaa1b9cbbd8d0dd628d93d8febedd9780",
+  "adapter_manifest_sha256": "ef8603aa780df9c90da2d9fe5dd44d7b733bf5a50d98ef1a390974e1986adb24",
+  "preflight_sha256": "a87087c1417b26399788d3719b1d1c998eb1e06a59884f71898b340d06aef29b",
+  "smoke_data_manifest_sha256": "2eaa21eadd8ec614db7df09cde0a98edfd5af0ef8d1ecc68bca9eea839ca838d",
+  "proof": {
+    "FloW_E0_seed0": {
+      "completion_sha256": "6667920ec2980b73342aa0d4935bab3f3fa3303952ebe1290a72877c453394c8"
+    },
+    "FloW_E2_seed0": {
+      "completion_sha256": "3ac5954326381cc65a653fcddacd47567b0d03d4e611d5288ac12999328974e2"
+    },
+    "FloW_E3_seed0": {
+      "completion_sha256": "0e0baa62a2c1c58b7515d2838bd8307a4426e1cae846554cd555fb346c48a6f7"
+    }
+  },
+  "scope": "real-data training and native validation before full ablation queue"
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "ring3.wsodd_annotation_semantics_audit.v1",
+  "status": "passed",
+  "audited_source": "WSODD USV_dataset/WSODD USV_dataset/annotation/*.xml",
+  "audit_scope": "all source Pascal-VOC XML annotations before the sequence-disjoint YOLO conversion",
+  "xml_files": 7467,
+  "objects": 21911,
+  "class_counts": {
+    "animal": 94,
+    "ball": 2609,
+    "boat": 8179,
+    "bridge": 2014,
+    "buoy": 167,
+    "grass": 110,
+    "harbor": 1224,
+    "mast": 354,
+    "person": 695,
+    "platform": 614,
+    "rock": 1540,
+    "rubbish": 669,
+    "ship": 3423,
+    "tree": 219
+  },
+  "difficult_values": {
+    "0": 21911
+  },
+  "truncated_values": {
+    "0": 19005,
+    "1": 2906
+  },
+  "ignore_like_tags": {},
+  "observed_xml_tags": [
+    "annotation",
+    "bndbox",
+    "database",
+    "depth",
+    "difficult",
+    "filename",
+    "folder",
+    "height",
+    "name",
+    "object",
+    "path",
+    "pose",
+    "segmented",
+    "size",
+    "source",
+    "truncated",
+    "width",
+    "xmax",
+    "xmin",
+    "ymax",
+    "ymin"
+  ],
+  "conclusion": {
+    "dedicated_ignore_or_crowd_semantics_present": false,
+    "nonzero_difficult_objects": 0,
+    "truncated_is_geometry_metadata_not_ignore": true,
+    "conversion_policy": "retain all 21911 annotated objects in the 14 detector classes; do not invent an ignore class or discard truncated objects",
+    "seadronessee_ignore_rule_reused": false
+  },
+  "method": "Parsed every XML file with Python xml.etree.ElementTree and counted object name, difficult, truncated, and ignore-like tags. Counts were cross-checked against the sequence-disjoint protocol class-instance totals."
+}

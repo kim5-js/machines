@@ -1,0 +1,100 @@
+{
+  "schema": "ring3.cbam_focal_formal_series_config.v1",
+  "status": "locked_requested",
+  "purpose": "Unified pretrained SeaDronesSee factorial ablation for CBAM and Focal-EIoU, followed by E2 and E3 on the combined base",
+  "e0_anchor": {
+    "reuse_completed_formal_e0": true,
+    "run_dir": "/root/autodl-tmp/formal_baselines/seed0_yolov8s_seadronessee_img960_e150"
+  },
+  "architecture": {
+    "cbam_layer_indices": [4, 6],
+    "cbam_scope": "backbone_P3_P4_C2f_only",
+    "channel_reduction_ratio": 16,
+    "spatial_kernel_size": 7,
+    "detect_input_indices": [15, 18, 21],
+    "head_p3_layer_index": 15,
+    "head_p3_layer_type": "C2f"
+  },
+  "focal_eiou": {
+    "alpha": 0.25,
+    "gamma": 2.0,
+    "eps": 1e-7,
+    "replaces": "CIoU_bbox_regression_term_only",
+    "dfl_preserved": true
+  },
+  "small_object_weighting": {
+    "ordinary_target_weight": 1.0,
+    "degraded_small_target_weight": 1.5,
+    "small_area_lt_px2": 1024,
+    "coordinate_space": "post_augmentation_training_pixels",
+    "scope": "degraded_small_assigned_positive_anchors_only",
+    "normalization_denominator_unchanged": true,
+    "background_anchor_weight_unchanged": true
+  },
+  "runs": [
+    {
+      "key": "cbam_only",
+      "name": "seed0_yolov8s_seadronessee_ablation_cbam_img960_e150",
+      "cbam": true,
+      "focal_eiou": false,
+      "dual_view": false,
+      "degraded_small_weighting": false
+    },
+    {
+      "key": "focal_eiou_only",
+      "name": "seed0_yolov8s_seadronessee_ablation_focal_eiou_img960_e150",
+      "cbam": false,
+      "focal_eiou": true,
+      "dual_view": false,
+      "degraded_small_weighting": false
+    },
+    {
+      "key": "cbam_focal",
+      "name": "seed0_yolov8s_seadronessee_ablation_cbam_focal_eiou_img960_e150",
+      "cbam": true,
+      "focal_eiou": true,
+      "dual_view": false,
+      "degraded_small_weighting": false
+    },
+    {
+      "key": "cbam_focal_e2",
+      "name": "seed0_yolov8s_seadronessee_cbam_focal_e2_dualview_nocons_img960_e150",
+      "cbam": true,
+      "focal_eiou": true,
+      "dual_view": true,
+      "degraded_small_weighting": false
+    },
+    {
+      "key": "cbam_focal_e3",
+      "name": "seed0_yolov8s_seadronessee_cbam_focal_e3_dualview_smallobj_alpha15_img960_e150",
+      "cbam": true,
+      "focal_eiou": true,
+      "dual_view": true,
+      "degraded_small_weighting": true
+    }
+  ],
+  "training": {
+    "pretrained": true,
+    "model": "/root/autodl-tmp/weights/yolov8s.pt",
+    "dataset": "SeaDronesSee source-disjoint locked split",
+    "epochs": 150,
+    "imgsz": 960,
+    "batch": 8,
+    "optimizer": "AdamW",
+    "lr0": 0.001111,
+    "seed": 0,
+    "independent_fresh_start_for_every_run": true,
+    "resume_only_from_same_run_last_pt": true,
+    "max_attempts_per_run": 3
+  },
+  "invariants": {
+    "no_consistency_loss_in_any_run": true,
+    "no_severity_weighting": true,
+    "no_curriculum": true,
+    "no_E4": true,
+    "formal_lock_unchanged": true,
+    "runtime_amendment_unchanged": true,
+    "dataset_split_unchanged": true,
+    "old_30_epoch_pilot_remains_validation_only": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "ring3.wsodd_sequence_e3_alpha15_fixed_test_hotfix_release.v1",
+  "status": "released",
+  "purpose": "Evaluation-only repair for resolving locked WSODD test-manifest basenames against the dataset YAML test image directory",
+  "failure_signature": "RuntimeError: Fixed test manifest has duplicates or missing images",
+  "root_cause": "The original evaluator resolved manifest basenames against the process working directory instead of dataset YAML path plus test split",
+  "invariants": {
+    "training_started": false,
+    "training_recipe_changed": false,
+    "checkpoint_updates": false,
+    "dataset_changed": false,
+    "test_manifest_changed": false,
+    "evaluation_parameters_changed": false,
+    "original_release_files_changed": false,
+    "e4_started": false
+  },
+  "locked_base_files": [
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_sequence_e3_alpha15_release_manifest.json", "sha256": "108a77741fac6aa7addcd2436b047f1d107d292e34d278e011d688143f73a80a"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_sequence_e3_alpha15_config.json", "sha256": "2baa668244706307e54144b800d098eef78e196fbe9657b3ed94b7595886fe37"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/train_wsodd_sequence_e3_alpha15.py", "sha256": "83a2007e4160cfbdf70225c951f5aba70f8855bd2ad53af811c0b9575d94cbe6"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_wsodd_single_fixed_test.py", "sha256": "bcd5db3698ac29472dbf419c9105de4ca506a2d1b811912e04c178ae9490d845"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/run_wsodd_sequence_e3_alpha15.sh", "sha256": "61e8969b1d3738c8225db8aa3ea13c8a3609cfd47543807c30b1ff10c288da04"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/train_pretrained_sgd_mainline.py", "sha256": "8d8d46976d2be9d2473886f7de25e91bbd788a4ed368bd51b7998d42fcc2e413"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/pretrained_sgd_mainline_models.py", "sha256": "4f797d6a0e9428227266d9189c74f43a5d4c3f52d2b6e7020763412d845f8fca"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/e3_small_object_weighting.py", "sha256": "5df5e0d4b39f17c0abb08288ff0d826b4894f6245bdd90dd6be6458590ecd67b"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/pretrained_sgd_mainline_supervisor_patch.py", "sha256": "0281cc5da384a6c936410cd5ca30a522ed01245586b789c11de2af572ba5e246"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/train_pretrained_sgd_alpha_ablation_v2.py", "sha256": "afc3c7c33e690db3a745b0c59ebc932cb7250ca2bddc722135e8903be670fc36"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/train_wsodd_legacy_e3_alpha15.py", "sha256": "3847a6aca963647bf687a84b05533c04a4d2b50ec865a8da543e045811a737f7"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/train_wsodd_pretrained_sgd_mainline.py", "sha256": "256ac80772bc3c0f23d6ac8e07877c43b333bb681e5b52898e39dbca0d79fd21"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_pretrained_sgd_hotfix_v3_entry.py", "sha256": "bad6f09ed1e06bb3af74d4fb9f15fa119493b11dd0e45cd1f189c91399f939ef"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/pretrained_sgd_mainline_entry.py", "sha256": "bc7e1076bb43df1cff5deddcf1fcecfe6911ea5a00f71b4f78f92d44fb9d6dbe"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/verify_yolo_dataset.py", "sha256": "faf305177a9e61477affb7f42d5030a8142b95b22335be8b602e6e418813002c"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_e3_coco_areas.py", "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_pretrained_sgd_robustness.py", "sha256": "cb42325d69011f24043170bbdee3b12371cd433d4dcf7d3fe611568a76c1794f"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/cbam_focal_formal_models.py", "sha256": "58ad7ef9a2e996729f6263312cfd692880eaf9279eb946684611e31299667fff"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/cbam_focal_sdc.py", "sha256": "a24a7eb23d3736b4d44d5317db170e6d8cd73b474738ea6c5698d068de89a537"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/datasets/wsodd_sequence_disjoint_v1.yaml", "sha256": "180965bbca7a5416d467b0d089965db2c8fc22751843795df295d1376c62907e"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/manifests/wsodd_sequence_disjoint_v1/test.txt", "sha256": "786bd086a5924fc8cda5ea339eaee8d30928ddd1fe7c90312fb19c1186a1c136"}
+  ],
+  "hotfix_files": [
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/wsodd_sequence_e3_alpha15_fixed_test_hotfix_v1.py", "sha256": "bc8aab5ad8ee67a936dc3ff8d58f5ff75764823a838705cb65f41a486f9972bd"},
+    {"path": "/root/autodl-tmp/ring3_setup/autodl/run_wsodd_sequence_e3_alpha15_fixed_test_hotfix_v1.sh", "sha256": "f14ca07846478debce73e6028311d26a6c54100779af508bc5533f0c8af494c4"}
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "ring3.e2_p3_consistency_config.v1",
+  "stage": "E2",
+  "method": "online_mdg_plus_shared_weight_p3_consistency",
+  "mdg": {
+    "config_path": "/root/autodl-tmp/ring3_setup/autodl/e1_mdg_config.json",
+    "config_sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+    "unchanged_from_e1": true
+  },
+  "dual_view": {
+    "clean_view": "standard_yolo_training_augmentation_output_before_mdg",
+    "degraded_view": "clone_of_clean_view_then_online_mdg",
+    "shared_detector_weights": true,
+    "detection_loss_on_clean": true,
+    "detection_loss_on_degraded": true,
+    "validation_uses_locked_original_distribution_only": true,
+    "inference_uses_single_detector_path_only": true
+  },
+  "consistency": {
+    "feature_scale": "P3",
+    "feature_locator": "first_input_to_detect_head",
+    "loss": "one_minus_cosine_similarity",
+    "feature_reduction": "flatten_each_paired_feature_map_then_mean_over_pairs",
+    "lambda": 0.1,
+    "loss_aggregation": "Ldet_clean_plus_Ldet_degraded_plus_lambda_times_Lp3",
+    "ultralytics_scaling": "lambda_times_mean_pair_loss_times_clean_batch_size"
+  },
+  "required_runtime_evidence": {
+    "detect_head_input_indices_recorded": true,
+    "p3_forward_hook_fired": true,
+    "paired_feature_shape_recorded": true,
+    "finite_nonzero_consistency_loss": true,
+    "finite_nonzero_consistency_only_p3_gradient": true,
+    "p3_parameter_changed_after_optimizer_step": true,
+    "mdg_branch_accounting_closed": true
+  },
+  "invariants": {
+    "formal_lock_unchanged": true,
+    "runtime_amendment_unchanged": true,
+    "training_hyperparameters_unchanged": true,
+    "dataset_yaml_and_manifest_unchanged": true,
+    "pretrained_weight_unchanged": true,
+    "independent_run_from_same_pretrained_initialization": true,
+    "no_cbam": true,
+    "no_focal_eiou": true,
+    "no_curriculum": true,
+    "p4_p5_consistency_disabled": true
+  },
+  "activation": {
+    "e1_original_validation_gate": "did_not_improve_e0",
+    "authorization": "User explicitly requested continuing to the real consistency modification after accepting E1 as an MDG-only component baseline.",
+    "authorization_date": "2026-08-24",
+    "interpretation": "This is an explicit stage override for core-method evaluation, not a claim that E1 passed its metric gate."
+  },
+  "source_plan": {
+    "experiment": "E2 = YOLOv8s + MDG + P3 consistency",
+    "shared_weights": true,
+    "initial_lambda": 0.1,
+    "reason_for_p3_first": "P3 is the detection feature scale most relevant to small objects."
+  }
+}

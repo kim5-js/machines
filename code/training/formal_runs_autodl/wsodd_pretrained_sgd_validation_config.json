@@ -1,0 +1,109 @@
+{
+  "schema": "ring3.wsodd_pretrained_sgd_validation_config.v1",
+  "status": "locked_post_training_evaluation",
+  "purpose": "Evaluate the completed WSODD pretrained-SGD E0-E3 checkpoints on the fixed sequence-disjoint test split, including COCO area AP, manually reviewed scenes, and controlled photometric degradation",
+  "invariants": {
+    "no_training": true,
+    "no_checkpoint_updates": true,
+    "no_e4": true,
+    "same_evaluator_for_all_models_and_conditions": true,
+    "same_prediction_parameters_for_all_models_and_conditions": true,
+    "labels_and_geometry_unchanged_under_photometric_degradation": true,
+    "manual_scene_labels_required": true,
+    "fixed_sequence_disjoint_test_split": true
+  },
+  "training_queue": {
+    "state": "/root/autodl-tmp/formal_state/wsodd_pretrained_sgd_mainline_state.json",
+    "summary": "/root/autodl-tmp/formal_state/wsodd_pretrained_sgd_mainline_summary.json",
+    "required_status": "completed",
+    "required_completed_runs": [
+      "e0",
+      "e1",
+      "e2",
+      "e3"
+    ]
+  },
+  "dataset": {
+    "yaml": "/root/autodl-tmp/ring3_setup/autodl/datasets/wsodd_sequence_disjoint_v1.yaml",
+    "yaml_sha256": "180965bbca7a5416d467b0d089965db2c8fc22751843795df295d1376c62907e",
+    "split": "test",
+    "images": 2406,
+    "classes": 14,
+    "area_coordinates": "original WSODD test-image pixels"
+  },
+  "evaluator": {
+    "path": "/root/autodl-tmp/ring3_setup/autodl/evaluate_e3_coco_areas.py",
+    "sha256": "c1eeb2e5bdf72e627a856ac14f4f679f844de2a9ff0a205cfce50323de9b61cc",
+    "imgsz": 960,
+    "batch": 8,
+    "chunk_size": 4,
+    "confidence_floor": 0.001,
+    "nms_iou": 0.7,
+    "prediction_max_det": 300,
+    "evaluation_max_det": 100,
+    "iou_thresholds": "0.50:0.05:0.95",
+    "recall_points": 101,
+    "small_area": "[0,32^2)",
+    "medium_area": "[32^2,96^2)",
+    "large_area": "[96^2,inf)"
+  },
+  "models": {
+    "E0": {
+      "run_dir": "/root/autodl-tmp/formal_wsodd_pretrained_sgd_mainline/seed0_yolov8s_wsodd_e0_pretrained_sgd_img960_e150"
+    },
+    "E1": {
+      "run_dir": "/root/autodl-tmp/formal_wsodd_pretrained_sgd_mainline/seed0_yolov8s_wsodd_e1_mdg_pretrained_sgd_img960_e150"
+    },
+    "E2": {
+      "run_dir": "/root/autodl-tmp/formal_wsodd_pretrained_sgd_mainline/seed0_yolov8s_wsodd_e2_dualview_nocons_pretrained_sgd_img960_e150"
+    },
+    "E3": {
+      "run_dir": "/root/autodl-tmp/formal_wsodd_pretrained_sgd_mainline/seed0_yolov8s_wsodd_e3_dualview_smallobj_alpha12_pretrained_sgd_img960_e150"
+    }
+  },
+  "scene_evaluation": {
+    "labels_csv": "/root/autodl-tmp/robustness_eval/wsodd_pretrained_sgd_e0_e3/scene_review/scene_labels.csv",
+    "allowed_labels": [
+      "Normal",
+      "Glare",
+      "Low-light",
+      "Mixed"
+    ],
+    "models": [
+      "E0",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "metrics": [
+      "mAP50-95",
+      "APsmall"
+    ]
+  },
+  "controlled_degradation": {
+    "source_config": "/root/autodl-tmp/ring3_setup/autodl/e1_mdg_config.json",
+    "source_config_sha256": "41e66e44295fe7dce43fa9f76c5deecae0f75c521abcf60f3d96331bc152b40a",
+    "models": [
+      "E0",
+      "E2"
+    ],
+    "families": [
+      "glare",
+      "low_light"
+    ],
+    "severities": [
+      "mild",
+      "medium",
+      "strong"
+    ],
+    "parameter_policy": "Use the midpoint of each locked MDG severity band; glare center is deterministic per image and shared across severities",
+    "random_seed_namespace": "ring3.wsodd_pretrained_sgd_robustness_eval.v1",
+    "metrics": [
+      "mAP50-95",
+      "APsmall"
+    ]
+  },
+  "output": "/root/autodl-tmp/robustness_eval/wsodd_pretrained_sgd_e0_e3/metrics",
+  "runtime_locked_config": "/root/autodl-tmp/formal_state/wsodd_pretrained_sgd_validation_runtime_config.json",
+  "state": "/root/autodl-tmp/formal_state/wsodd_pretrained_sgd_validation_state.json"
+}

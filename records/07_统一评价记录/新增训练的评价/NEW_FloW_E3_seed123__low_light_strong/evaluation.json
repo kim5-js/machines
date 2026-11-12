@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "utc": "2026-11-11T13:49:13.518227+00:00",
+  "job": {
+    "key": "NEW_FloW_E3_seed123__low_light_strong",
+    "experiment_id": "FloW_E3_seed123",
+    "dataset": "FloW",
+    "family": "strategy",
+    "arm": "FloW_E3_seed123",
+    "seed": "123",
+    "split": "test",
+    "condition": "low_light_strong",
+    "weights": "/root/autodl-tmp/flow_source_retrain_20260920/release_v1/runs/FloW_E3_seed123/weights/best.pt",
+    "weights_sha256": "5b22c4a066ef7a32675ebec4ea125b509a3e84597bda4ca4e709f87baac9bd33",
+    "block": "post_train"
+  },
+  "images": 541,
+  "ground_truth_boxes": 1090,
+  "predictions": 10654,
+  "input_pixels_sha256": "dee479887c353ad43d60e510a05a2f5c28c1faf7b8d1030e1c1def744dec063e",
+  "predictions_sha256": "95d01f0fd45dd49974a4b5cba0bbb1fff1fc95946335aae9442f3a4799a79c1c",
+  "metrics": {
+    "mAP50-95": 0.45387063645749953,
+    "mAP50": 0.887203097789315,
+    "mAP75": 0.40223641970620205,
+    "APsmall": 0.2825912039940335,
+    "APmedium": 0.5802728585429583,
+    "APlarge": 0.6096669573324598,
+    "AR1": 0.2942201834862386,
+    "AR10": 0.5322935779816513,
+    "AR100": 0.5401834862385321,
+    "ARsmall": 0.40574257425742577,
+    "ARmedium": 0.6488235294117648,
+    "ARlarge": 0.7066666666666667
+  },
+  "per_class_AP": {
+    "bottle": 0.45387063645749953
+  },
+  "condition_parameters": {
+    "brightness": 0.84,
+    "gamma": 1.255
+  },
+  "inference": {
+    "imgsz": 960,
+    "batch": 1,
+    "half": false,
+    "rect": false,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0
+  },
+  "evaluator_code_sha256": "988485f79624cd42ceed9335d284df4cdcdf7b3d583e052fcbed2dd6bccf0267",
+  "runtime": {
+    "ultralytics": "8.4.124",
+    "ultralytics_file": "/workspace/recompute_20261109/bundle/code/flow_vendor/ultralytics/__init__.py",
+    "torch": "2.5.1+cu124",
+    "pycocotools": "2.0.10",
+    "opencv": "4.12.0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1"
+  },
+  "elapsed_seconds": 18.617098165210336
+}
